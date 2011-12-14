@@ -1,4 +1,5 @@
 .clearfix
+  *zoom: 1
   &:after
     content: '.'
     display: block
@@ -14,6 +15,14 @@
   float: left
 
 .last-col
+  display: table-cell
+  float: none
+  width: auto
+  _margin-right: -3px
+  _left: -3px
+  _position: relative
+  *display: block
+  *zoom: 1
   &:after
     content: ' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . '
     clear: both
@@ -62,11 +71,6 @@
 
 .col5of6
   width: 83.33333%
-
-.last-col
-  display: table-cell
-  float: none
-  width: auto
 
 .right
   float: right
