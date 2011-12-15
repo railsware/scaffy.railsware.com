@@ -1,8 +1,8 @@
 =animation($properties)
   -webkit-animation: $properties
   -moz-animation:    $properties
-  -o-animation:      $properties
-  
+  animation:         $properties
+
 =border-radius($properties)
   -webkit-border-radius: $properties
   -moz-border-radius:    $properties
@@ -19,54 +19,51 @@
   -moz-box-sizing:    border-box
   box-sizing:         border-box
 
-=gradient-vertical($startColor, $endColor)
-  background-color: lighten($endColor, 10%) // Need to implement calculating color between end and stop colors
-  background-repeat: repeat-x
-  background-image: -khtml-gradient(linear, left top, left bottom, from($startColor), to($endColor))
-  background-image: -moz-linear-gradient(top, $startColor, $endColor)
-  background-image: -ms-linear-gradient(top, $startColor, $endColor)
-  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(100%, $endColor))
-  background-image: -webkit-linear-gradient(top, $startColor, $endColor)
-  background-image: -o-linear-gradient(top, $startColor, $endColor)
-  background-image: linear-gradient(top, $startColor, $endColor)
-  
-=gradient-horizontal($startColor, $endColor)
-  background-color: lighten($endColor, 10%)
-  background-repeat: repeat-x
-  background-image: -khtml-gradient(linear, left top, right top, from($startColor), to($endColor))
-  background-image: -moz-linear-gradient(left, $startColor, $endColor)
-  background-image: -ms-linear-gradient(left, $startColor, $endColor)
-  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $startColor), color-stop(100%, $endColor))
-  background-image: -webkit-linear-gradient(left, $startColor, $endColor)
-  background-image: -o-linear-gradient(left, $startColor, $endColor)
-  background-image: linear-gradient(left, $startColor, $endColor)
+=gradient-vertical($start-color, $end-color)
+  background-color: lighten($end-color, 10%)
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start-color), color-stop(100%, $end-color))
+  background-image: -webkit-linear-gradient(top, $start-color, $end-color)
+  background-image:    -moz-linear-gradient(top, $start-color, $end-color)
+  background-image:     -ms-linear-gradient(top, $start-color, $end-color)
+  background-image:      -o-linear-gradient(top, $start-color, $end-color)
+  background-image:         linear-gradient(top, $start-color, $end-color)
+
+=gradient-horizontal($start-color, $end-color)
+  background-color: lighten($end-color, 10%)
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $start-color), color-stop(100%, $end-color))
+  background-image: -webkit-linear-gradient(left, $start-color, $end-color)
+  background-image:    -moz-linear-gradient(left, $start-color, $end-color)
+  background-image:     -ms-linear-gradient(left, $start-color, $end-color)
+  background-image:      -o-linear-gradient(left, $start-color, $end-color)
+  background-image:         linear-gradient(left, $start-color, $end-color)
 
 =inline-block
   display: -moz-inline-stack
   display: inline-block
   zoom: 1
-  *display: inline
   _overflow: hidden
+  *display: inline
 
 =placeholder($color)
-  &:-moz-placeholder 
+  &:-moz-placeholder
     color: $color
-  &::-webkit-input-placeholder 
+  &::-webkit-input-placeholder
     color: $color
-  
-=text-shadow($properties) 
+
+=text-shadow($properties)
   -webkit-text-shadow: $properties
-  -moz-text-shadow: $properties
-  text-shadow: $properties
-  
+  -moz-text-shadow:    $properties
+  text-shadow:         $properties
+
 =transition($properties)
   -webkit-transition: $properties
   -moz-transition:    $properties
   -o-transition:      $properties
   transition:         $properties
-  
+
 =transform($properties)
   -webkit-transform: $properties
   -moz-transform:    $properties
   -o-transform:      $properties
   transform:         $properties
+
