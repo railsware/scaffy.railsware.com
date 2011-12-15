@@ -19,6 +19,28 @@
   -moz-box-sizing:    border-box
   box-sizing:         border-box
 
+=gradient-vertical($startColor, $endColor)
+  background-color: lighten($endColor, 10%) // Need to implement calculating color between end and stop colors
+  background-repeat: repeat-x
+  background-image: -khtml-gradient(linear, left top, left bottom, from($startColor), to($endColor))
+  background-image: -moz-linear-gradient(top, $startColor, $endColor)
+  background-image: -ms-linear-gradient(top, $startColor, $endColor)
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $startColor), color-stop(100%, $endColor))
+  background-image: -webkit-linear-gradient(top, $startColor, $endColor)
+  background-image: -o-linear-gradient(top, $startColor, $endColor)
+  background-image: linear-gradient(top, $startColor, $endColor)
+  
+=gradient-horizontal($startColor, $endColor)
+  background-color: lighten($endColor, 10%)
+  background-repeat: repeat-x
+  background-image: -khtml-gradient(linear, left top, right top, from($startColor), to($endColor))
+  background-image: -moz-linear-gradient(left, $startColor, $endColor)
+  background-image: -ms-linear-gradient(left, $startColor, $endColor)
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $startColor), color-stop(100%, $endColor))
+  background-image: -webkit-linear-gradient(left, $startColor, $endColor)
+  background-image: -o-linear-gradient(left, $startColor, $endColor)
+  background-image: linear-gradient(left, $startColor, $endColor)
+
 =inline-block
   display: -moz-inline-stack
   display: inline-block
@@ -48,15 +70,3 @@
   -moz-transform:    $properties
   -o-transform:      $properties
   transform:         $properties
-  
-=transition-delay($properties)
-  -webkit-transition-delay: $properties
-  -moz-transition-delay:    $properties
-  -o-transition-delay:      $properties
-  transition-delay:         $properties
-
-=background-image($properties)
-  background-image: -webkit-linear-gradient($properties)
-  background-image:    -moz-linear-gradient($properties)
-  background-image:      -o-linear-gradient($properties)
-  background-image:         linear-gradient($properties)
