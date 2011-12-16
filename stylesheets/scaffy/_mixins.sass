@@ -27,6 +27,7 @@
   background-image:     -ms-linear-gradient(top, $start-color, $end-color)
   background-image:      -o-linear-gradient(top, $start-color, $end-color)
   background-image:         linear-gradient(top, $start-color, $end-color)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$start-color', endColorstr = '$end-color');
 
 =gradient-horizontal($start-color, $end-color)
   background-color: lighten($end-color, 10%)
@@ -36,6 +37,7 @@
   background-image:     -ms-linear-gradient(left, $start-color, $end-color)
   background-image:      -o-linear-gradient(left, $start-color, $end-color)
   background-image:         linear-gradient(left, $start-color, $end-color)
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$start-color', endColorstr = '$end-color');
 
 =inline-block
   display: -moz-inline-stack
