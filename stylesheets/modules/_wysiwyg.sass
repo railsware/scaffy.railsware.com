@@ -1,28 +1,31 @@
+$border-color: #ccc
+
 .wysiwyg
   ul
     margin: 10px 0 20px
     li
       list-style: disc
-      margin-left: 20px
+      margin: 3px 0 3px 20px
   ol
-    margin: 10px 0 20px
+    @extend ul
     li
       list-style: decimal
-      margin-left: 20px
   p,
-  blockquote
+  blockquote,
+  pre
+    line-height: 1.5
     margin: 10px 0 15px
   table
     margin: 25px 0
     width: 100%
     td
-      border: 1px solid #ccc
+      border: 1px solid $border-color
       padding: 7px 10px
     th
       font-weight: bold
       padding: 7px 10px
   hr
-    background-color: #ccc
+    background-color: $border-color
     border: none
     height: 1px
     margin: 15px 0
@@ -33,12 +36,24 @@
       font-weight: bold
     dd
       margin: 5px 0 10px 20px
+
+  // Form and other elements
   .checkbox,
   .radio
     margin: 5px 3px
+  fieldset,
   pre
+    padding: 10px 15px
+  pre
+    background-color: #ffc
+    border-left: 1px solid #eee
     font-family: inherit
     white-space: pre-wrap
+  fieldset
+    border: 1px solid $border-color
+    margin: 15px 0
+  legend
+    padding: 2px 5px
   acronym,
   abbr
     border-bottom: 1px dotted #000
