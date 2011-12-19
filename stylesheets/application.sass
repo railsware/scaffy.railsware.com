@@ -1,11 +1,22 @@
-@import 'scaffy/scaffy'
+@import 'scaffy/config'
+// Layout specific overrides
+$h1: 56px
+$h2: 36px
+$h3: 26px
+$h4: 18px
+$h5: 14px
+@import 'scaffy/framework'
+@import 'modules/for-application'
+
+// Local variables
 $layout-width:     980px
 $wrapper-paddings: 20px
 
+/* * * * * * * * * * * * * * * * * /
+
 body
   color: $base-font-color
-  font-size: $base-font-size
-  line-height: 1.231
+  font: #{$base-font-size}/1.231 'Lucida Grande', sans-serif
   margin: 0
   padding: 0
 
