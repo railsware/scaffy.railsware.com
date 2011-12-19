@@ -2,3 +2,9 @@
 .sass-cache
 *.DS_Store
 .DS_Store
+.bundle
+db/*.sqlite3
+log/
+config/database.yml
+public/assets
+tmp/
