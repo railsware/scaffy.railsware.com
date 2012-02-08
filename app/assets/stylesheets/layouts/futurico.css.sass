@@ -1,0 +1,32 @@
+@import 'framework/config'
+
+body
+  background: #292b30 image-url('futurico/background-noise.png')
+  color: $base-font-color
+  font: #{$base-font-size}/1.231 $base-font
+  margin: 0
+  padding: 0
+  .background-light
+    height: 100%
+    left: 0
+    position: fixed
+    top: 0
+    width: 100%
+    z-index: 0
+
+.container
+  position: relative
+  z-index: 1
+
+.wrapper
+  clear: both
+  margin: auto
+  padding: 20px 0
+  position: relative
+  width: 960px
+
+a
+  color: inherit
+  &:hover
+    text-decoration: none
+

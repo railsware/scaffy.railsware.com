@@ -1,0 +1,56 @@
+@import '../framework/config'
+
+// Button shadows set
+$underline:         0 1px 0 rgba(#000, .2)
+$inset:       inset 0 -1px 5px rgba(#000, .4)
+$click:       inset 0 1px 2px rgba(#000, .5)
+$glare:       inset 0 1px 0 rgba(#fff, .3)
+$glare-light: inset 0 1px 0 rgba(#fff, .15)
+
+
+.button
+  color: rgba(#000, .66)
+  cursor: pointer
+  font-weight: bold
+  height: 26px
+  padding: 6px 16px
+  text-decoration: none
+  +inline-block
+  +border-radius(20px)
+  +box-sizing
+  +box-shadow($underline)
+  +text-shadow(0 1px 0 rgba(#fff, .2))
+  +vertical-gradient(#dbd7d7, #8c8c8c)
+  &:hover,
+  &:focus
+    color: rgba(#000, .8)
+    +box-shadow(($underline, $inset))
+  &:active
+    +box-shadow(($underline, $glare, $click))
+    +vertical-gradient(#ccc, #777)
+
+  // Firmish style
+  &.firm
+    +vertical-gradient(#7fcee5, #3aa1bf)
+    &:active
+      +vertical-gradient(#59b7d2, #2d95b3)
+
+  // Positive style
+  &.positive
+    +vertical-gradient(#aed160, #6c901b)
+    &:active
+      +vertical-gradient(#9ec250, #5f8212)
+
+  // Neutral style
+  &.neutral
+    color: rgba(#fff, .66)
+    +text-shadow(0 1px 0 rgba(#000, .2))
+    +vertical-gradient(#5b5d63, #46474c)
+    &:active
+      +box-shadow(($underline, $glare-light, $click))
+      +vertical-gradient(#4e4f56, #3b3d42)
+
+input.button
+  border: none
+  height: auto
+

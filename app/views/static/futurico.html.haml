@@ -1,0 +1,71 @@
+!!!
+%html{:lang => "en-US"}
+  %head
+    %meta{:charset => "UTF-8"}
+      %title Futurico user interface
+      = stylesheet_link_tag "futurico"
+  %body
+
+    %img.background-light{:src => "/assets/futurico/background-light.png"}
+
+    .container
+      .header
+        .wrapper.clearfix
+          .col1of4.access-controls
+            %a{:href => "#"} Sign In
+            %span.phs
+              :plain
+                /
+            %a{:href => "#"} Register
+            %span.delimiter.phs
+              :plain
+                or
+            %a.fb-signup{:href => "#"}
+
+          .col1of2
+            %ul.navigation
+              %li.current
+                %a{:href => "#"} Main page
+              %li
+                %a{:href => "#"} Services
+              %li
+                %a{:href => "#"} Contacts
+
+          .last-col
+            .search
+              .text.light
+                %input{:type => "text", :placeholder => "Search box light", :tabindex => "1"}
+                %input.search-button{:type => "submit", :value => "", :tabindex => "2"}
+
+      .wrapper
+        .site-info
+          %h2.site-name
+            Futurico user interface
+            %span.version 1.0
+
+          .about
+            %span.legend-left
+            %span.legend-center beautiful ui components
+            %span.legend-right
+
+      .content
+        .wrapper.clearfix
+          .col1of4
+            .mbl
+              .text.dark
+                %input{:type => "text", :placeholder => "Search box light", :tabindex => "3"}
+            .mbl
+              .button Div button
+            .mbl
+              %a.button{:href => "#"} Link button
+            .mbl
+              %input.button{:type => "submit", :value => "Input button"}
+            .mbl
+              %a.button.firm{:href => "#"} Firm button
+            .mbl
+              %a.button.positive{:href => "#"} Positive button
+            .mbl
+              %a.button.neutral{:href => "#"} Neutral button
+
+          .last-col
+
