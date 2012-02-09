@@ -15,12 +15,13 @@ $glare-edge: inset 1px 1px 0 rgba(#fff, .1)
   height: 26px
   padding: 6px 16px
   text-decoration: none
-  +inline-block
   +border-radius(20px)
   +box-sizing
   +box-shadow(($underline, $glare-edge))
+  +inline-block
   +text-shadow(0 1px 0 rgba(#fff, .2))
   +vertical-gradient(#dbd7d7, #8c8c8c)
+  +user-select(none)
   &:hover,
   &:focus
     color: rgba(#000, .8)

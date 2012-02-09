@@ -17,6 +17,7 @@ $click: inset 0 0 7px rgba(#000, .8)
   +border-radius(10px)
   +box-sizing
   +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .1)))
+  +user-select(none)
 
   // With a small dot slider
   &.dot
@@ -49,6 +50,7 @@ $click: inset 0 0 7px rgba(#000, .8)
     position: absolute
     +border-radius(50%)
     +box-shadow($medium)
+    +user-select(none)
     &:hover
       +box-shadow(($medium, $hover))
     &:active

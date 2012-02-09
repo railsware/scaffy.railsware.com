@@ -51,6 +51,7 @@
       .content
         .wrapper.clearfix
           .col1of4
+            -# Buttons
             .mbl
               .text.dark
                 %input{:type => "text", :placeholder => "Search box light", :tabindex => "3"}
@@ -68,6 +69,8 @@
               %a.button.neutral{:href => "#"} Neutral button
             .mbl
               %a.button.positive.disabled{:href => "#"} Disabled button
+
+            -# Scrollboxes
             .mbl
               .scrollbox.dot
                 .scale{:style => "width: 20%"}
@@ -80,6 +83,53 @@
               .scrollbox.range
                 .scale{:style => "width: 20%"}
                   .slider
+
+            -# Selects
+            .mbl
+              .select.idle
+                .selected
+                  Bill Hampton
+                  %span.icon
+                .options
+                  %ul.stack
+                    %li.option Aaliyah
+                    %li.option Barbra
+                    %li.option Azura
+                    %li.option Babs
+                    %li.option Fox
+                    -# %li.option Bill
+                    -# %li.option John
+                    -# %li.option Kate
+            .mbl
+              .select.negative
+                .selected
+                  Bill Hampton
+                  %span.icon
+                .options
+                  %ul.stack
+                    %li.option Aaliyah
+                    %li.option Barbra
+                    %li.option Azura
+                    %li.option Babs
+                    %li.option Fox
+                    -# %li.option Bill
+                    -# %li.option John
+                    -# %li.option Kate
+            .mbl
+              .select.opened
+                .selected
+                  Bill Hampton
+                  %span.icon
+                .options
+                  %ul.stack
+                    %li.option Aaliyah
+                    %li.option Barbra
+                    %li.option Azura
+                    %li.option Babs
+                    %li.option Fox
+                    -# %li.option Bill
+                    -# %li.option John
+                    -# %li.option Kate
 
           .last-col
 
