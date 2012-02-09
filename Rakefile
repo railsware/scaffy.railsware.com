@@ -5,3 +5,7 @@
 require File.expand_path('../config/application', __FILE__)
 
 Scaffy::Application.load_tasks
+
+task :build do
+  `sass --update app/assets/stylesheets:pages/stylesheets`
+end
