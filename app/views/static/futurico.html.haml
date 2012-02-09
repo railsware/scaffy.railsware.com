@@ -33,7 +33,7 @@
 
           .last-col
             .search
-              .text.light
+              .text-rounded.light
                 %input{:type => "text", :placeholder => "Search box light", :tabindex => "1"}
                 %input.search-button{:type => "submit", :value => "", :tabindex => "2"}
 
@@ -51,10 +51,15 @@
       .content
         .wrapper.clearfix
           .col1of4
-            -# Buttons
+            -# Text inputs
             .mbl
               .text.dark
-                %input{:type => "text", :placeholder => "Search box light", :tabindex => "3"}
+                %input{:type => "text", :placeholder => "Search box dark", :tabindex => "3"}
+            .mbl
+              .text-rounded.dark
+                %input{:type => "text", :placeholder => "Search box rounded dark", :tabindex => "3"}
+
+            -# Buttons
             .mbl
               .button Div button
             .mbl
