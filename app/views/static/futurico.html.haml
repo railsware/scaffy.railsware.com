@@ -5,139 +5,18 @@
       %title Futurico user interface
       = stylesheet_link_tag "futurico"
   %body
-
     %img.background-light{:src => "/assets/futurico/background-light.png"}
 
     .container
-      .header
-        .wrapper.clearfix
-          .col1of4.access-controls
-            %a{:href => "#"} Sign In
-            %span.phs
-              :plain
-                /
-            %a{:href => "#"} Register
-            %span.delimiter.phs
-              :plain
-                or
-            %a.fb-signup{:href => "#"}
-
-          .col1of2
-            %ul.navigation
-              %li.current
-                %a{:href => "#"} Main page
-              %li
-                %a{:href => "#"} Services
-              %li
-                %a{:href => "#"} Contacts
-
-          .last-col
-            .search
-              .text-rounded.light
-                %input{:type => "text", :placeholder => "Search box light", :tabindex => "1"}
-                %input.search-button{:type => "submit", :value => "", :tabindex => "2"}
-
-      .wrapper
-        .site-info
-          %h2.site-name
-            Futurico user interface
-            %span.version 1.0
-
-          .about
-            %span.legend-left
-            %span.legend-center beautiful ui components
-            %span.legend-right
+      =render :partial => "static/futurico/header"
 
       .content
         .wrapper.clearfix
           .col1of4
-            -# Text inputs
-            .mbl
-              .text.dark
-                %input{:type => "text", :placeholder => "Search box dark", :tabindex => "3"}
-            .mbl
-              .text-rounded.dark
-                %input{:type => "text", :placeholder => "Search box rounded dark", :tabindex => "3"}
-
-            -# Buttons
-            .mbl
-              .button Div button
-            .mbl
-              %a.button{:href => "#"} Link button
-            .mbl
-              %input.button{:type => "submit", :value => "Input button"}
-            .mbl
-              %a.button.firm{:href => "#"} Firm button
-            .mbl
-              %a.button.positive{:href => "#"} Positive button
-            .mbl
-              %a.button.neutral{:href => "#"} Neutral button
-            .mbl
-              %a.button.positive.disabled{:href => "#"} Disabled button
-
-            -# Scrollboxes
-            .mbl
-              .scrollbox.dot
-                .hitbox
-                .scale{:style => "width: 20%"}
-                  .slider
-            .mbl
-              .scrollbox.disk
-                .hitbox
-                .scale{:style => "width: 20%"}
-                  .slider
-            .mbl
-              .scrollbox.range
-                .hitbox
-                .scale{:style => "width: 20%"}
-                  .slider
-
-            -# Selects
-            .mbl
-              .select.idle
-                .selected
-                  Bill Hampton
-                  %span.icon
-                .options
-                  %ul.stack
-                    %li.option Aaliyah
-                    %li.option Barbra
-                    %li.option Azura
-                    %li.option Babs
-                    %li.option Fox
-                    -# %li.option Bill
-                    -# %li.option John
-                    -# %li.option Kate
-            .mbl
-              .select.negative
-                .selected
-                  Bill Hampton
-                  %span.icon
-                .options
-                  %ul.stack
-                    %li.option Aaliyah
-                    %li.option Barbra
-                    %li.option Azura
-                    %li.option Babs
-                    %li.option Fox
-                    -# %li.option Bill
-                    -# %li.option John
-                    -# %li.option Kate
-            .mbl
-              .select.opened
-                .selected
-                  Bill Hampton
-                  %span.icon
-                .options
-                  %ul.stack
-                    %li.option Aaliyah
-                    %li.option Barbra
-                    %li.option Azura
-                    %li.option Babs
-                    %li.option Fox
-                    -# %li.option Bill
-                    -# %li.option John
-                    -# %li.option Kate
+            =render :partial => "static/futurico/text_inputs"
+            =render :partial => "static/futurico/buttons"
+            =render :partial => "static/futurico/scrollboxes"
+            =render :partial => "static/futurico/selects"
 
           .last-col
 
