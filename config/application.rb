@@ -1,6 +1,5 @@
 require File.expand_path('../boot', __FILE__)
 
-require "action_mailer/railtie"
 require 'sprockets/railtie'
 require 'haml'
 
@@ -46,5 +45,8 @@ module Scaffy
 
     # Version of your assets, change this if you want to expire all your assets
     config.assets.version = '1.0'
+
+    # Make just 1 line shit in console
+    config.assets.logger = false
   end
 end
