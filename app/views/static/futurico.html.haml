@@ -8,16 +8,17 @@
     %img.background-light{:src => "/assets/futurico/background-light.png"}
 
     .container
-      =render :partial => "static/futurico/header"
+      = render :partial => "static/futurico/header"
 
       .content
         .wrapper.clearfix
           .col1of4
-            =render :partial => "static/futurico/text_inputs"
-            =render :partial => "static/futurico/buttons"
-            =render :partial => "static/futurico/scrollboxes"
-            =render :partial => "static/futurico/selects"
-            =render :partial => "static/futurico/checkboxes"
+            = render :partial => "static/futurico/text_inputs"
+            = render :partial => "static/futurico/buttons"
+            = render :partial => "static/futurico/scrollboxes"
+            = render :partial => "static/futurico/selects"
+            = render :partial => "static/futurico/checkboxes"
 
-          .last-col
+          .futurico-content.last-col
+            = render :partial => "static/futurico/tabbox"
 

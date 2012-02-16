@@ -1,0 +1,75 @@
+@import '../framework/config'
+
+.tabbox
+
+  // Tabbox main horizontal tabs to navigate through
+  .tabbox-tabs
+    color: #a8a8a8
+    font-size: 13px
+    overflow: hidden
+    +text-shadow(0 1px 0 rgba(#000, .2))
+    li
+      cursor: pointer
+      float: left
+      margin-right: 3px
+      padding: 12px 60px 9px
+      +border-radius(10px 10px 0 0)
+      +box-shadow(inset 0 1px 0 rgba(#fff, .1))
+      +vertical-gradient(#5b5d62, #4b4d51)
+      &:hover
+        +vertical-gradient(#666, #555)
+      &:active
+        +box-shadow((inset 0 1px 0 rgba(#fff, .15), inset 0 1px 5px rgba(#000, .4)))
+        +vertical-gradient(#4b4d54, #3d3f44)
+      &.active
+        background: #e5e5e5
+        color: #404040
+        padding-bottom: 12px
+        +box-shadow(inset 0 1px #fff)
+        +text-shadow(0 1px 0 #fff)
+
+  // Tabbox main wrap area with solid background where everything is placed
+  .tabbox-stuff
+    background-color: #e5e5e5
+    padding: 14px
+    position: relative
+
+  // Tabbox icons to navigate inside (sub-navigation)
+  .tabbox-navigation
+    float: left
+    position: relative
+    width: 93px
+    z-index: 2
+    li
+      background-position: center center
+      background-repeat: no-repeat
+      cursor: pointer
+      height: 64px
+      &:hover
+        background-color: #f0f0f0
+        +box-shadow(inset 0 0 3px rgba(#000, .2))
+      &:active
+        background-color: #ddd
+      &.active
+        background-color: #fff
+        +box-shadow(3px 3px 5px -3px rgba(#000, .4))
+      &.archive
+        background-image: image-url('futurico/tabbox/navigation-archive.png')
+      &.messages
+        background-image: image-url('futurico/tabbox/navigation-messages.png')
+      &.cloud
+        background-image: image-url('futurico/tabbox/navigation-cloud.png')
+
+  // Tabbox content area
+  .tabbox-content
+    background-color: #fff
+    min-height: 144px
+    padding: 24px 29px
+    position: relative
+    z-index: 3
+    .heading
+      border-bottom: 1px solid #e9e9e9
+      color: #686868
+      margin-bottom: 17px
+      padding-bottom: 15px
+
