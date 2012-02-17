@@ -1,0 +1,39 @@
+.header
+  .wrapper.clearfix
+    .col1of4.access-controls
+      %a{:href => "#"} Sign In
+      %span.phs
+        :plain
+          /
+      %a{:href => "#"} Register
+      %span.delimiter.phs
+        :plain
+          or
+      %a.fb-signup{:href => "#"}
+
+    .col1of2
+      %ul.navigation
+        %li.current
+          %a{:href => "#"} Main page
+        %li
+          %a{:href => "#"} Services
+        %li
+          %a{:href => "#"} Contacts
+
+    .last-col
+      .search
+        .text-rounded.light
+          %input{:type => "text", :placeholder => "Search box light", :tabindex => "1"}
+          %input.search-button{:type => "submit", :value => "", :tabindex => "2"}
+
+.wrapper
+  .site-info
+    %h2.site-name
+      Futurico user interface
+      %span.version 1.0
+
+    .about
+      %span.legend-left
+      %span.legend-center beautiful ui components
+      %span.legend-right
+

@@ -1,0 +1,22 @@
+@import '../framework/config'
+
+.checkbox
+  background: image-url('futurico/checkbox/disk.png') 0 0 no-repeat
+  color: rgba(#fff, .85)
+  cursor: pointer
+  padding: 1px 0 3px 25px
+  position: relative
+  // Square checkbox
+  &.square
+    background-image: image-url('futurico/checkbox/square.png')
+
+  // Checkbox states
+  &:hover
+    background-position: 0 -26px
+    color: #fff
+
+  &.checked
+    background-position: 0 -53px
+    &:hover
+      background-position: 0 -80px
+

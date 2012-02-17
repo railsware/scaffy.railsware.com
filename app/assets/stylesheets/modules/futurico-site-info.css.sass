@@ -1,0 +1,46 @@
+@import '../framework/config'
+
+.site-info
+  padding: 25px 0 0 25px
+  text-align: center
+  +text-shadow(0 1px 0 rgba(#fff, .06))
+  .site-name
+    font-weight: bold
+    margin-bottom: 5px
+    text-transform: uppercase
+
+  // Centered legend with line-through
+  .about
+    font-family: $firm-font
+    font-style: italic
+    left: -13px
+    margin: auto
+    overflow: hidden
+    position: relative
+    text-align: center
+    width: 306px
+
+  .version
+    font-family: $firm-font
+    font-size: 11px
+    margin-left: 3px
+    position: relative
+    top: -5px
+
+  .legend-center
+    display: inline-block
+    padding: 0 5px 2px
+    vertical-align: middle
+
+  .legend-left,
+  .legend-right
+    border-bottom: 1px solid rgba(#fff, .06)
+    border-top: 1px solid #000
+    display: inline-block
+    margin: 0 0 0 -999px
+    vertical-align: middle
+    width: 999px
+
+  .legend-right
+    margin: 0 -999px 0 0
+
