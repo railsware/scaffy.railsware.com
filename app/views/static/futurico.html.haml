@@ -22,6 +22,9 @@
           .futurico-content.last-col
             .mbl.pbl
               = render :partial => "static/futurico/tabbox"
-            .mbl.pbl
-              = render :partial => "static/futurico/crossbar"
+            .mbl.pbl.clearfix
+              .col1of6
+                = render :partial => "static/futurico/crossbar"
+              .col1of3
+                = render :partial => "static/futurico/currently-playing"
 

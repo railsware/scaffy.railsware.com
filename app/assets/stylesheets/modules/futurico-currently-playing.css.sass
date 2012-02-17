@@ -1,0 +1,57 @@
+@import '../framework/config'
+
+.currently-playing
+  color: #717342
+  padding: 10px 14px
+  position: relative
+  text-align: center
+  +border-radius(8px)
+  +box-sizing
+  +box-shadow((0 1px 0 rgba(#fff, .5), 0 -1px 0 #000))
+  +text-shadow(0 1px 0 rgba(#fff, .5))
+  +vertical-gradient(#dfe2ad, #d1d395)
+  &:after
+    background-color: rgba(#fff, .4)
+    content: ''
+    height: 40%
+    left: 0
+    position: absolute
+    top: 0
+    width: 100%
+    z-index: 1
+    +border-radius(10px)
+
+  // Artist & song title
+  [class^='playing-']
+    height: 15px
+    overflow: hidden
+    position: relative
+    white-space: no-wrap
+    z-index: 2
+
+  .playing-artist
+    font-weight: bold
+    margin-bottom: 2px
+
+  .song-info
+    padding-top: 8px
+    font-size: 10px
+
+  [class^='song-time']
+    float: left
+    margin: 0 7px
+
+  // Song track overrides
+  .scrollbox.dot
+    background-color: #787878
+    top: 2px
+    z-index: 2
+    +box-shadow((inset 0 1px 2px rgba(#000, .6), 0 1px 0 rgba(#fff, .5)))
+    .scale
+      border: none
+      height: 7px
+      +box-shadow(inset 0 1px 2px rgba(#000, .4))
+    .slider
+      background: #fff
+      top: -1px
+
