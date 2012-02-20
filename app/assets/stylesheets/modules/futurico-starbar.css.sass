@@ -1,0 +1,25 @@
+@import '../framework/config'
+
+.starbar
+  background: #94eaf3 image-url('futurico/starbar/background.png') 0 0 repeat-x
+  display: inline-block
+  padding: 10px
+  +border-radius(8px)
+
+  .star
+    background: image-url('futurico/starbar/star.png') 0 0 no-repeat
+    float: left
+    height: 16px
+    margin-right: 1px
+    width: 16px
+    &.half
+      background-position: 0 -22px
+    &.full
+      background-position: 0 -45px
+
+  .starbar-rating
+    color: #216a72
+    float: right
+    font-weight: bold
+    padding: 2px 0 0 11px
+
