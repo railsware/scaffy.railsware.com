@@ -21,27 +21,28 @@
     +border-radius(10px)
 
   // Artist & song title
-  [class^='playing-']
+  .playing
     height: 15px
     overflow: hidden
     position: relative
-    white-space: no-wrap
+    white-space: nowrap
     z-index: 2
-
-  .playing-artist
-    font-weight: bold
-    margin-bottom: 2px
+    &.artist
+      font-weight: bold
+      margin-bottom: 2px
 
   .song-info
     padding-top: 8px
     font-size: 10px
 
-  [class^='song-time']
-    margin: 0 7px
+  // Song track
+  .song-track
+    float: left
+    width: 100%
 
-  // Song track overrides
   .scrollbox.dot
     background-color: #787878
+    margin: 0 50px
     top: 2px
     z-index: 2
     +box-shadow((inset 0 1px 2px rgba(#000, .6), 0 1px 0 rgba(#fff, .5)))
@@ -52,4 +53,11 @@
     .slider
       background: #fff
       top: -1px
+
+  .song-time
+    float: left
+    margin-left: -100%
+    width: 50px
+    &.end
+      margin-left: -50px
 
