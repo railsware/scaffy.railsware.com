@@ -1,0 +1,19 @@
+.login-block
+  .login-ear
+
+  %h2.mbl sign in
+
+  .mbm
+    .text-rounded.light
+      %input{:type => "text", :placeholder => "login", :tabindex => "13"}
+  .pts
+    .text-rounded.light
+      %input{:type => "text", :placeholder => "password", :tabindex => "14"}
+
+  .login-buttons.clearfix
+    .left.pts
+      .checkbox-light.square.checked
+        remember me
+    .right
+      %input.button.positive{:type => "submit", :value => "Sign in "}
+
