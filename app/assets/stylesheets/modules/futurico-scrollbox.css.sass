@@ -38,6 +38,20 @@ $click: inset 0 0 7px rgba(#000, .8)
       background: image-url('futurico/scrollbox/sliders.png') 0 0 no-repeat
       +center-slider(19px)
 
+  // Without borders (very sharp)
+  &.fat
+    .hitbox
+      height: 19px
+      top: -6px
+    .scale
+      border: none
+      height: 7px
+      +box-shadow(inset 1px 1px 0 rgba(#fff, .4))
+      +vertical-gradient(#afd067, #71951f)
+    .slider
+      background: image-url('futurico/scrollbox/sliders.png') 0 0 no-repeat
+      +center-slider(19px)
+
   // With side arrows < >
   &.range
     .hitbox
