@@ -1,0 +1,39 @@
+@import '../framework/config'
+
+.user-slug
+  .slug-avatar
+    border: 4px solid #141517
+    float: left
+    height: 29px
+    margin-right: 16px
+    +border-radius(2px)
+    +box-shadow((inset 0 1px 0 #0a0a0b, 0 1px 0 rgba(#fff, .06)))
+
+  .slug-name
+    color: #fff
+    font-size: 12px
+    margin: 4px 0 3px
+
+  .slug-status
+    font: italic 11px $firm-font
+    padding-left: 16px
+    position: relative
+    &:before
+      content: ''
+      height: 4px
+      left: 3px
+      position: absolute
+      top: 4px
+      width: 4px
+      +border-radius(50%)
+
+    &.online
+      color: #96bd40
+      &:before
+        background-color: #98bf43
+
+    &.away
+      color: #999
+      &:before
+        background-color: #999
+

@@ -27,10 +27,13 @@
                 = render :partial => "static/futurico/crossbar"
               .col1of3
                 = render :partial => "static/futurico/currently-playing"
-              .col1of5
+              .left
                 .mll.pll
                   = render :partial => "static/futurico/commutators"
               .last-col
                 .mll.pll
-                  =render :partial => "static/futurico/sticker"
+                  = render :partial => "static/futurico/user-slug"
+
+            .mbl.pbl.clearfix
+              =render :partial => "static/futurico/stickers"
 

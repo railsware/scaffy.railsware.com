@@ -1,13 +1,33 @@
 @import '../framework/config'
 
 .sticker
-  background: image-url('futurico/sticker/percent.png') 0 0 no-repeat
   color: #fff
-  font: bold 46px $firm-font
-  height: 104px
-  padding-top: 20px
   position: relative
   text-align: center
-  width: 124px
   +text-shadow(1px 1px 0 rgba(#000, .15))
+
+  &.percent
+    background: image-url('futurico/sticker/percent.png') 0 0 no-repeat
+    font: bold 46px $firm-font
+    height: 104px
+    padding-top: 20px
+    width: 124px
+
+  &.pack
+    background: image-url('futurico/sticker/pack.png') 0 0 no-repeat
+    font: bold 38px $firm-font
+    height: 82px
+    padding-top: 15px
+    width: 97px
+    .sticker-label
+      background-color: #18657b
+      font: bold 9px $base-font
+      display: inline-block
+      letter-spacing: 1px
+      padding: 3px 10px
+      position: relative
+      text-transform: uppercase
+      top: -22px
+      +border-radius(20px)
+      +box-shadow(1px 1px 0 rgba(#fff, .1))
 
