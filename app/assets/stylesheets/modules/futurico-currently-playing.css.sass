@@ -1,8 +1,9 @@
 @import '../framework/config'
+$song-time-width: 50px
 
 .currently-playing
   color: #717342
-  padding: 10px 14px
+  padding: 10px 14px 14px
   position: relative
   text-align: center
   +border-radius(8px)
@@ -36,13 +37,9 @@
     font-size: 10px
 
   // Song track
-  .song-track
-    float: left
-    width: 100%
-
   .scrollbox.dot
     background-color: #787878
-    margin: 0 50px
+    margin: 0 $song-time-width
     top: 2px
     z-index: 2
     +box-shadow((inset 0 1px 2px rgba(#000, .6), 0 1px 0 rgba(#fff, .5)))
@@ -55,9 +52,13 @@
       top: -1px
 
   .song-time
-    float: left
-    margin-left: -100%
-    width: 50px
+    bottom: 9px
+    position: absolute
+    width: $song-time-width
+    &.start
+      left: 5px
+      text-align: right
     &.end
-      margin-left: -50px
+      right: 5px
+      text-align: left
 
