@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "UTF-8"}
       %title Scaffy framework
-      = stylesheet_link_tag "futurico"
+      = stylesheet_link_tag "dark"
   %body
     %img.background-light{:src => "/assets/futurico/background-light.png"}
 
@@ -13,10 +13,13 @@
       .content
         .wrapper.clearfix
           .col1of4
-            = render :partial => "static/futurico/text_inputs"
-            = render :partial => "static/futurico/buttons"
-            = render :partial => "static/futurico/scrollboxes"
-            = render :partial => "static/futurico/selects"
+            .pbl
+              = render :partial => "static/futurico/text_inputs"
+              = render :partial => "static/futurico/selects"
+            .pbl
+              = render :partial => "static/futurico/buttons"
+            .pbl
+              = render :partial => "static/futurico/scrollboxes"
             = render :partial => "static/futurico/checkboxes"
 
           .futurico-content.last-col

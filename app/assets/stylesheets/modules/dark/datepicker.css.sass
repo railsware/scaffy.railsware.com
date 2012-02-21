@@ -1,4 +1,4 @@
-@import '../framework/config'
+@import '../../framework/config'
 
 .datepicker-placeholder
   position: relative
@@ -8,6 +8,8 @@
   color: #a8a8a8
   padding: 30px
   position: absolute
+  +border-radius(2px)
+  +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .06)))
 
 // Datepicker calendar
 .datepicker-calendar
@@ -67,10 +69,12 @@
     left: -4px
     position: absolute
     width: 16px
-    &:hover
+    &:hover,
+    &:focus
       background-position: 5px -13px
     &.disabled
       background-position: 5px -29px
+      cursor: default
 
   .datepicker-forward
     @extend .datepicker-back
@@ -87,6 +91,7 @@
   right: 0
   top: 0
   width: 27px
-  &:hover
+  &:hover,
+  &:focus
     background-position: 8px -11px
 
