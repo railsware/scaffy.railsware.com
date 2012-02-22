@@ -20,22 +20,22 @@
   box-sizing:         border-box
 
 =vertical-gradient($start-color, $end-color)
+  background: $end-color
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start-color), color-stop(100%, $end-color))
   background-image: -webkit-linear-gradient(top, $start-color, $end-color)
   background-image:    -moz-linear-gradient(top, $start-color, $end-color)
   background-image:     -ms-linear-gradient(top, $start-color, $end-color)
   background-image:      -o-linear-gradient(top, $start-color, $end-color)
   background-image:         linear-gradient(top, $start-color, $end-color)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$start-color', endColorstr = '$end-color')
 
 =horizontal-gradient($start-color, $end-color)
+  background: $end-color
   background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $start-color), color-stop(100%, $end-color))
   background-image: -webkit-linear-gradient(left, $start-color, $end-color)
   background-image:    -moz-linear-gradient(left, $start-color, $end-color)
   background-image:     -ms-linear-gradient(left, $start-color, $end-color)
   background-image:      -o-linear-gradient(left, $start-color, $end-color)
   background-image:         linear-gradient(left, $start-color, $end-color)
-  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr = '$start-color', endColorstr = '$end-color')
 
 =inline-block
   display: -moz-inline-stack
