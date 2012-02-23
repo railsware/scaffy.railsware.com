@@ -26,9 +26,11 @@
     background-color: #141517
     color: #fff
     cursor: pointer
+    display: block
     height: 26px
     padding: 6px 16px
     position: relative
+    text-decoration: none
     z-index: 5
     +border-radius(30px)
     +box-sizing
@@ -64,16 +66,33 @@
     padding-bottom: 2px
     max-height: 140px
     overflow: auto
+    li
+      color: #9da0ab
+      cursor: pointer
+      height: 26px
+      padding: 6px 16px
+      +box-sizing
+      +text-shadow(0 1px 0 rgba(#000, .5))
+      &:hover,
+      &:focus,
+      &.highlighted
+        color: #fff
+        +box-shadow((inset 1px 1px 1px rgba(#fff, .4), 0 1px 1px rgba(#000, .3)))
+        +vertical-gradient(#a2ca4c, #6c901b)
+      &.inactive-result
+        display: none
 
-  .option
-    color: #9da0ab
-    cursor: pointer
-    height: 26px
-    padding: 6px 16px
-    +box-sizing
-    +text-shadow(0 1px 0 rgba(#000, .5))
-    &:hover
+  // Select search
+  .select-search
+    margin-bottom: 5px
+    padding: 1px 9px 3px
+    input
+      background-color: #30333b
+      border: 1px solid #252525
       color: #fff
-      +box-shadow((inset 1px 1px 1px rgba(#fff, .4), 0 1px 1px rgba(#000, .3)))
-      +vertical-gradient(#a2ca4c, #6c901b)
+      padding: 4px 9px
+      width: 100%
+      +border-radius(2px)
+      +box-sizing
+      +box-shadow(0 1px 0 rgba(#fff, .06))
 
