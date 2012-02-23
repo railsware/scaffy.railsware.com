@@ -1,0 +1,37 @@
+@import '../../framework/config'
+
+.circle-banner
+  background-color: #141517
+  color: #fff
+  font: italic 11px $firm-font
+  height: 165px
+  line-height: 1.5
+  padding: 20px
+  position: relative
+  text-align: center
+  width: 165px
+  +border-radius(50%)
+  +box-shadow(0 1px 0 rgba(#fff, .06))
+  .banner-inner
+    padding-top: 20px
+
+  .banner-description
+    border-top: 1px solid #88bebe
+    color: #88bebe
+    margin-top: 15px
+    padding-top: 10px
+
+  // Pullers
+  .banner-pull-l
+    clear: both
+    float: left
+    height: 20px
+    width: 30%
+    &.pull2
+      width: 17%
+
+  .banner-pull-r
+    @extend .banner-pull-l
+    clear: none
+    float: right
+
