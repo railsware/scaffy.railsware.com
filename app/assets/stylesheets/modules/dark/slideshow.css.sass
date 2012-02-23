@@ -3,7 +3,7 @@ $slide-height: 138px
 $slide-width: 272px
 
 .slideshow,
-.slideshow .slideshow-slides,
+.slideshow .slideshow-slides-wrapper,
 .slideshow .each-slide
   height: $slide-height
   width: $slide-width
@@ -16,13 +16,34 @@ $slide-width: 272px
   +border-radius(8px)
   +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .06)))
 
-  .slideshow-slides
+  .slideshow-slides-wrapper
     overflow: hidden
+    position: relative
+
+  .slideshow-slides
     position: absolute
+    +transition(all .2s)
 
   .each-slide
     background-position: center
     background-repeat: no-repeat
     float: left
     +border-radius(5px)
+
+  // Slideshow controls
+  .show-slide
+    background: image-url('futurico/slideshow/prev.png') 0 0 no-repeat
+    cursor: pointer
+    height: 22px
+    margin-top: -13px
+    position: absolute
+    top: 50%
+    left: -20px
+    width: 14px
+    &:hover
+      background-position: 0 bottom
+    &.next
+      background-image: image-url('futurico/slideshow/next.png')
+      left: auto
+      right: -20px
 
