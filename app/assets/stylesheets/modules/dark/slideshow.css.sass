@@ -1,5 +1,5 @@
 @import '../../framework/config'
-$slide-height: 138px
+$slide-height: 174px
 $slide-width: 272px
 
 .slideshow,
@@ -28,6 +28,7 @@ $slide-width: 272px
     background-position: center
     background-repeat: no-repeat
     float: left
+    position: relative
     +border-radius(5px)
 
   // Slideshow controls
@@ -46,4 +47,15 @@ $slide-width: 272px
       background-image: image-url('futurico/slideshow/next.png')
       left: auto
       right: -20px
+
+  // Slide description
+  .slide-description
+    background-color: #000
+    bottom: 0
+    color: #fff
+    padding: 11px 13px
+    position: absolute
+    width: 100%
+    +border-radius(0 0 5px 5px)
+    +box-sizing
 
