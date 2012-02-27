@@ -1,12 +1,13 @@
 @import '../../framework/config'
 
 // Button shadows set
-$underline:           0 1px 0 rgba(#000, .2)
-$inset:         inset 0 -1px 5px rgba(#000, .4)
-$click:         inset 0 1px 2px rgba(#000, .5)
-$glare:         inset 0 1px 0 rgba(#fff, .3)
-$glare-light:   inset 0 1px 0 rgba(#fff, .15)
-$glare-edge: inset 1px 1px 0 rgba(#fff, .1)
+$underline:              0 1px 0 rgba(#000, .2)
+$inset:            inset 0 -1px 5px rgba(#000, .4)
+$click:            inset 0 1px 2px rgba(#000, .5)
+$glare:            inset 0 1px 0 rgba(#fff, .3)
+$glare-light:      inset 0 1px 0 rgba(#fff, .15)
+$glare-edge:       inset 1px 1px 1px rgba(#fff, .5)
+$glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
 
 .button
   color: rgba(#000, .66)
@@ -45,10 +46,14 @@ $glare-edge: inset 1px 1px 0 rgba(#fff, .1)
   // Neutral style
   &.neutral
     color: rgba(#fff, .66)
+    +box-shadow(($underline, $glare-edge-light))
     +text-shadow(0 1px 0 rgba(#000, .2))
     +vertical-gradient(#5b5d63, #46474c)
+    &:hover,
+    &:focus
+      +box-shadow(($underline, $glare-edge-light, $inset))
     &:active
-      +box-shadow(($underline, $glare-light, $glare-edge, $click))
+      +box-shadow(($underline, $glare-light, $glare-edge-light, $click))
       +vertical-gradient(#4e4f56, #3b3d42)
 
   // Disabled state
@@ -65,4 +70,19 @@ $glare-edge: inset 1px 1px 0 rgba(#fff, .1)
 input.button
   border: none
   height: auto
+
+// Huge button size
+.button-huge
+  @extend .button
+  font-size: 20px
+  font-weight: bold
+  height: 56px
+  padding: 9px 38px 11px
+  text-align: center
+  +border-radius(60px)
+
+  .button-description
+    color: rgba(0, 0, 0, .6)
+    display: block
+    font: italic 12px $firm-font
 
