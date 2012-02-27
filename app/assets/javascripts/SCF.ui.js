@@ -9,5 +9,8 @@ $(document).ready(function() {
 
     // Init appreciate
     SCF.Appreciate.init();
+
+    // Init equalizer
+    SCF.Equalizer.init();
 });
 

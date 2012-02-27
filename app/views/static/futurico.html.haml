@@ -21,7 +21,10 @@
               = render :partial => "static/futurico/buttons"
             .pbl
               = render :partial => "static/futurico/scrollboxes"
-            = render :partial => "static/futurico/checkboxes"
+            .mbl.pbl
+              = render :partial => "static/futurico/checkboxes"
+            .mbl.clearfix
+              =render :partial => "static/futurico/equalizer"
 
           .futurico-content.last-col
             .mbl.pbl
