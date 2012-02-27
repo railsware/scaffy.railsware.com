@@ -6,5 +6,8 @@ $(document).ready(function() {
 
     // Init slideshow
     SCF.Slideshow.init();
+
+    // Init appreciate
+    SCF.Appreciate.init();
 });
 
