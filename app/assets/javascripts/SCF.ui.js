@@ -21,5 +21,10 @@ $(document).ready(function() {
 
     // Init commutator
     SCF.Commutator.init();
+
+    // Init tabbox
+    var tabBox = new SCF.Tabbox(".tabbox");
+    tabBox.init();
+
 });
 
