@@ -2,8 +2,8 @@
 
 =center-slider($size)
   height: $size
+  margin-left: -($size / 2 - .5px)
   right: -($size / 2 - .5px)
-  top: -($size / 2 - .5px)
   width: $size
 
 // Shadows set
@@ -25,7 +25,8 @@ $click: inset 0 0 7px rgba(#000, .8)
     .hitbox
       height: 11px
       top: -2px
-    .slider
+    .ui-slider-handle
+      top: 1px
       +center-slider(7px)
       +vertical-gradient(#f7f7f7, #9f9f9f)
 
@@ -34,8 +35,9 @@ $click: inset 0 0 7px rgba(#000, .8)
     .hitbox
       height: 19px
       top: -6px
-    .slider
+    .ui-slider-handle
       background: image-url('futurico/scrollbox/sliders.png') 0 0 no-repeat
+      top: -2px
       +center-slider(19px)
 
   // Without borders (very sharp)
@@ -48,8 +50,9 @@ $click: inset 0 0 7px rgba(#000, .8)
       height: 7px
       +box-shadow(inset 1px 1px 0 rgba(#fff, .4))
       +vertical-gradient(#afd067, #71951f)
-    .slider
+    .ui-slider-handle
       background: image-url('futurico/scrollbox/sliders.png') 0 0 no-repeat
+      top: -2px
       +center-slider(19px)
 
   // With side arrows < >
@@ -57,8 +60,9 @@ $click: inset 0 0 7px rgba(#000, .8)
     .hitbox
       height: 19px
       top: -6px
-    .slider
+    .ui-slider-handle
       background: image-url('futurico/scrollbox/sliders.png') center -30px no-repeat
+      top: -2px
       +center-slider(19px)
 
   .scale
@@ -69,7 +73,7 @@ $click: inset 0 0 7px rgba(#000, .8)
     +border-radius(10px)
     +vertical-gradient(#7ba129, #8db439)
 
-  .slider
+  .ui-slider-handle
     cursor: pointer
     margin-top: 1px
     position: absolute

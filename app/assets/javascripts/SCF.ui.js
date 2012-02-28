@@ -15,5 +15,8 @@ $(document).ready(function() {
 
     // Init datepicker
     SCF.Datepicker.init();
+
+    // Init scrollbox
+    SCF.Scrollbox.init();
 });
 
