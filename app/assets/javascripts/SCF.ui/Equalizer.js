@@ -11,12 +11,13 @@ self.init = function() {
 };
 
 self.bindEvents = function() {
-    $(self.scale).each(function() {
+    $(self.bar).each(function() {
+        // Slider mechanics
         $(this).slider({
             slide: function(event, ui){
                 var scaleHeight = ui.value;
 
-                $(this).css({
+                $(this).find(self.scale).css({
                     'height': scaleHeight
                 });
             },
@@ -24,12 +25,15 @@ self.bindEvents = function() {
             orientation: 'vertical',
             value: 50
         });
+
+        // Set a default value for all bars
+        $(this).find(self.scale).css('height', 50);
     });
 };
 
 // vars
 self.element = ".equalizer";
-self.scale = self.element + " .scale";
-self.slider = self.element + " .slider";
+self.bar = self.element + " .bar";
+self.scale = ".scale";
 
 }());
