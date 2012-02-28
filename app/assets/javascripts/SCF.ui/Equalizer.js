@@ -12,6 +12,9 @@ self.init = function() {
 
 self.bindEvents = function() {
     $(self.bar).each(function() {
+        // Get a default value for all bars
+        var scaleInitialHeight = $(this).find(self.scale).height();
+
         // Slider mechanics
         $(this).slider({
             slide: function(event, ui){
@@ -23,11 +26,8 @@ self.bindEvents = function() {
             },
             max: 114,
             orientation: 'vertical',
-            value: 50
+            value: scaleInitialHeight
         });
-
-        // Set a default value for all bars
-        $(this).find(self.scale).css('height', 50);
     });
 };
 
