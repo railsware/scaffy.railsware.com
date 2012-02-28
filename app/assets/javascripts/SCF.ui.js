@@ -12,5 +12,8 @@ $(document).ready(function() {
 
     // Init equalizer
     SCF.Equalizer.init();
+
+    // Init datepicker
+    SCF.Datepicker.init();
 });
 
