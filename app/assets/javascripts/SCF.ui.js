@@ -18,5 +18,8 @@ $(document).ready(function() {
 
     // Init scrollbox
     SCF.Scrollbox.init();
+
+    // Init commutator
+    SCF.Commutator.init();
 });
 
