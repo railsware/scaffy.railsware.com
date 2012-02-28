@@ -90,12 +90,32 @@
     left: auto
     right: -5px
 
+// Bottom navigation
+.ui-datepicker-buttonpane
+  position: absolute
+  right: 0
+  top: 0
+  .ui-datepicker-current
+    background: none
+    border: none
+    color: #555
+    cursor: pointer
+    font: italic 12px $firm-font
+    margin-top: 8px
+    position: absolute
+    right: 122px
+    &:hover
+      color: #999
+
 // Datepicker close button
-.datepicker-close
+.ui-datepicker-close
   background: image-url('futurico/datepicker/close.png') 8px 9px no-repeat
+  border: none
   cursor: pointer
+  font-size: 1px
   height: 27px
   position: absolute
+  text-indent: -999em
   right: 0
   top: 0
   width: 27px

@@ -11,7 +11,11 @@ self.init = function() {
 };
 
 self.bindEvents = function() {
-    $(self.element).datepicker();
+    $(self.element).datepicker({
+        showButtonPanel: true,
+        minDate: -20,
+        maxDate: "+1M +10D"
+    });
 };
 
 // vars
