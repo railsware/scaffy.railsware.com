@@ -14,7 +14,9 @@ self.bindEvents = function() {
     $(self.element).datepicker({
         showButtonPanel: true,
         minDate: -20,
-        maxDate: "+1M +10D"
+        maxDate: "+1M +10D",
+        dayNamesMin: ['Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat', 'Sun'],
+        firstDay: 1
     });
 };
 
