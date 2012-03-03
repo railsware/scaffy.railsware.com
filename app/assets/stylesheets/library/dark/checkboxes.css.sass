@@ -1,14 +1,11 @@
 @import '../../framework/config'
 
 .checkbox
-  background: image-url('futurico/checkbox/disk.png') 0 0 no-repeat
+  background: image-url('futurico/checkbox/square.png') 0 0 no-repeat
   color: #ddd
   cursor: pointer
   padding: 1px 0 3px 25px
   position: relative
-  // Square checkbox
-  &.square
-    background-image: image-url('futurico/checkbox/square.png')
 
   // Checkbox states
   &:hover
@@ -23,6 +20,10 @@
 // Light skin
 .checkbox-light
   @extend .checkbox
-  &.square
-    background-image: image-url('futurico/checkbox/square-light.png')
+  background-image: image-url('futurico/checkbox/square-light.png')
+
+// Radio
+.radio
+  @extend .checkbox
+  background-image: image-url('futurico/checkbox/disk.png')
 

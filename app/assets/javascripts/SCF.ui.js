@@ -30,5 +30,20 @@ $(document).ready(function() {
     // Init pagination
     SCF.Pagination.init();
 
+    // Custom radios
+    $(".radiogroup .radio").click(function() {
+        $(".radio").removeClass("checked");
+        $(this).addClass("checked");
+    });
+
+    // Custom checkboxes
+    $(".checkbox").click(function() {
+        $(this).toggleClass("checked");
+    });
+
+    $(".checkbox-light").click(function() {
+        $(this).toggleClass("checked");
+    });
+
 });
 
