@@ -27,5 +27,8 @@ $(document).ready(function() {
     tabBox.init();
     $(".tabbox-stuff").tabs();
 
+    // Init pagination
+    SCF.Pagination.init();
+
 });
 

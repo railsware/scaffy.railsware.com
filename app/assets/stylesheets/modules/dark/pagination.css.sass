@@ -3,14 +3,22 @@
 .pagination
   +user-select(none)
   li
-    color: #fff
-    cursor: pointer
     float: left
     font-weight: bold
-    height: 17px
     margin-right: 7px
-    padding-top: 4px
     text-align: center
+    &.active
+      a
+        color: #3e5706
+        +box-shadow(1px 1px 0 rgba(#000, .2))
+        +text-shadow(0 1px 0 #fff)
+        +vertical-gradient(#fdfdfd, #9e9e9e)
+  a
+    color: #fff
+    display: block
+    height: 17px
+    padding-top: 4px
+    text-decoration: none
     width: 21px
     +border-radius(50%)
     +box-shadow((inset 1px 1px 0 rgba(#000, .3), 1px 1px 0 rgba(#fff, .1)))
@@ -18,11 +26,6 @@
     behavior: url('/assets/vendor/PIE.htc')
     &:hover
       background-color: #3f4147
-    &.active
-      color: #3e5706
-      +box-shadow(1px 1px 0 rgba(#000, .2))
-      +text-shadow(0 1px 0 #fff)
-      +vertical-gradient(#fdfdfd, #9e9e9e)
 
   .pagination-up
     background: image-url('futurico/pagination/up.png') 0 0 no-repeat
