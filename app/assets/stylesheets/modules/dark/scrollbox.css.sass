@@ -19,6 +19,7 @@ $click: inset 0 0 7px rgba(#000, .8)
   +box-sizing
   +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .1)))
   +user-select(none)
+  behavior: url('/assets/vendor/PIE.htc')
 
   // With a small dot slider
   &.dot
@@ -29,6 +30,7 @@ $click: inset 0 0 7px rgba(#000, .8)
       top: 1px
       +center-slider(7px)
       +vertical-gradient(#f7f7f7, #9f9f9f)
+      behavior: url('/assets/vendor/PIE.htc')
 
   // Apple like with angle gradients
   &.disk
@@ -50,6 +52,7 @@ $click: inset 0 0 7px rgba(#000, .8)
       height: 7px
       +box-shadow(inset 1px 1px 0 rgba(#fff, .4))
       +vertical-gradient(#afd067, #71951f)
+      behavior: url('/assets/vendor/PIE.htc')
     .ui-slider-handle
       background: image-url('futurico/scrollbox/sliders.png') 0 0 no-repeat
       top: -2px
