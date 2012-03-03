@@ -25,6 +25,7 @@ $(document).ready(function() {
     // Init tabbox
     var tabBox = new SCF.Tabbox(".tabbox");
     tabBox.init();
+    $(".tabbox-stuff").tabs();
 
 });
 

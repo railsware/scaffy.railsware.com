@@ -7,34 +7,58 @@
   .tabbox-stuff.clearfix
     %ul.tabbox-navigation
       %li.archive
-      %li.messages.active
+        %a{:href => "#tabbox-archive"}
+      %li.messages
+        %a{:href => "#tabbox-messages"}
       %li.cloud
+        %a{:href => "#tabbox-cloud"}
 
     .last-col
       .tabbox-content
-        .heading
-          %h2
-            We are in the final stage now
-            %span.status-message.positive Success message
+        #tabbox-archive
+          .heading
+            %h2
+              Archived data
+              %span.status-message.negative No connection
+            .preloader
+          %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
 
-          .preloader
+        #tabbox-messages
+          .heading
+            %h2
+              Inbox messages
+              %span.status-message.positive 2 new
+          %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
 
-        %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
+        #tabbox-cloud
+          .heading
+            %h2
+              Files inside the cloud
+              %span.status-message Total: 91,819,826
+          %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
 
   -# Option 2 tabbox
   .tabbox-stuff.clearfix
     %ul.tabbox-navigation
-      %li.archive.active
+      %li.archive
+        %a{:href => "#tabbox-archive"}
       %li.messages
+        %a{:href => "#tabbox-messages"}
 
     .last-col
       .tabbox-content
-        .heading
-          %h2
-            Archive title goes here
-            %span.status-message.positive Success message
+        #tabbox-archive
+          .heading
+            %h2
+              Archived data
+              %span.status-message.negative No connection
+            .preloader
+          %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
 
-          .preloader
-
-        %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
+        #tabbox-messages
+          .heading
+            %h2
+              Inbox messages
+              %span.status-message.positive 2 new
+          %img{:src => "/assets/futurico/tabbox/fish-decor.png"}
 
