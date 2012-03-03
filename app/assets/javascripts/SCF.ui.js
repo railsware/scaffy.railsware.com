@@ -31,9 +31,13 @@ $(document).ready(function() {
     SCF.Pagination.init();
 
     // Custom radios
-    $(".radiogroup .radio").click(function() {
-        $(".radio").removeClass("checked");
-        $(this).addClass("checked");
+    $(".radiogroup").each(function() {
+        var parent = this;
+
+        $(this).find(".radio").click(function() {
+	    $(parent).find(".radio").removeClass("checked");
+            $(this).addClass("checked");
+        });
     });
 
     // Custom checkboxes
