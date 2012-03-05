@@ -51,6 +51,7 @@ $glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
     +box-shadow(($underline, $glare-edge-light))
     +text-shadow(0 1px 0 rgba(#000, .2))
     +vertical-gradient(#5b5d63, #46474c)
+    color: #aaa \9
     &:hover,
     &:focus
       +box-shadow(($underline, $glare-edge-light, $inset))
@@ -60,13 +61,16 @@ $glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
 
   // Disabled state
   &.disabled
-    color: rgba(#000, .5)
+    color: rgba(#000, .3)
     cursor: default
-    opacity: .3
+    text-shadow: none
     +box-shadow(none)
-    +vertical-gradient(#ddd, #bbb)
+    +vertical-gradient(rgba(155, 155, 155, .30), rgba(155, 155, 155, .25))
+    color: #393939 \9
+    -pie-background: rgba(155, 155, 155, .30)
     &:active
-      +vertical-gradient(#ddd, #bbb)
+      +vertical-gradient(rgba(155, 155, 155, .30), rgba(155, 155, 155, .25))
+      -pie-background: rgba(155, 155, 155, .30)
 
 // Correct rendering with input
 input.button
