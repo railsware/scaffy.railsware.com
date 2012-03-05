@@ -35,7 +35,7 @@ $(document).ready(function() {
         var parent = this;
 
         $(this).find(".radio").click(function() {
-	    $(parent).find(".radio").removeClass("checked");
+        $(parent).find(".radio").removeClass("checked");
             $(this).addClass("checked");
         });
     });
@@ -48,6 +48,9 @@ $(document).ready(function() {
     $(".checkbox-light").click(function() {
         $(this).toggleClass("checked");
     });
+
+    // Init custom placeholder for text inputs
+    $("input[placeholder], textarea[placeholder]").placeholder();
 
 });
 
