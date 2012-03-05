@@ -1,6 +1,6 @@
 .header
   .wrapper.clearfix
-    .col1of4.access-controls
+    .col1of4.header-controls
       %a{:href => "#"} Sign In
       %span.phs
         :plain
@@ -12,7 +12,7 @@
       %a.fb-signup{:href => "#"}
 
     .col1of2
-      %ul.navigation
+      %ul.header-navigation
         %li.current
           %a{:href => "#"} Main page
         %li
@@ -21,14 +21,14 @@
           %a{:href => "#"} Contacts
 
     .last-col
-      .search
+      .header-search
         .text-rounded.light
           %input{:type => "text", :placeholder => "Search box light", :tabindex => "1"}
           %input.search-button{:type => "submit", :value => "", :tabindex => "2"}
 
 .wrapper
   .site-info
-    %h2.site-name
+    %h2.sitename
       Futurico user interface
       %span.version 1.0
 

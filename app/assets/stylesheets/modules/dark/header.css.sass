@@ -5,72 +5,71 @@
   border-bottom: 1px solid rgba(#fff, .15)
   color: #fff
 
-  // Login, Sign up and similar links
-  .access-controls
-    color: #8d8d8d
-    font-size: 11px
-    a
-      color: #ddd
-      text-decoration: none
-      &:hover
-        color: #fff
-    .delimiter
-      font-family: $firm-font
-      font-style: italic
-    .fb-signup
-      background: image-url('futurico/header/fb-signup.png') 0 0 no-repeat
-      display: inline-block
-      height: 21px
-      margin: -7px 0
-      width: 89px
+// Login, Sign up and similar links
+.header-controls
+  color: #8d8d8d
+  font-size: 11px
+  a
+    color: #ddd
+    text-decoration: none
+    &:hover
+      color: #fff
+  .delimiter
+    font-family: $firm-font
+    font-style: italic
+  .fb-signup
+    background: image-url('futurico/header/fb-signup.png') 0 0 no-repeat
+    display: inline-block
+    height: 21px
+    margin: -7px 0
+    width: 89px
 
-  // Main site navigation
-  .navigation
-    font-family: "Helvetica Neue", $base-font
-    font-size: 13px
-    text-align: center
-    text-transform: uppercase
-    li
-      display: inline-block
-      height: 16px
-      position: relative
-      top: 2px
+// Main site navigation
+.header-navigation
+  font-family: "Helvetica Neue", $base-font
+  font-size: 13px
+  text-align: center
+  text-transform: uppercase
+  li
+    display: inline-block
+    height: 16px
+    position: relative
+    top: 2px
+    &:after
+      background: #84aa30
+      content: ''
+      height: 4px
+      position: absolute
+      right: -4px
+      top: 43%
+      width: 4px
+      +border-radius(50%)
+    &:last-child
       &:after
-        background: #84aa30
+        display: none
+    &.current
+      &:before
+        background: image-url('futurico/header/ear.png') 0 0 no-repeat
+        bottom: -19px
         content: ''
-        height: 4px
+        height: 8px
+        left: 50%
+        margin-left: -7px
         position: absolute
-        right: -4px
-        top: 5px
-        width: 4px
-        +border-radius(50%)
-      &:last-child
-        &:after
-          display: none
-      &.current
-        &:before
-          background: image-url('futurico/header/ear.png') 0 0 no-repeat
-          bottom: -19px
-          content: ''
-          height: 8px
-          left: 50%
-          margin-left: -7px
-          position: absolute
-          width: 14px
-        a
-          color: #94be38
-    a
-      margin: 0 13px
-      text-decoration: none
-      &:hover
-        color: #d0deb2
+        width: 14px
+      a
+        color: #94be38
+  a
+    margin: 0 13px
+    text-decoration: none
+    &:hover
+      color: #d0deb2
 
-  // Search
-  .search
-    text-align: right
-    [class*='text']
-      margin: -5px 0
-      width: 66%
-      input[type='submit']
-        background-image: image-url('futurico/header/search-icon.png')
+// Search
+.header-search
+  float: right
+  margin: -5px 0 -9px
+  width: 66%
+  input[type='submit']
+    background-image: image-url('futurico/header/search-icon.png')
 
