@@ -1,12 +1,45 @@
 @import '../../framework/config'
 
-input[type='submit']
+// Default input styling common for all
+input[type='text'],
+input[type='password']
   font-family: $base-font
   font-size: $base-font-size
+  height: 26px
+  line-height: 26px
+  padding: 0 16px
+  position: relative
+  width: 100%
+  +box-sizing
+  +border-radius(2px)
+  behavior: url('/assets/vendor/PIE.htc')
 
+// Submit button inside input
+input[type='submit']
+  background-color: #90b73b
+  background-position: center
+  background-repeat: no-repeat
+  border: none
+  cursor: pointer
+  font-family: $base-font
+  font-size: $base-font-size
+  height: 18px
+  position: absolute
+  right: 4px
+  top: 4px
+  width: 18px
+  +border-radius(50%)
+  behavior: url('/assets/vendor/PIE.htc')
+  &:hover,
+  &:focus
+    +box-shadow(0 1px 2px rgba(#000, .3))
+  &:active
+    background-color: #729620
+
+// SKINS
+// ===============================================
 .text
   position: relative
-
   // Dark skin
   &.dark
     input[type='text'],
@@ -17,6 +50,7 @@ input[type='submit']
       padding-left: 10px
       padding-right: 10px
       +box-shadow(0 1px 0 rgba(#fff, .15))
+      +placeholder-color(#777)
       behavior: url('/assets/vendor/PIE.htc')
       &:hover
         +box-shadow(0 0 0 3px rgba(#fff, .1))
@@ -47,39 +81,8 @@ input[type='submit']
       &:focus
         +box-shadow(0 0 0 3px #80a62d)
 
-  // Default input styling common for all
-  input[type='text'],
-  input[type='password']
-    font-family: $base-font
-    font-size: $base-font-size
-    height: 26px
-    padding: 7px 16px 6px
-    position: relative
-    width: 100%
-    +box-sizing
-    +border-radius(2px)
-    behavior: url('/assets/vendor/PIE.htc')
-
-  // Submit button inside input
-  input[type='submit']
-    background-color: #90b73b
-    background-position: center
-    background-repeat: no-repeat
-    border: none
-    cursor: pointer
-    height: 18px
-    position: absolute
-    right: 4px
-    top: 4px
-    width: 18px
-    +border-radius(50%)
-    behavior: url('/assets/vendor/PIE.htc')
-    &:hover,
-    &:focus
-      +box-shadow(0 1px 2px rgba(#000, .3))
-    &:active
-      background-color: #729620
-
+// MODIFICATORS
+// ===============================================
 // With rounded sides
 .text-rounded
   @extend .text
