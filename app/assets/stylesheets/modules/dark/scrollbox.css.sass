@@ -13,9 +13,9 @@ $click: inset 0 0 7px rgba(#000, .8)
 
 .scrollbox
   background-color: #1e1f22
+  border-radius: 10px
   height: 7px
   position: relative
-  +border-radius(10px)
   +box-sizing
   +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .1)))
   +user-select(none)
@@ -71,17 +71,17 @@ $click: inset 0 0 7px rgba(#000, .8)
   .scale
     background-color: #84aa31
     border: 2px solid #212227
+    border-radius: 10px
     height: 3px
     position: relative
-    +border-radius(10px)
     +vertical-gradient(#7ba129, #8db439)
 
   .ui-slider-handle
+    border-radius: 50%
     cursor: pointer
     margin-top: 1px
     position: absolute
     z-index: 3
-    +border-radius(50%)
     +box-shadow($medium)
     +user-select(none)
     &:hover

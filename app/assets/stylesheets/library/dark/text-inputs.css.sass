@@ -3,6 +3,7 @@
 // Default input styling common for all
 input[type='text'],
 input[type='password']
+  border-radius: 2px
   font-family: $base-font
   font-size: $base-font-size
   height: 26px
@@ -11,7 +12,6 @@ input[type='password']
   position: relative
   width: 100%
   +box-sizing
-  +border-radius(2px)
   behavior: url('/assets/vendor/PIE.htc')
 
 // SKINS
@@ -49,6 +49,7 @@ input[type='password']
     background-position: center
     background-repeat: no-repeat
     border: none
+    border-radius: 50%
     cursor: pointer
     font-family: $base-font
     font-size: $base-font-size
@@ -57,7 +58,6 @@ input[type='password']
     right: 4px
     top: 4px
     width: 18px
-    +border-radius(50%)
     behavior: url('/assets/vendor/PIE.htc')
     &:hover,
     &:focus
@@ -72,8 +72,8 @@ input[type='password']
       background: #fdfdfd
       border: none
       color: #000
+      text-shadow: 0 1px 0 rgba(#fff, .2)
       +placeholder-color(#666)
-      +text-shadow(0 1px 0 rgba(#fff, .2))
       +vertical-gradient(#fdfdfd, #9a9a9a)
       behavior: url('/assets/vendor/PIE.htc')
       &:hover
@@ -88,6 +88,6 @@ input[type='password']
   @extend .text
   input[type='text'],
   input[type='password']
-    +border-radius(30px)
+    border-radius: 30px
     behavior: url('/assets/vendor/PIE.htc')
 

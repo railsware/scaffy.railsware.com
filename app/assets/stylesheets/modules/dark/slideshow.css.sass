@@ -10,10 +10,10 @@ $slide-width: 272px
 
 .slideshow
   background: #141517
+  border-radius: 8px
   display: inline-block
   padding: 4px
   position: relative
-  +border-radius(8px)
   +box-shadow((inset 0 1px 0 #000, 0 1px 0 rgba(#fff, .06)))
   +user-select(none)
 
@@ -28,9 +28,9 @@ $slide-width: 272px
   .each-slide
     background-position: center
     background-repeat: no-repeat
+    border-radius: 5px
     float: left
     position: relative
-    +border-radius(5px)
 
   // Slideshow controls
   .show-slide
@@ -52,12 +52,12 @@ $slide-width: 272px
   // Slide description
   .slide-description
     background-color: #000
+    border-radius: 0 0 5px 5px
     bottom: 0
     color: #fff
     padding: 11px 13px
     position: absolute
     width: 100%
-    +border-radius(0 0 5px 5px)
     +box-sizing
     +user-select(text)
 

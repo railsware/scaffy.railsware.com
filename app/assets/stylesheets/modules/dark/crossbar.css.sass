@@ -9,11 +9,11 @@
   // Common crossbar button
   [class^='to-']
     background: image-url('futurico/crossbar/button.png') 0 0 no-repeat
+    border-radius: 50%
     display: block
     height: 24px
     position: absolute
     width: 24px
-    +border-radius(50%)
     &:hover,
     &:focus
       background-position: 0 -30px
@@ -36,16 +36,19 @@
     top: 0
     .arrow
       background-image: image-url('futurico/crossbar/to-top.png')
+
   [class$='right']
     right: 0
     top: 19px
     .arrow
       background-image: image-url('futurico/crossbar/to-right.png')
+
   [class$='bottom']
     left: 19px
     bottom: 0
     .arrow
       background-image: image-url('futurico/crossbar/to-bottom.png')
+
   [class$='left']
     left: 0
     top: 19px

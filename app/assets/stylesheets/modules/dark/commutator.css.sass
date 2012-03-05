@@ -1,13 +1,13 @@
 @import '../../framework/config'
 
 .commutator
+  border-radius: 20px
   cursor: pointer
   display: inline-block
   font-weight: bold
   height: 26px
   overflow: hidden
   position: relative
-  +border-radius(20px)
   +user-select(none)
   behavior: url('/assets/vendor/PIE.htc')
 
@@ -15,8 +15,8 @@
   // ===============================================
   &.on
     color: #3e5706
+    text-shadow: 0 1px rgba(#fff, .2)
     +box-shadow((inset 1px 1px 0 rgba(#fff, .4), 1px 1px 1px rgba(#000, .3)))
-    +text-shadow(0 1px rgba(#fff, .2))
     +vertical-gradient(#aed160, #6c901b)
     .is
       &.on

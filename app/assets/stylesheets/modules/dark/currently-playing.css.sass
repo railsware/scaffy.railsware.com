@@ -2,17 +2,18 @@
 $song-time-width: 50px
 
 .currently-playing
+  border-radius: 8px
   color: #717342
   padding: 10px 14px 14px
   position: relative
   text-align: center
-  +border-radius(8px)
+  text-shadow: 0 1px 0 rgba(#fff, .5)
   +box-shadow((0 1px 0 rgba(#fff, .5), 0 -1px 0 #000))
-  +text-shadow(0 1px 0 rgba(#fff, .5))
   +vertical-gradient(#dfe2ad, #d1d395)
   behavior: url('/assets/vendor/PIE.htc')
   &:after
     background-color: rgba(#fff, .4)
+    border-radius: 10px
     content: ''
     height: 40%
     left: 0
@@ -20,7 +21,6 @@ $song-time-width: 50px
     top: 0
     width: 100%
     z-index: 1
-    +border-radius(10px)
 
   // Artist & song title
   .playing

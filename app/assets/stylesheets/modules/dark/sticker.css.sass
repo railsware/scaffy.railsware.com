@@ -4,7 +4,7 @@
   color: #fff
   position: relative
   text-align: center
-  +text-shadow(1px 1px 0 rgba(#000, .15))
+  text-shadow: 1px 1px 0 rgba(#000, .15)
 
   &.percent
     background: image-url('futurico/sticker/percent.png') 0 0 no-repeat
@@ -22,6 +22,7 @@
     width: 97px
     .sticker-label
       background-color: #18657b
+      border-radius: 20px
       font: bold 9px $base-font
       display: inline-block
       letter-spacing: 1px
@@ -29,7 +30,6 @@
       position: relative
       text-transform: uppercase
       top: -26px
-      +border-radius(20px)
       +box-shadow(1px 1px 0 rgba(#fff, .1))
       behavior: url('/assets/vendor/PIE.htc')
 

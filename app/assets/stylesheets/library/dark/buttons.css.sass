@@ -10,6 +10,7 @@ $glare-edge:       inset 1px 1px 1px rgba(#fff, .5)
 $glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
 
 .button
+  border-radius: 20px
   color: rgba(#000, .66)
   cursor: pointer
   font-weight: bold
@@ -17,11 +18,10 @@ $glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
   padding: 6px 16px
   position: relative
   text-decoration: none
-  +border-radius(20px)
+  text-shadow: 0 1px 0 rgba(#fff, .2)
   +box-sizing
   +box-shadow(($underline, $glare-edge))
   +inline-block
-  +text-shadow(0 1px 0 rgba(#fff, .2))
   +vertical-gradient(#dbd7d7, #8c8c8c)
   +user-select(none)
   behavior: url('/assets/vendor/PIE.htc')
@@ -48,8 +48,8 @@ $glare-edge-light: inset 1px 1px 0 rgba(#fff, .1)
   // Neutral style
   &.neutral
     color: rgba(#fff, .66)
+    text-shadow: 0 1px 0 rgba(#000, .2)
     +box-shadow(($underline, $glare-edge-light))
-    +text-shadow(0 1px 0 rgba(#000, .2))
     +vertical-gradient(#5b5d63, #46474c)
     color: #aaa \9
     &:hover,
@@ -80,12 +80,12 @@ input.button
 // Huge button size
 .button-huge
   @extend .button
+  border-radius: 60px
   font-size: 20px
   font-weight: bold
   height: 56px
   padding: 9px 38px 11px
   text-align: center
-  +border-radius(60px)
 
   .button-description
     color: rgba(0, 0, 0, .6)
