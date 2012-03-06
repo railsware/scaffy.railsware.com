@@ -10,3 +10,4 @@ naKolene:
 	zip -r public/html/bundle.zip public/html
 	git add .
 	git commit -m "Release"
+	git push origin HEAD
