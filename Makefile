@@ -7,5 +7,7 @@ naKolene:
 	sass --update --style compressed app/assets/stylesheets/futurico-dark-bundle.sass:public/html/stylesheets/futurico-dark-bundle.css
 	rm public/html/bundle.zip
 	zip -r public/html/bundle.zip public/html
+	git add .
+	git commit -a -m "Release"
 	git push origin HEAD
 	git push heroku master
