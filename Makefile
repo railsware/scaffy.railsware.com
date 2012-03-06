@@ -8,3 +8,4 @@ naKolene:
 	rm public/html/bundle.zip
 	zip -r public/html/bundle.zip public/html
 	git push origin HEAD
+	git push heroku master
