@@ -8,6 +8,7 @@ naKolene:
 	rm public/html/stylesheets/futurico-dark.css
 	rm public/html/stylesheets/framework/config.css
 	rm public/html/stylesheets/framework/mixins.css
+	rm public/html/javascripts/application.js
 	rm public/html/bundle.zip
 	zip -r public/html/bundle.zip public/html
 	git add .
