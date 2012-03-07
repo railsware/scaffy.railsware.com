@@ -52,5 +52,9 @@ $(document).ready(function() {
     // Init custom placeholder for text inputs
     $("input[placeholder], textarea[placeholder]").placeholder();
 
+    // Init Starbar
+    var starBar = new SCF.Starbar(".starbar", 3);
+    starBar.init();
+
 });
 
