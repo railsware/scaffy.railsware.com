@@ -35,8 +35,8 @@ Open source framework to kickstart front-end development. It allows you to keep 
     Add a link to a **config.sass** to use shared mixins with variables.  
     To specify multiple modules sets for different layouts create folders inside:
     **/modules/application/**  
-    **/modules/admin/**    
-    If module gets too big, slice it to keep code small:
+    **/modules/admin/**  
+    If module gets too big, slice it to keep code small:  
     **/modules/participant/info.sass**  
     **/modules/participant/status.sass**  
     **/modules/participant/controls.sass**  
