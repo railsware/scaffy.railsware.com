@@ -1,7 +1,7 @@
 # What is Scaffy?
 Open sourse framework to kickstart front-end development. It allows you to keep code logical and easily maintainable & extandable by splitting it into modules.
 
-Using Scaffy let's you:
+### Using Scaffy let's you
 * don't be aware of styles inheritance
 * don't have a conflicts between two complitely different elements in different places
 * be sure that current element will look identically same everywhere
