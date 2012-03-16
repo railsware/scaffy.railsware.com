@@ -1,10 +1,11 @@
 # What is Scaffy?
 Open sourse framework to kickstart front-end development. It allows you to keep code logical and easily maintainable & extandable by splitting it into modules.
+[Scaffy homepage & documentation]: http://scaffy.herokuapp.com/
 
-### Using Scaffy let's you
+### Using Scaffy lets you
 * don't be aware of styles inheritance
 * don't have a conflicts between two complitely different elements in different places
-* be sure that current element will look identically same everywhere
+* be sure that the current element will look identically same everywhere
 * clone element to create few styles of it (few buttons sizes and colors) keeping separate structure from skin
 * keep source predictable to find by having naming convention
 * using SASS in full power by having shared mixins & variables accross the project
@@ -26,7 +27,7 @@ Open sourse framework to kickstart front-end development. It allows you to keep 
 * library
   * **\*.sass** — place for groups like: buttons, text-inputs, selects, radios, checkboxes and other elements which you can combine.
     Add a link to a **config.sass** to use shared mixins with variables.
-    To specify multiple *libraries* for different *layouts* move *groups* to a separate folders inside the *library*:
+    To specify multiple *libraries* for different *layouts* move *groups* to separate folders inside the *library*:
     /library/application/
     /library/admin/
 * modules
@@ -40,4 +41,8 @@ Open sourse framework to kickstart front-end development. It allows you to keep 
     /modules/participant/status.sass
     /modules/participant/controls.sass
     /modules/participant/states.sass
+
+# Who are these guys?
+Scaffy was made by [Railsware][], software consultancy.
+[Railsware]: http://railsware.com
 
