@@ -31,16 +31,16 @@ Open source framework to kickstart front-end development. It allows you to keep 
     /library/application/
     /library/admin/
 * modules
-  * **\*.sass** — use to create modules such as **login-block.sass**, **modal.sass**, **votebar.sass**, **dropdown.sass**, **lightbox.sass** and so on  
+  * **\*.sass** — use to create modules such as **login-block.sass**, **modal.sass**, **votebar.sass**, **dropdown.sass**, **lightbox.sass** and so on.  
     Add a link to a **config.sass** to use shared mixins with variables.  
-    To specify multiple modules sets for different layouts create folders inside:  
-    /modules/application/  
-    /modules/admin/  
-    If module gets too big, slice it to keep code small:  
-    /modules/participant/info.sass  
-    /modules/participant/status.sass  
-    /modules/participant/controls.sass  
-    /modules/participant/states.sass  
+    #### To specify multiple modules sets for different layouts create folders inside:
+    * /modules/application/
+    * /modules/admin/
+    #### If module gets too big, slice it to keep code small:
+    * /modules/participant/info.sass
+    * /modules/participant/status.sass
+    * /modules/participant/controls.sass
+    * /modules/participant/states.sass
 
 # Who are these guys?
 Scaffy was made by [Railsware][], software consultancy.
