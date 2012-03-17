@@ -2,8 +2,7 @@ SCF = {};
 
 $(document).ready(function() {
     // Init custom selects
-    $(".select").chosen();
-    $(".select-arrowed").chosen();
+    $(".js-select").chosen();
 
     // Init slideshow
     SCF.Slideshow.init();
