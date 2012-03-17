@@ -14,15 +14,14 @@
       .content
         .wrapper.clearfix
           .col1of4
-            .pbl
-              = render :partial => "static/futurico/text_inputs"
-              = render :partial => "static/futurico/selects"
+            = render :partial => "static/futurico/text_inputs"
+            = render :partial => "static/futurico/scrollboxes"
+            = render :partial => "static/futurico/selects"
+            = render :partial => "static/futurico/text-inputs-rounded"
+            .mbl
+              = render :partial => "static/futurico/checkboxes"
             .pbl
               = render :partial => "static/futurico/buttons"
-            .pbl
-              = render :partial => "static/futurico/scrollboxes"
-            .mbl.pbl
-              = render :partial => "static/futurico/checkboxes"
             .mbl.clearfix
               =render :partial => "static/futurico/equalizer"
 

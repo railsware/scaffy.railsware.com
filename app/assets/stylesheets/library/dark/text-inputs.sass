@@ -35,35 +35,23 @@ input[type='password']
       &:focus
         +box-shadow(0 0 0 3px #80a62d)
 
-    input[type='submit']
-      background-color: #e7e7e7
-      &:hover,
-      &:focus
-        +box-shadow(inset 0 0 5px rgba(#000, .6))
-      &:active
-        background-color: #bbb
-
   // Submit button inside input
   input[type='submit']
-    background-color: #90b73b
-    background-position: center
+    background-color: transparent
+    background-position: center 0
     background-repeat: no-repeat
     border: none
-    border-radius: 50%
     cursor: pointer
     font-family: $base-font
     font-size: $base-font-size
-    height: 18px
+    height: 19px
     position: absolute
-    right: 4px
-    top: 4px
-    width: 18px
-    behavior: url('/assets/vendor/PIE.htc')
+    right: 3px
+    top: 3px
+    width: 19px
     &:hover,
     &:focus
-      +box-shadow(0 1px 2px rgba(#000, .3))
-    &:active
-      background-color: #729620
+      background-position: center -30px
 
   // Light skin
   &.light
@@ -81,6 +69,10 @@ input[type='password']
       &:focus
         +box-shadow(0 0 0 3px #80a62d)
 
+    input[type='submit']
+      background-position: center -30px
+
+
 // MODIFICATORS
 // ===============================================
 // With rounded sides
@@ -90,4 +82,9 @@ input[type='password']
   input[type='password']
     border-radius: 30px
     behavior: url('/assets/vendor/PIE.htc')
+
+// Search input
+.text
+  input.search-button
+    background-image: image-url('futurico/text-input/search-button.png')
 

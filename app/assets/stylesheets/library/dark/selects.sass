@@ -5,6 +5,7 @@
   +user-select(none)
 
   &.opened
+    z-index: 999
     .options
       display: block
 
@@ -30,7 +31,8 @@
     cursor: pointer
     display: block
     height: 26px
-    padding: 6px 16px
+    line-height: 18px
+    padding: 4px 16px 6px
     position: relative
     text-decoration: none
     text-shadow: 0 1px 0 rgba(#000, .4)
@@ -41,7 +43,8 @@
     &:hover
       background-color: #000
       .icon
-        +box-shadow(inset 0 0 8px rgba(#000, .9))
+        background-position: 0 -30px
+
     .icon
       background: image-url('futurico/select/selected-icon.png') 0 0 no-repeat
       border-radius: 50%
@@ -97,4 +100,11 @@
       width: 100%
       +box-sizing
       +box-shadow(0 1px 0 rgba(#fff, .06))
+
+// Arrowed skin. Opener has an icon with up'n'down arrows
+.select-arrowed
+  @extend .select
+  .selected
+    .icon
+      background-image: image-url('futurico/select/selected-icon-arrowed.png')
 
