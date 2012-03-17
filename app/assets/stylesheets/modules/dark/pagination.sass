@@ -14,14 +14,13 @@
         +box-shadow(1px 1px 0 rgba(#000, .2))
         +vertical-gradient(#fdfdfd, #9e9e9e)
   a
-    border-radius: 50%
+    border-radius: 20px
     color: #fff
     display: block
     height: 17px
-    padding-top: 4px
+    padding: 4px 7px 0
     text-decoration: none
     text-shadow: 1px 1px 0 rgba(#000, .4)
-    width: 21px
     +box-shadow((inset 1px 1px 0 rgba(#000, .3), 1px 1px 0 rgba(#fff, .1)))
     behavior: url('/assets/vendor/PIE.htc')
     &:hover
@@ -39,4 +38,12 @@
   .pagination-down
     @extend .pagination-up
     background-image: image-url('futurico/pagination/down.png')
+
+  .pagination-left
+    @extend .pagination-up
+    background-image: image-url('futurico/pagination/left.png')
+
+  .pagination-right
+    @extend .pagination-up
+    background-image: image-url('futurico/pagination/right.png')
 

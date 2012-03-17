@@ -7,12 +7,11 @@ input[type='password']
   font-family: $base-font
   font-size: $base-font-size
   height: 26px
-  line-height: 26px
-  padding: 0 16px
+  padding: 0 10px
   position: relative
+  vertical-align: middle
   width: 100%
   +box-sizing
-  behavior: url('/assets/vendor/PIE.htc')
 
 // SKINS
 // ===============================================
@@ -25,15 +24,34 @@ input[type='password']
       background: #141517
       color: #fff
       border: 1px solid #000
-      padding-left: 10px
-      padding-right: 10px
       +box-shadow(0 1px 0 rgba(#fff, .15))
       +placeholder-color(#777)
+      padding-top: 4px \9
       behavior: url('/assets/vendor/PIE.htc')
       &:hover
         +box-shadow(0 0 0 3px rgba(#fff, .1))
       &:focus
         +box-shadow(0 0 0 3px #80a62d)
+
+  // Light skin
+  &.light
+    input[type='text'],
+    input[type='password']
+      background: #fdfdfd
+      border: none
+      color: #000
+      text-shadow: 0 1px 0 rgba(#fff, .2)
+      +placeholder-color(#666)
+      +vertical-gradient(#fdfdfd, #9a9a9a)
+      padding-top: 5px \9
+      behavior: url('/assets/vendor/PIE.htc')
+      &:hover
+        +box-shadow(0 0 0 3px rgba(#fff, .25))
+      &:focus
+        +box-shadow(0 0 0 3px #80a62d)
+
+    input[type='submit']
+      background-position: center -30px
 
   // Submit button inside input
   input[type='submit']
@@ -53,25 +71,6 @@ input[type='password']
     &:focus
       background-position: center -30px
 
-  // Light skin
-  &.light
-    input[type='text'],
-    input[type='password']
-      background: #fdfdfd
-      border: none
-      color: #000
-      text-shadow: 0 1px 0 rgba(#fff, .2)
-      +placeholder-color(#666)
-      +vertical-gradient(#fdfdfd, #9a9a9a)
-      behavior: url('/assets/vendor/PIE.htc')
-      &:hover
-        +box-shadow(0 0 0 3px rgba(#fff, .25))
-      &:focus
-        +box-shadow(0 0 0 3px #80a62d)
-
-    input[type='submit']
-      background-position: center -30px
-
 
 // MODIFICATORS
 // ===============================================
@@ -81,6 +80,8 @@ input[type='password']
   input[type='text'],
   input[type='password']
     border-radius: 30px
+    padding-left: 16px
+    padding-right: 16px
     behavior: url('/assets/vendor/PIE.htc')
 
 // Search input
