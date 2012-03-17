@@ -31,23 +31,16 @@ $(document).ready(function() {
     // Init pagination
     SCF.Pagination.init();
 
-    // Custom radios
-    $(".radiogroup").each(function() {
-        var parent = this;
-
-        $(this).find(".radio").click(function() {
-        $(parent).find(".radio").removeClass("checked");
-            $(this).addClass("checked");
-        });
-    });
-
     // Custom checkboxes
-    $(".checkbox").click(function() {
-        $(this).toggleClass("checked");
-    });
+    var checkbox = new SCF.Checkbox(".js-checkbox");
+    checkbox.init();
 
-    $(".checkbox-light").click(function() {
-        $(this).toggleClass("checked");
+    // Custom radios
+    $(".radiogroup").each(function(index) {
+        var selector = "js-radiogroup-" + index;
+        $(this).addClass(selector);
+        var radioGroup = new SCF.Radio("." + selector);
+        radioGroup.init();
     });
 
     // Init custom placeholder for text inputs
