@@ -15,8 +15,8 @@
   // ===============================================
   &.on
     color: #3e5706
-    text-shadow: 0 1px rgba(#fff, .2)
-    +box-shadow((inset 1px 1px 0 rgba(#fff, .4), 1px 1px 1px rgba(#000, .3)))
+    text-shadow: 0 1px rgba($sharp, .2)
+    +box-shadow((inset 1px 1px 0 rgba($sharp, .4), 1px 1px 1px rgba($contrast, .3)))
     +vertical-gradient(#aed160, #6c901b)
     .is
       &.on
@@ -25,9 +25,9 @@
         margin-right: 24px
 
   &.off
-    background-color: #000
-    color: #fff
-    +box-shadow(0 1px 0 rgba(#fff, .06))
+    background-color: $contrast
+    color: $sharp
+    +box-shadow(0 1px 0 rgba($sharp, .06))
     .is
       &.on
         left: -100%

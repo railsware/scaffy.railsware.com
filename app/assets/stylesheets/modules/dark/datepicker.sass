@@ -6,7 +6,7 @@
 .ui-datepicker
   background-color: #141517
   border-radius: 2px
-  color: #a8a8a8
+  color: $bare
   display: none
   padding: 30px
   position: absolute
@@ -29,7 +29,7 @@
     &.ui-state-disabled
       border-color: transparent
       cursor: default
-      color: #565656
+      color: $neutral
 
     &.ui-datepicker-today
       background-color: #243205
@@ -55,7 +55,7 @@
   text-transform: uppercase
 
   .year
-    color: #565656
+    color: $neutral
     padding-left: 19px
     position: relative
     &:before
@@ -101,14 +101,14 @@
   .ui-datepicker-current
     background: none
     border: none
-    color: #555
+    color: $neutral
     cursor: pointer
     font: italic 12px $firm-font
     margin: 8px -15px 0 0
     position: absolute
     right: 50%
     &:hover
-      color: #999
+      color: $pale
 
 // Datepicker close button
 .ui-datepicker-close
