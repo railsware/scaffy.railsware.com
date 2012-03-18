@@ -1,11 +1,27 @@
-.wrapper
-  .site-info
-    %h1.sitename
-      Futurico user interface
-      %span.version 1.0
+.wrapper.clearfix
+  .col1of4
+    &nbsp;
 
-    .about
-      %span.legend-left
-      %span.legend-center Based on Scaffy framework
-      %span.legend-right
+  .col1of2
+    .futurico-content
+      .site-info
+        %h1.sitename
+          Futurico user interface
+          %span.version 1.0
+
+        .about
+          %span.legend-left
+          %span.legend-center beautiful ui components
+          %span.legend-right
+
+  .col1of4.last-col
+    .site-info-credentials
+      .mbl
+        %h3
+          %strong Design by Vladimir Kudinov
+        %a{:href => "http://vladimirkudinov.com"} http://vladimirkudinov.com
+
+      %h3
+        %strong Coded by Sergii Iurevych
+      %a{:href => "http://twitter.com/iurevych"} @iurevych
 
