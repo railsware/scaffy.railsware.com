@@ -8,3 +8,5 @@ log/
 config/database.yml
 public/assets
 tmp/
+*Thumbs.db
+Thumbs.db
