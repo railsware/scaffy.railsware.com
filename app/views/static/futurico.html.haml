@@ -10,7 +10,7 @@
     %img.background-light{:src => "/assets/futurico/background-light.png", :alt => ""}
 
     .container
-      =render :partial => "static/futurico/header"
+      =render :partial => "static/futurico/site-info"
 
       .content
         .wrapper.clearfix
@@ -19,6 +19,26 @@
             =render :partial => "static/futurico/scrollboxes"
             =render :partial => "static/futurico/selects"
             =render :partial => "static/futurico/text-inputs-rounded"
+
+          .futurico-content.last-col
+            .mbl.pbl
+              =render :partial => "static/futurico/tabbox"
+            .clearfix
+              .col1of6
+                =render :partial => "static/futurico/crossbar"
+              .col1of3
+                =render :partial => "static/futurico/currently-playing"
+              .left
+                .mll.pll
+                  = render :partial => "static/futurico/commutators"
+              .last-col
+                .mll.pll
+                  =render :partial => "static/futurico/user-slug"
+
+        =render :partial => "static/futurico/header"
+
+        .wrapper.clearfix
+          .col1of4
             .mbl.pbm
               = render :partial => "static/futurico/checkboxes"
             .mbl
@@ -31,20 +51,6 @@
               =render :partial => "static/futurico/equalizer"
 
           .futurico-content.last-col
-            .mbl.pbl
-              =render :partial => "static/futurico/tabbox"
-            .mbl.pbl.clearfix
-              .col1of6
-                =render :partial => "static/futurico/crossbar"
-              .col1of3
-                =render :partial => "static/futurico/currently-playing"
-              .left
-                .mll.pll
-                  = render :partial => "static/futurico/commutators"
-              .last-col
-                .mll.pll
-                  =render :partial => "static/futurico/user-slug"
-
             .mbl.pbl.clearfix
               .col1of2
                 =render :partial => "static/futurico/slideshow"
