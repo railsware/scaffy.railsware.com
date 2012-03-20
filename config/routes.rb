@@ -48,8 +48,8 @@ Scaffy::Application.routes.draw do
 
   # You can have the root of your site routed with "root"
   # just remember to delete public/index.html.
-  root :to => 'static#futurico'
-  match 'static/futurico' => 'static#futurico'
+  root :to => 'application#index'
+  match 'index' => 'application#index'
 
   # See how all your routes lay out with "rake routes"
 

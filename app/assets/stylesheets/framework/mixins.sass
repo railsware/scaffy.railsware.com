@@ -23,7 +23,6 @@
   background-image:     -ms-linear-gradient(top, $start-color, $end-color)
   background-image:      -o-linear-gradient(top, $start-color, $end-color)
   background-image:         linear-gradient(top, $start-color, $end-color)
-  -pie-background: linear-gradient($start-color, $end-color)
 
 =horizontal-gradient($start-color, $end-color)
   background: $end-color
@@ -68,4 +67,13 @@
   -moz-user-select:    $properties
   -ms-user-select:     $properties
   user-select:         $properties
+
+=selection($background, $color)
+  &::selection
+    background: $background
+    color: $color
+
+  &::-moz-selection
+    background: $background
+    color: $color
 

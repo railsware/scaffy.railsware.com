@@ -1,0 +1,29 @@
+!!!
+%html{:lang => "en-US"}
+  %head
+    %meta{:charset => "UTF-8"}
+    %title Scaffy framework
+    =stylesheet_link_tag "application"
+    =javascript_include_tag "application"
+    %meta{:content => "initial-scale = 1, maximum-scale = 1, user-scalable = no", :name => "viewport"}/
+  %body
+    .container
+      .content
+        .wrapper
+          %h1
+            Scaffy framework
+
+          =render :partial => "about-scaffy"
+          =render :partial => "grids"
+
+          %h2.mtl.firm Who use it?
+          %p.mbl
+            All products in
+            %a{:href => "http://railsware.com"} Railsware
+            are made based on Scaffy.
+
+          %p
+            Also
+            %a{:href => "http://futurico.herokuapp.com"} Futurico User Interface
+            is based on it.
+

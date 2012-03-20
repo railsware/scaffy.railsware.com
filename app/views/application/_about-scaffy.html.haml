@@ -1,0 +1,85 @@
+%h2.firm
+  What is Scaffy?
+
+%h4.mbl
+  Open source framework made in
+  %a{:href => "http://railsware.com"} Railsware
+  to kickstart front-end development. It allows you to keep code logical and easily maintainable & extendable by splitting it into modules.
+  %br/
+  %a{:href => "http://github.com/railsware/scaffy"} Scaffy on Github
+
+%h2.firm Using Scaffy lets you
+%ul.unordered-list
+  %li Don't be aware of styles inheritance
+  %li Don't have a conflicts between two completely different elements in different places
+  %li Be sure that the current element will look identically same everywhere
+  %li Clone element to create few styles of it (few buttons sizes and colors) keeping separate structure from skin
+  %li Making code predictable to find by having naming convention
+  %li Using SASS in full power by having shared mixins &amp; variables across the project
+  %li Organize endless amount of Skins &amp; Layouts without code duplicate
+
+%h2.firm So what's inside?
+%h3 Framework
+%ul.unordered-list
+  %li
+    %strong base.sass
+    &mdash; linker for all framework stylesheets
+  %li
+    %strong config.sass
+    &mdash; all shared variables store here. Also, links mixins at the end
+  %li
+    %strong grids.sass
+    &mdash; rock solid grids that allow you to build any layout no matter how complex is it. Works perfectly in IE6+ and all others
+  %li
+    %strong mixins.sass
+    &mdash; all SASS mixins go here. No need to use monster tools with thousands of mixins, just create mixins for your needs and use them across the project.
+  %li
+    %strong reset.sass
+    &mdash; resets everything to zero margin, padding + some black magic hacks to fix browsers inconsistencies
+  %li
+    %strong spaces.sass
+    &mdash; use to modify the default spacing between objects
+  %li
+    %strong type.sass
+    &mdash; stores all typography related style definitions
+
+%h3 Layouts
+%ul.unordered-list
+  %li
+    %strong *.sass
+    &mdash; place for general layout styling. Store body, wrapper, content and other layout specific blocks here. Add a link to a config.sass to use shared mixins with variables. You can store all kinds of layouts here like: application.sass, homepage.sass, admin.sass
+
+%h3 Library
+%ul.unordered-list
+  %li
+    %strong *.sass
+    &mdash; place for groups like buttons, text-inputs, selects, radios, checkboxes and other elements, which you can combine. Add a link to a config.sass to use shared mixins with variables. To specify multiple libraries for different layouts move groups to separate folders inside the library: /library/application/ /library/admin/
+
+%h3 Modules
+%ul.unordered-list
+  %li
+    %strong *.sass
+    &mdash; use to create modules such as login-block.sass, modal.sass, votebar.sass, dropdown.sass, lightbox.sass and so on.
+    Add a link to a config.sass to use shared mixins with variables.
+
+  %li
+    To specify multiple modules sets for different layouts create folders inside:
+    %p.mvx
+      %strong /modules/application/
+    %p.mbx
+      %strong /modules/admin/
+
+  %li
+    If module gets too big, slice it to keep code small:
+    %p.mvx
+      %strong /modules/participant/info.sass
+    %p.mbx
+      %strong /modules/participant/status.sass
+    %p.mbx
+      %strong /modules/participant/controls.sass
+    %p.mbx
+      %strong /modules/participant/states.sass
+
+%h2.firm Grids
+%p.mbl Grids control width. 6 sizes available by default.
+
