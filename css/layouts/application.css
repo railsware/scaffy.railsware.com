@@ -1,0 +1,18 @@
+body {
+  background: white;
+  color: black;
+  font: 14px/1.231 Arial, Helvetica, sans-serif; }
+
+.wrapper {
+  clear: both;
+  margin: auto;
+  padding: 20px 0;
+  position: relative;
+  width: 960px; }
+
+.unordered-list {
+  font-size: 15px;
+  margin-bottom: 20px; }
+  .unordered-list li {
+    list-style-type: square;
+    margin: 0 0 5px 25px; }
