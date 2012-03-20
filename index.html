@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scaffy framework</title>
+    <link href="css/framework/base.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/layouts/application.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="css/modules/debug-grid.css" media="screen" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <div class="container">
+      <div class="content">
+        <div class="wrapper">
+          <h1>
+            Scaffy framework
+          </h1>
+          <h2 class="firm">
+            What is Scaffy?
+          </h2>
+          <h4 class="mbl">
+            Open source framework made in
+            <a href="http://railsware.com">Railsware</a>
+            to kickstart front-end development. It allows you to keep code logical and easily maintainable & extendable by splitting it into modules.
+            <br>
+            <a href="http://github.com/railsware/scaffy">Scaffy on Github</a>
+          </h4>
+          <h2 class="firm">Using Scaffy lets you</h2>
+          <ul class="unordered-list">
+            <li>Don't be aware of styles inheritance</li>
+            <li>Don't have a conflicts between two completely different elements in different places</li>
+            <li>Be sure that the current element will look identically same everywhere</li>
+            <li>Clone element to create few styles of it (few buttons sizes and colors) keeping separate structure from skin</li>
+            <li>Making code predictable to find by having naming convention</li>
+            <li>Using SASS in full power by having shared mixins &amp; variables across the project</li>
+            <li>Organize endless amount of Skins &amp; Layouts without code duplicate</li>
+          </ul>
+          <h2 class="firm">So what's inside?</h2>
+          <h3>Framework</h3>
+          <ul class="unordered-list">
+            <li>
+              <strong>base.sass</strong>
+              &mdash; linker for all framework stylesheets
+            </li>
+            <li>
+              <strong>config.sass</strong>
+              &mdash; all shared variables store here. Also, links mixins at the end
+            </li>
+            <li>
+              <strong>grids.sass</strong>
+              &mdash; rock solid grids that allow you to build any layout no matter how complex is it. Works perfectly in IE6+ and all others
+            </li>
+            <li>
+              <strong>mixins.sass</strong>
+              &mdash; all SASS mixins go here. No need to use monster tools with thousands of mixins, just create mixins for your needs and use them across the project.
+            </li>
+            <li>
+              <strong>reset.sass</strong>
+              &mdash; resets everything to zero margin, padding + some black magic hacks to fix browsers inconsistencies
+            </li>
+            <li>
+              <strong>spaces.sass</strong>
+              &mdash; use to modify the default spacing between objects
+            </li>
+            <li>
+              <strong>type.sass</strong>
+              &mdash; stores all typography related style definitions
+            </li>
+          </ul>
+          <h3>Layouts</h3>
+          <ul class="unordered-list">
+            <li>
+              <strong>*.sass</strong>
+              &mdash; place for general layout styling. Store body, wrapper, content and other layout specific blocks here. Add a link to a config.sass to use shared mixins with variables. You can store all kinds of layouts here like: application.sass, homepage.sass, admin.sass
+            </li>
+          </ul>
+          <h3>Library</h3>
+          <ul class="unordered-list">
+            <li>
+              <strong>*.sass</strong>
+              &mdash; place for groups like buttons, text-inputs, selects, radios, checkboxes and other elements, which you can combine. Add a link to a config.sass to use shared mixins with variables. To specify multiple libraries for different layouts move groups to separate folders inside the library: /library/application/ /library/admin/
+            </li>
+          </ul>
+          <h3>Modules</h3>
+          <ul class="unordered-list">
+            <li>
+              <strong>*.sass</strong>
+              &mdash; use to create modules such as login-block.sass, modal.sass, votebar.sass, dropdown.sass, lightbox.sass and so on.
+              Add a link to a config.sass to use shared mixins with variables.
+            </li>
+            <li>
+              To specify multiple modules sets for different layouts create folders inside:
+              <p class="mvx">
+                <strong>/modules/application/</strong>
+              </p>
+              <p class="mbx">
+                <strong>/modules/admin/</strong>
+              </p>
+            </li>
+            <li>
+              If module gets too big, slice it to keep code small:
+              <p class="mvx">
+                <strong>/modules/participant/info.sass</strong>
+              </p>
+              <p class="mbx">
+                <strong>/modules/participant/status.sass</strong>
+              </p>
+              <p class="mbx">
+                <strong>/modules/participant/controls.sass</strong>
+              </p>
+              <p class="mbx">
+                <strong>/modules/participant/states.sass</strong>
+              </p>
+            </li>
+          </ul>
+          <h2 class="firm">Grids</h2>
+          <p class="mbl">Grids control width. 6 sizes available by default.</p>
+          <div class="clearfix debug-grids">
+            <div class="col1of2">
+              <div class="inner-col">Column 1 of 2</div>
+            </div>
+            <div class="col1of2 last-col">
+              <div class="inner-col">Column 1 of 2</div>
+            </div>
+          </div>
+          <div class="clearfix debug-grids">
+            <div class="col1of3">
+              <div class="inner-col">Column 1 of 3</div>
+            </div>
+            <div class="col1of3">
+              <div class="inner-col">Column 1 of 3</div>
+            </div>
+            <div class="col1of3 last-col">
+              <div class="inner-col">Column 1 of 3</div>
+            </div>
+          </div>
+          <div class="clearfix debug-grids">
+            <div class="col1of4">
+              <div class="inner-col">Column 1 of 4</div>
+            </div>
+            <div class="col1of4">
+              <div class="inner-col">Column 1 of 4</div>
+            </div>
+            <div class="col1of4">
+              <div class="inner-col">Column 1 of 4</div>
+            </div>
+            <div class="col1of4 last-col">
+              <div class="inner-col">Column 1 of 4</div>
+            </div>
+          </div>
+          <div class="clearfix debug-grids">
+            <div class="col1of5">
+              <div class="inner-col">Column 1 of 5</div>
+            </div>
+            <div class="col1of5">
+              <div class="inner-col">Column 1 of 5</div>
+            </div>
+            <div class="col1of5">
+              <div class="inner-col">Column 1 of 5</div>
+            </div>
+            <div class="col1of5">
+              <div class="inner-col">Column 1 of 5</div>
+            </div>
+            <div class="col1of5 last-col">
+              <div class="inner-col">Column 1 of 5</div>
+            </div>
+          </div>
+          <div class="clearfix debug-grids">
+            <div class="col1of6">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+            <div class="col1of6">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+            <div class="col1of6">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+            <div class="col1of6">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+            <div class="col1of6">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+            <div class="col1of6 last-col">
+              <div class="inner-col">Column 1 of 6</div>
+            </div>
+          </div>
+          <h2 class="mtl firm">Who use it?</h2>
+          <p class="mbl">
+            All products in
+            <a href="http://railsware.com">Railsware</a>
+            are made based on Scaffy.
+          </p>
+          <p>
+            Also
+            <a href="http://futurico.herokuapp.com">Futurico User Interface</a>
+            is based on it.
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
