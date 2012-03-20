@@ -1,0 +1,10 @@
+.debug-grids .inner-col {
+  background-color: #dddddd;
+  border-radius: 3px;
+  border: 1px solid #d0d0d0;
+  margin: 0 10px 10px 0;
+  padding: 10px; }
+  .debug-grids .inner-col:hover {
+    background-color: #d0d0d0; }
+.debug-grids .last-col .inner-col {
+  margin-right: 0; }
