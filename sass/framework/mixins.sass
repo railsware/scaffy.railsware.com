@@ -1,0 +1,79 @@
+=animation($properties)
+  -webkit-animation: $properties
+  -moz-animation:    $properties
+  -ms-animation:     $properties
+  -o-animation:      $properties
+  animation:         $properties
+
+=box-shadow($properties)
+  -webkit-box-shadow: $properties
+  -moz-box-shadow:    $properties
+  box-shadow:         $properties
+
+=box-sizing
+  -webkit-box-sizing: border-box
+  -moz-box-sizing:    border-box
+  box-sizing:         border-box
+
+=vertical-gradient($start-color, $end-color)
+  background: $end-color
+  background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0%, $start-color), color-stop(100%, $end-color))
+  background-image: -webkit-linear-gradient(top, $start-color, $end-color)
+  background-image:    -moz-linear-gradient(top, $start-color, $end-color)
+  background-image:     -ms-linear-gradient(top, $start-color, $end-color)
+  background-image:      -o-linear-gradient(top, $start-color, $end-color)
+  background-image:         linear-gradient(top, $start-color, $end-color)
+
+=horizontal-gradient($start-color, $end-color)
+  background: $end-color
+  background-image: -webkit-gradient(linear, left top, right top, color-stop(0%, $start-color), color-stop(100%, $end-color))
+  background-image: -webkit-linear-gradient(left, $start-color, $end-color)
+  background-image:    -moz-linear-gradient(left, $start-color, $end-color)
+  background-image:     -ms-linear-gradient(left, $start-color, $end-color)
+  background-image:      -o-linear-gradient(left, $start-color, $end-color)
+  background-image:         linear-gradient(left, $start-color, $end-color)
+
+=inline-block
+  display: -moz-inline-stack
+  display: inline-block
+  zoom: 1
+  _overflow: hidden
+  *display: inline
+
+=placeholder-color($color)
+  &:-moz-placeholder
+    color: $color
+  &::-webkit-input-placeholder
+    color: $color
+  &.placeholder
+    color: $color
+
+=transition($properties)
+  -webkit-transition: $properties
+  -moz-transition:    $properties
+  -ms-transition:     $properties
+  -o-transition:      $properties
+  transition:         $properties
+
+=transform($properties)
+  -webkit-transform: $properties
+  -moz-transform:    $properties
+  -ms-transform:     $properties
+  -o-transform:      $properties
+  transform:         $properties
+
+=user-select($properties)
+  -webkit-user-select: $properties
+  -moz-user-select:    $properties
+  -ms-user-select:     $properties
+  user-select:         $properties
+
+=selection($background, $color)
+  &::selection
+    background: $background
+    color: $color
+
+  &::-moz-selection
+    background: $background
+    color: $color
+
