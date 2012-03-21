@@ -12,27 +12,75 @@
       <div class="content">
         <div class="wrapper">
           <h1>
-            Scaffy framework
+            Scaffy
           </h1>
-          <h2 class="firm">
-            What is Scaffy?
-          </h2>
-          <h4 class="mbl">
-            Open source framework made in
-            <a href="http://railsware.com">Railsware</a>
-            to kickstart front-end development. It allows you to keep code logical and easily maintainable & extendable by splitting it into modules.
-            <br>
+          <h3 class="mbl">
+            Set of best practices, approaches &amp; tools by <a href="http://railsware.com">Railsware</a> client engineers
+            to write logical, modular, easily maintainable & extendable CSS.
             <a href="http://github.com/railsware/scaffy">Scaffy on Github</a>
-          </h4>
-          <h2 class="firm">Using Scaffy lets you</h2>
+          </h3>
+          <h2 class="firm">Achievements board for large-scale projects</h2>
           <ul class="unordered-list">
-            <li>Don't be aware of styles inheritance</li>
-            <li>Don't have a conflicts between two completely different elements in different places</li>
-            <li>Be sure that the current element will look identically same everywhere</li>
-            <li>Clone element to create few styles of it (few buttons sizes and colors) keeping separate structure from skin</li>
-            <li>Making code predictable to find by having naming convention</li>
-            <li>Using SASS in full power by having shared mixins &amp; variables across the project</li>
-            <li>Organize endless amount of Skins &amp; Layouts without code duplicate</li>
+            <li class="unordered-list-item">
+              <h4>Look identically everywhere</h4>
+              Doesn't matter where your object will take place it looks the same. It is possible
+              by creating unique classes for each object. For example <code>.navigation</code> in <code>.header</code> will look
+              identically the same in <code>.footer</code> or in the <code>.content</code> area. That means if you need to modify
+              navigation in footer, you have to create another type of it, like .sub-navigation.
+              <p class="ptm">Selector should describe a main object, be as short as it can &amp; don't make potential conflict:
+<pre>
+<code>.player .avatar  -> .player-avatar
+.navigation li   -> .navigation-item
+.lightbox .close -> .lightbox-close</code>
+</pre>
+              </p>
+            </li>
+            <li class="unordered-list-item">
+              <h4>Minimize style inherritance</h4>
+              When you have a high nesting of objects inside each other the deepest one will take a blow
+              of all styles you implied to its parents' tags. To get this achievement don't set styling to tags.
+              Your CSS should have this look in ideal:
+<pre>
+<code>ul.navigation    -> .navigation
+ul.navigation li -> .navigation-item</code>
+</pre>
+            </li>
+            <li class="unordered-list-item">
+              <h4>Object modifiers</h4>
+              Let's say you have 3 sizes and 3 colors of buttons. In this case its better to write <code>.button</code> as a
+              base and create modifiers of it keeping separate structure from skin:
+<pre>
+<code>.button { ... }
+.button.tiny { ... } /* Defines shape and size */
+.button.positive { ... } /* Defines color */</code>
+</pre>
+              Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
+              of the current class.
+            </li>
+            <li class="unordered-list-item">
+              <h4>Code style &amp; conventions</h4>
+              Depending on your project needs team should define a code style to be used accross the project.
+              Here is an example:
+<pre>
+<code>.selector {
+  background: #ccc url('image.png') 0 0 no-repeat;
+  font: 14px 'Helvetica Neue', Helvetica, sans-serif
+  padding: 0 4px 2px;
+  z-index: 5;
+}
+
+.selector-child {
+  display: inline-block;
+  -webkit-transition: all .2s;
+     -moz-transition: all .2s;
+      -ms-transition: all .2s;
+       -o-transition: all .2s;
+          transition: all .2s;
+}</code>
+</pre>
+            </li>
+            <li class="unordered-list-item">Using SASS in full power by having shared mixins &amp; variables across the project</li>
+            <li class="unordered-list-item">Organize endless amount of Skins &amp; Layouts without code duplicate</li>
           </ul>
           <h2 class="firm">So what's inside?</h2>
           <h3>Framework</h3>
