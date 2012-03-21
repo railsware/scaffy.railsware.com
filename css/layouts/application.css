@@ -1,7 +1,7 @@
 body {
   background: white;
   color: black;
-  font: 14px/1.231 Arial, Helvetica, sans-serif; }
+  font: 14px/1.35 Arial, Helvetica, sans-serif; }
 
 .wrapper {
   clear: both;
@@ -13,6 +13,17 @@ body {
 .unordered-list {
   font-size: 15px;
   margin-bottom: 20px; }
-  .unordered-list li {
-    list-style-type: square;
-    margin: 0 0 5px 25px; }
+
+.unordered-list-item {
+  list-style-type: square;
+  margin: 0 0 20px 25px; }
+
+pre {
+  border-left: 4px solid #9cc346;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding: 10px 15px; }
+
+code {
+  color: #0072ff;
+  font-family: Monaco, monospace; }

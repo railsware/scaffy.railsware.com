@@ -89,6 +89,13 @@ textarea {
   overflow: auto;
   vertical-align: top; }
 
+code {
+  white-space: pre; }
+
+code,
+pre {
+  font: 14px/1.231 Arial, Helvetica, sans-serif; }
+
 .clearfix {
   *zoom: 1; }
   .clearfix:after {
