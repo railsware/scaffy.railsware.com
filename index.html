@@ -36,13 +36,17 @@
               </p>
             </li>
             <li class="unordered-list-item">
-              <h4>Minimize style inherritance</h4>
+              <h4>Minimize style inherritance &amp; reduce cascades</h4>
               When you have a high nesting of objects inside each other the deepest one will take a blow
-              of all styles you implied to its parents' tags. To get this achievement don't set styling to tags.
+              of all styles you implied to its parents' tags.
+              Another tricky situation happens if you have a <strong>cascade</strong> and your object in fact location dependent.
+              To get this achievement reduce cascades where possible &amp; don't set styling to tags.
               Your CSS should have this look in ideal:
 <pre>
 <code>ul.navigation    -> .navigation
-ul.navigation li -> .navigation-item</code>
+ul.navigation li -> .navigation-item
+.modal-popup .login-content .buttons .login-button  -> .modal-button
+.modal-popup .login-content #social_connect_buttons -> .modal-buttons</code>
 </pre>
             </li>
             <li class="unordered-list-item">
@@ -154,7 +158,17 @@ $space-l: 20px</code>
 </pre>
 
             </li>
-            <li class="unordered-list-item">Organize endless amount of Skins &amp; Layouts without code duplicate</li>
+            <li class="unordered-list-item">
+              <h4>Class name should live for years</h4>
+              Class name should describe the function of an object. If we're talking about color appearance
+              (<strong>object modifier</strong>) then it is useful to abstract naming cause it's appearance can change
+              quite frequently. As an example let's take a <code>.button</code>:
+<pre>
+<code>.button.green -> .button.positive
+.light-blue -> .pale
+.white -> .contrast</code>
+</pre>
+            </li>
           </ul>
           <h2 class="firm">So what's inside?</h2>
           <h3>Framework</h3>
