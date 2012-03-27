@@ -1,0 +1,1115 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="UTF-8">
+    <title>Scaffy framework</title>
+    <link href="bundle.css" media="screen" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" type="text/javascript"></script>
+    <script src="javascripts/vendor/jquery-ui-1.8.18.custom.min.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui.js" type="text/javascript"></script>
+    <script src="javascripts/vendor/chosen.jquery.js" type="text/javascript"></script>
+    <script src="javascripts/vendor/jquery.placeholder.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/Equalizer.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/appreciate.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/commutator.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/datepicker.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/pagination.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/scrollbox.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/slideshow.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/tabbox.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/starbar.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/checkbox.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/radio.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/player.js" type="text/javascript"></script>
+    <script src="javascripts/SCF.ui/currentlyPlaying.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <img alt="" class="background-light" src="images/background-light.png">
+    <div class="container">
+      <div class="wrapper clearfix">
+        <div class="col1of4">
+          <div class="site-info-links">
+            &nbsp;
+          </div>
+        </div>
+        <div class="col1of2">
+          <div class="futurico-content">
+            <div class="site-info">
+              <h1 class="sitename">
+                Futurico user interface
+                <span class="version">1.0</span>
+              </h1>
+              <div class="about">
+                <span class="legend-left"></span>
+                <span class="legend-center">beautiful ui components</span>
+                <span class="legend-right"></span>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col1of4 last-col">
+          <div class="site-info-credentials">
+            <div class="mbl">
+              <h3>
+                <strong>
+                  Design by
+                  <a href="http://vladimirkudinov.com">Vladimir Kudinov</a>
+                </strong>
+              </h3>
+              <a href="http://www.behance.net/madbyte">Portfolio on Behance</a>
+            </div>
+            <h3>
+              <strong>
+                Coded by
+                <a href="http://twitter.com/iurevych">Sergii Iurevych</a>
+              </strong>
+            </h3>
+            Using
+            <a href="http://railsware.github.com/scaffy">Scaffy</a>
+          </div>
+        </div>
+      </div>
+      <div class="content">
+        <div class="wrapper clearfix">
+          <div class="col1of4">
+            <div class="mbl">
+              <div class="text-rounded light">
+                <input placeholder="Light edit box" tabindex="3" type="text">
+              </div>
+            </div>
+            <div class="mbl">
+              <div class="text dark">
+                <input placeholder="Text edit" tabindex="3" type="text">
+              </div>
+            </div>
+            <div class="mbl ptm">
+              <div class="scrollbox js-scrollbox dot">
+                <div class="hitbox"></div>
+                <div class="scale" style="width: 75%"></div>
+              </div>
+            </div>
+            <div class="mbl ptm">
+              <div class="scrollbox js-scrollbox disk">
+                <div class="hitbox"></div>
+                <div class="scale" style="width: 50%"></div>
+              </div>
+            </div>
+            <div class="mbm ptm pbl">
+              <div class="scrollbox js-scrollbox range">
+                <div class="hitbox"></div>
+                <div class="scale" style="width: 30%"></div>
+              </div>
+            </div>
+            <div class="mbl">
+              <select class="select js-select">
+                <option></option>
+                <option value="Aaliyah">Aaliyah</option>
+                <option value="Barbara">Barbara</option>
+                <option value="Azura">Azura</option>
+                <option value="Babs">Babs</option>
+                <option value="Fox">Fox</option>
+              </select>
+            </div>
+            <div class="mbl">
+              <select class="select-arrowed js-select">
+                <option></option>
+                <option value="Aaliyah">Aaliyah</option>
+                <option value="Barbara">Barbara</option>
+                <option value="Azura">Azura</option>
+                <option value="Babs">Babs</option>
+                <option value="Fox">Fox</option>
+              </select>
+            </div>
+            <div class="mbl">
+              <div class="text-rounded dark">
+                <input tabindex="5" type="text" value="Search box">
+                <input class="search-button" tabindex="6" type="submit" value="">
+              </div>
+            </div>
+            <div class="text-rounded dark">
+              <input tabindex="4" type="text" value="1 250 USD">
+            </div>
+          </div>
+          <div class="futurico-content last-col">
+            <div class="mbl pbl">
+              <div class="tabbox">
+                <ul class="tabbox-tabs">
+                  <li class="active">Option 1</li>
+                  <li>Option 2</li>
+                </ul>
+                <div class="tabbox-stuff clearfix">
+                  <ul class="tabbox-navigation">
+                    <li class="archive">
+                      <a href="#tabbox-archive"></a>
+                    </li>
+                    <li class="messages">
+                      <a href="#tabbox-messages"></a>
+                    </li>
+                    <li class="cloud">
+                      <a href="#tabbox-cloud"></a>
+                    </li>
+                  </ul>
+                  <div class="last-col">
+                    <div class="tabbox-content">
+                      <div id="tabbox-archive">
+                        <div class="heading">
+                          <h2 class="heading-col">
+                            Heading 1
+                          </h2>
+                          <h3 class="heading-col">
+                            Heading 2
+                          </h3>
+                          <h4 class="heading-col">
+                            Heading 3
+                            <span class="status-message negative">No connection</span>
+                          </h4>
+                          <div class="preloader"></div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col2of5 mrl prl">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col2of5">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="tabbox-messages">
+                        <div class="heading">
+                          <h2>
+                            Inbox messages
+                            <span class="status-message positive">2 new</span>
+                          </h2>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col2of5 mrl prl">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col2of5">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="tabbox-cloud">
+                        <div class="heading">
+                          <h2>
+                            Files inside the cloud
+                            <span class="status-message">Total: 91,819,826</span>
+                          </h2>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col2of5 mrl prl">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col2of5">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tabbox-stuff clearfix">
+                  <ul class="tabbox-navigation">
+                    <li class="archive">
+                      <a href="#tabbox-archive-2"></a>
+                    </li>
+                    <li class="messages">
+                      <a href="#tabbox-messages-2"></a>
+                    </li>
+                  </ul>
+                  <div class="last-col">
+                    <div class="tabbox-content">
+                      <div id="tabbox-archive-2">
+                        <div class="heading">
+                          <h2>
+                            Archived data
+                            <span class="status-message negative">No connection</span>
+                          </h2>
+                          <div class="preloader"></div>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col2of5 mrl prl">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col2of5">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div id="tabbox-messages-2">
+                        <div class="heading">
+                          <h2>
+                            Inbox messages
+                            <span class="status-message positive">2 new</span>
+                          </h2>
+                        </div>
+                        <div class="clearfix">
+                          <div class="col2of5 mrl prl">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                          <div class="col2of5">
+                            <div class="dataset">
+                              <table>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    RAM
+                                  </td>
+                                  <td class="dataset-number">
+                                    2 GB
+                                  </td>
+                                  <td width="50%">
+                                    <div class="dataset-bar" style="width: 50%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    CPU
+                                  </td>
+                                  <td class="dataset-number">
+                                    5 GHz
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 100%"></div>
+                                  </td>
+                                </tr>
+                                <tr>
+                                  <td class="dataset-entity">
+                                    HDD
+                                  </td>
+                                  <td class="dataset-number">
+                                    500 GB
+                                  </td>
+                                  <td>
+                                    <div class="dataset-bar" style="width: 66%"></div>
+                                  </td>
+                                </tr>
+                              </table>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="clearfix">
+              <div class="left mrl prl">
+                <div class="equalizer clearfix">
+                  <div class="equalizer-bar minimal">
+                    <div class="equalizer-scale" style="height: 35px"></div>
+                  </div>
+                  <div class="equalizer-delimiter"></div>
+                  <div class="equalizer-bar elastic">
+                    <div class="equalizer-scale" style="height: 70px"></div>
+                  </div>
+                  <div class="equalizer-delimiter"></div>
+                  <div class="equalizer-bar">
+                    <div class="equalizer-scale" style="height: 105px"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col1of6">
+                <div class="crossbar">
+                  <a class="to-top" href="#" tabindex="6">
+                    <div class="arrow"></div>
+                  </a>
+                  <a class="to-right" href="#" tabindex="7">
+                    <div class="arrow"></div>
+                  </a>
+                  <a class="to-bottom" href="#" tabindex="8">
+                    <div class="arrow"></div>
+                  </a>
+                  <a class="to-left" href="#" tabindex="9">
+                    <div class="arrow"></div>
+                  </a>
+                </div>
+              </div>
+              <div class="col1of3">
+                <div class="currently-playing js-currently-playing">
+                  <div class="playing artist">The Cardigans</div>
+                  <div class="playing song">I Need Some Fine Wine And You</div>
+                  <div class="song-info clearfix">
+                    <div class="song-time start">0:34</div>
+                    <div class="scrollbox dot">
+                      <div class="hitbox js-currently-playing-hitbox"></div>
+                      <div class="scale js-currently-playing-scale" style="width: 20%">
+                        <div class="slider"></div>
+                      </div>
+                    </div>
+                    <div class="song-time end">2:41</div>
+                  </div>
+                </div>
+              </div>
+              <div class="col1of3 last-col">
+                <div class="mll pll">
+                  <div class="clearfix">
+                    <div class="left mrl">
+                      <div class="mbl">
+                        <div class="commutator off">
+                          <div class="is on">
+                            On
+                            <div class="is off">
+                              Off
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mbl">
+                        <div class="commutator on">
+                          <div class="is on">
+                            On
+                            <div class="is off">
+                              Off
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="last-col">
+                      <div class="mbl">
+                        <div class="commutator off">
+                          <div class="is on">
+                            Turned on
+                            <div class="is off">
+                              Is off
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="mbl">
+                        <div class="commutator on">
+                          <div class="is on">
+                            Turned on
+                            <div class="is off">
+                              Is off
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="mbl">
+          <div class="header">
+            <div class="wrapper clearfix">
+              <div class="col1of4 header-controls">
+                <a href="#">Sign In</a>
+                <span class="phs">
+                  /
+                </span>
+                <a href="#">Register</a>
+                <span class="delimiter phs">
+                  or
+                </span>
+                <a class="fb-signup" href="#"></a>
+              </div>
+              <div class="col1of2">
+                <ul class="header-navigation">
+                  <li class="current">
+                    <a href="#">Main page</a>
+                  </li>
+                  <li>
+                    <a href="#">Services</a>
+                  </li>
+                  <li>
+                    <a href="#">Contacts</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="last-col">
+                <div class="header-search">
+                  <div class="text-rounded light">
+                    <input placeholder="Search box light" tabindex="1" type="text">
+                    <input class="search-button" tabindex="2" type="submit" value="">
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper clearfix">
+          <div class="col1of4">
+            <div class="mbl pbm">
+              <div class="radiogroup">
+                <div class="form-row clearfix">
+                  <div class="col1of2">
+                    <div class="radio checked js-radio">
+                      Radio 1
+                    </div>
+                  </div>
+                  <div class="col1of2">
+                    <div class="checkbox checked js-checkbox">
+                      Option 1
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row clearfix">
+                  <div class="col1of2">
+                    <div class="radio js-radio">
+                      Radio 2
+                    </div>
+                  </div>
+                  <div class="col1of2">
+                    <div class="checkbox js-checkbox">
+                      Option 2
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="radiogroup">
+                <div class="form-row clearfix">
+                  <div class="col1of2">
+                    <div class="radio-light checked js-radio">
+                      Radio 3
+                    </div>
+                  </div>
+                  <div class="col1of2">
+                    <div class="checkbox-light checked js-checkbox">
+                      Option 3
+                    </div>
+                  </div>
+                </div>
+                <div class="form-row last clearfix">
+                  <div class="col1of2">
+                    <div class="radio-light js-radio">
+                      Radio 4
+                    </div>
+                  </div>
+                  <div class="col1of2">
+                    <div class="checkbox-light js-checkbox">
+                      Option 4
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mbl">
+              <div class="login-block">
+                <div class="login-ear"></div>
+                <h2 class="mbl">sign in</h2>
+                <div class="mbm">
+                  <div class="text-rounded light">
+                    <input placeholder="login" tabindex="13" type="text">
+                  </div>
+                </div>
+                <div class="pts">
+                  <div class="text-rounded light">
+                    <input placeholder="password" tabindex="14" type="password">
+                  </div>
+                </div>
+                <div class="login-buttons clearfix">
+                  <div class="left pts">
+                    <div class="checkbox-light square checked js-checkbox">
+                      remember
+                    </div>
+                  </div>
+                  <div class="right">
+                    <input class="button positive" type="submit" value="Sign in ">
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mbl">
+              <div class="paragraph sharp">
+                <div class="clearfix mbs">
+                  <h3 class="left mrm">
+                    <strong>Hot News</strong>
+                  </h3>
+                  <div class="last-col pts">
+                    <div class="pagination clearfix">
+                      <div class="pagination-up"></div>
+                      <div class="pagination-down"></div>
+                      <div class="pagination-left"></div>
+                      <div class="pagination-right"></div>
+                    </div>
+                  </div>
+                </div>
+                <div class="mbl">
+                  <div class="comments">
+                    <div class="ear"></div>
+                    12 comments
+                  </div>
+                </div>
+                <ul class="pagination clearfix" id="pagination">
+                  <li class="active"><a href="#pagination">1</a></li>
+                  <li><a href="#pagination">2</a></li>
+                  <li><a href="#pagination">3</a></li>
+                  <li><a href="#pagination">4</a></li>
+                  <li><a href="#pagination">5</a></li>
+                  <li>
+                    . . .
+                  </li>
+                  <li><a href="#pagination">9187</a></li>
+                </ul>
+              </div>
+            </div>
+            <div class="mbl pvm">
+              <div class="mbl">
+                <div class="progressbar-label">Download: 20%</div>
+                <div class="scrollbox dot">
+                  <div class="scale" style="width: 20%"></div>
+                </div>
+              </div>
+              <div class="mbl">
+                <div class="progressbar-label">Download: 17%</div>
+                <div class="scrollbox fat">
+                  <div class="scale" style="width: 17%"></div>
+                </div>
+              </div>
+            </div>
+            <div class="mbl clearfix">
+              <ul class="player clearfix">
+                <li class="player-control">
+                  <div class="player-icon p-back"></div>
+                </li>
+                <li class="player-control-huge">
+                  <div class="player-icon p-play"></div>
+                </li>
+                <li class="player-control">
+                  <div class="player-icon p-next"></div>
+                </li>
+                <li class="player-control-wrapper js-player">
+                  <div class="player-control">
+                    <div class="player-icon p-volume"></div>
+                  </div>
+                  <div class="player-scale-holder">
+                    <div class="player-scale js-volume-scale">
+                      <div class="player-scale-filler js-volume-bar" style="width: 40%"></div>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="mbl clearfix">
+              <div class="paragraph sharp">
+                full bass &amp; treble
+              </div>
+              <div class="equalizer clearfix">
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 35px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 46px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 22px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 48px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 61px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 65px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 78px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 100px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 62px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 33px"></div>
+                </div>
+                <div class="equalizer-delimiter"></div>
+                <div class="equalizer-bar">
+                  <div class="equalizer-scale" style="height: 78px"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="futurico-content last-col">
+            <div class="mbl pbl clearfix">
+              <div class="col1of2">
+                <div class="slideshow js-slideshow">
+                  <div class="slideshow-slides-wrapper">
+                    <ul class="slideshow-slides js-slideshow-slides">
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide-2.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide-3.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide-2.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                      <li class="each-slide js-slideshow-slide" style="background-image: url('images/slideshow/test-slide-3.jpg')">
+                        <div class="slide-description">
+                          Elephants never forget
+                        </div>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="show-slide prev js-slideshow-prev-slide"></div>
+                  <div class="show-slide next js-slideshow-next-slide"></div>
+                </div>
+              </div>
+              <div class="col1of2 last-col">
+                <div class="pll mll">
+                  <div class="left">
+                    <div class="sticker percent">
+                      25
+                    </div>
+                  </div>
+                  <div class="left mrl prl"><div class="sticker pack"><div class="sticker-discount">20</div><div class="sticker-label">packs</div></div></div>
+                </div>
+              </div>
+            </div>
+            <div class="mbl pbl clearfix">
+              <div class="col1of2">
+                <div class="datepicker-placeholder"></div>
+              </div>
+              <div class="col1of2 last-col">
+                <div class="pll mll">
+                  <div class="circle-banner">
+                    <div class="ear"></div>
+                    <div class="banner-inner clearfix">
+                      <div class="banner-pull-l pull1"></div>
+                      <div class="banner-pull-r pull1"></div>
+                      <div class="banner-pull-l pull2"></div>
+                      <div class="banner-pull-r pull2"></div>
+                      Italian wine is wine produced in Italy, a country which is home to some of the oldest companies
+                    </div>
+                    <div class="banner-description">
+                      <a href="#">Read More</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="mbl pbl clearfix">
+              <div class="col1of2 mrl prl">
+                <div class="mbl pbm clearfix">
+                  <div class="left mrl">
+                    <div class="appreciate"></div>
+                  </div>
+                  <div class="left mrl">
+                    <div class="appreciate firm"></div>
+                  </div>
+                  <div class="left">
+                    <div class="appreciate tnx"></div>
+                  </div>
+                </div>
+                <div class="mbl pbm">
+                  <div class="clearfix">
+                    <div class="col1of2">
+                      <div class="user-slug">
+                        <img alt="Sergii Iurevych" class="slug-avatar" src="images/avatars/iurevych.jpg">
+                        <ul class="last-col">
+                          <li class="slug-name">Sergii Iurevych</li>
+                          <li class="slug-status online">Online</li>
+                        </ul>
+                      </div>
+                    </div>
+                    <div class="col1of2 last-col">
+                      <div class="user-slug">
+                        <img alt="Vladimir Kudinov" class="slug-avatar" src="images/avatars/kudinov.jpg">
+                        <ul class="last-col">
+                          <li class="slug-name">Vladimir Kudinov</li>
+                          <li class="slug-status away">Away</li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="starbar clearfix">
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="star"></div>
+                  <div class="starbar-rating">
+                    Rating: 175
+                  </div>
+                </div>
+              </div>
+              <div class="left pll mlm">
+                <div class="mbl">
+                  <a class="button-huge positive" href="#">
+                    SIGN IN
+                    <span class="button-description">One minute</span>
+                  </a>
+                </div>
+                <div class="mbl">
+                  <a class="button mrm" href="#">button</a>
+                  <a class="button firm" href="#">button</a>
+                </div>
+                <div class="mbl">
+                  <a class="button positive mrm" href="#">button</a>
+                  <a class="button neutral" href="#">button</a>
+                </div>
+                <div class="by-center">
+                  <a class="button positive disabled" href="#">Disabled button</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="wrapper by-center">
+          <a class="crosslink" href="http://designmodo.com/futurico-html/">
+            Download on DesignModo
+          </a>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
