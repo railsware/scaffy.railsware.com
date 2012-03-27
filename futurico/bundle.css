@@ -1707,6 +1707,13 @@ input[type='password'] {
 .site-info-links {
   padding-top: 35px; }
 
+.site-info-rw-link {
+  border-bottom: 1px solid #cc0000;
+  text-decoration: none; }
+
+.site-info-rw-link:hover {
+  border-bottom: 1px solid red; }
+
 .slideshow,
 .slideshow .slideshow-slides-wrapper,
 .slideshow .each-slide {
