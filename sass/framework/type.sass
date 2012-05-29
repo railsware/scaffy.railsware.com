@@ -1,4 +1,5 @@
 @import 'config.sass'
+@import url('http://fonts.googleapis.com/css?family=Signika:400,600')
 
 h1, .h1
   font-size: $h1
@@ -18,11 +19,8 @@ h5, .h5
 h6, .h6
   font-size: $h6
 
-h1, h2, h3, h4, h5, h6
-  font-weight: bold
-
 h1
-  margin-bottom: 20px
+  margin-bottom: 15px
 
 h2
   margin-bottom: 13px
@@ -65,8 +63,8 @@ h5
   color: $negative
 
 a
-  color: $link
-  text-decoration: underline
+  color: $positive
+  text-decoration: none
   &:hover
-    text-decoration: none
+    color: lighten($positive, 20%)
 

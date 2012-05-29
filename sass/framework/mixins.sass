@@ -77,3 +77,23 @@
     background: $background
     color: $color
 
+=clearfix
+  &:after
+    content: '.'
+    display: block
+    height: 0
+    clear: both
+    visibility: hidden
+
+=last-col
+  display: table-cell
+  float: none
+  width: auto
+  &:after
+    content: ' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . '
+    clear: both
+    display: block
+    height: 0 !important
+    line-height: 0
+    visibility: hidden
+

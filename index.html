@@ -23,62 +23,84 @@
   <body>
     <div class="container">
       <a href="http://railsware.com" class="link-by-railsware">Brought to you by Railsware</a>
-      <div class="content">
-        <div class="wrapper">
-          <h1>
-            Scaffy
-          </h1>
-          <h3 class="mbl">
-            Set of best practices, approaches &amp; tools by <a class="rw-link" href="http://railsware.com">Railsware</a> client engineers
-            to write logical, modular, easily maintainable & extendable CSS.
-            <a href="http://github.com/railsware/scaffy">Scaffy on Github</a>
-          </h3>
-          <h2 class="firm">Achievements board for large-scale projects</h2>
-          <ul class="unordered-list">
-            <li class="unordered-list-item">
-              <h4>Look identically everywhere</h4>
-              Doesn't matter where your object will take place it looks the same. It is possible
-              by creating unique classes for each object. For example <code>.navigation</code> in <code>.header</code> will look
-              identically the same in <code>.footer</code> or in the <code>.content</code> area. That means if you need to modify
-              navigation in footer, you have to create another type of it, like .sub-navigation.
-              <p class="ptm">Selector should describe a main object, be as short as it can &amp; don't make potential conflict:
+      <div class="wrapper">
+        <!-- Headline ============================-->
+        <div class="clearfix mbl">
+          <div class="col1of4">
+            <img src="images/logo.png" alt="Scaffy by Railsware" />
+          </div>
+          <div class="col3of4 by-right">
+            <a class="button" href="http://github.com/railsware/scaffy">Fork on Github</a>
+          </div>
+        </div>
+
+        <!-- Logo with description ============================-->
+        <div class="clearfix mbl">
+          <div class="col1of4">
+            <img src="images/css3.png" class="symbol" alt="CSS3 Scaffy" />
+          </div>
+          <div class="col3of4">
+            <div class="content">
+              <h1 class="positive">Set of best practices, approaches and tools that help writing modular&nbsp;CSS</h1>
+              <h1>All kinds developers can create user interfaces without frontender!</h1>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements ============================-->
+        <div class="clearfix mbl">
+          <div class="col1of4 by-right">
+            <h2 class="firm">Achievements for large projects</h2>
+          </div>
+          <div class="col3of4">
+            <div class="content">
+                <h2 class="positive">Look identically everywhere</h2>
+                <img src="images/article/look.jpg" class="article-pic" alt="" />
+                Doesn't matter where your object will take place it looks the same. It is possible
+                by creating unique classes for each object. For example <code>.navigation</code> in <code>.header</code> will look
+                identically the same in <code>.footer</code> or in the <code>.content</code> area. That means if you need to modify
+                navigation in footer, you have to create another type of it, like .sub-navigation.
+                <div class="ptm mbl">Selector should describe a main object, be as short as it can &amp; don't make potential conflict:
 <pre>
 <code>.player .avatar  -> .player-avatar
 .navigation li   -> .navigation-item
 .navigation li   -> .navigation > li /* In case navigation is flat and doesn't have a big nesting */
 .lightbox .close -> .lightbox-close</code>
 </pre>
-              </p>
-            </li>
-            <li class="unordered-list-item">
-              <h4>Minimize style inherritance &amp; reduce cascades</h4>
-              When you have a high nesting of objects inside each other the deepest one will take a blow
-              of all styles you implied to its parents' tags.
-              Another tricky situation happens if you have a <strong>cascade</strong> and your object in fact location dependent.
-              To get this achievement reduce cascades where possible &amp; don't set styling to tags.
-              Your CSS should have this look in ideal:
+                </div>
+
+                <h2 class="positive">Minimize style inherritance &amp; reduce cascades</h2>
+                <img src="images/article/inheritance.jpg" class="article-pic" alt="" />
+                When you have a high nesting of objects inside each other the deepest one will take a blow
+                of all styles you implied to its parents' tags.
+                Another tricky situation happens if you have a <strong>cascade</strong> and your object in fact location dependent.
+                To get this achievement reduce cascades where possible &amp; don't set styling to tags.
+                Your CSS should have this look in ideal:
+                <div class="mbl">
 <pre>
 <code>ul.navigation    -> .navigation
 .modal-popup .login-content .buttons .login-button  -> .modal-button
 .modal-popup .login-content #social_connect_buttons -> .modal-buttons</code>
 </pre>
-            </li>
-            <li class="unordered-list-item">
-              <h4>Object modifiers</h4>
-              Let's say you have 3 sizes and 3 colors of buttons. In this case its better to write <code>.button</code> as a
-              base and create modifiers of it keeping separate structure from skin:
+                </div>
+
+                <h2 class="positive">Object modifiers</h2>
+                <img src="images/article/modifier.jpg" class="article-pic" alt="" />
+                Let's say you have 3 sizes and 3 colors of buttons. In this case its better to write <code>.button</code> as a
+                base and create modifiers of it keeping separate structure from skin:
 <pre>
 <code>.button { ... }
 .button.tiny { ... } /* Defines shape and size */
 .button.positive { ... } /* Defines color */</code>
 </pre>
-              Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
-              of the current class.
-            </li>
-            <li class="unordered-list-item">
-              <h4>Code style &amp; conventions</h4>
-              Depending on your project needs team should define a code style to be used accross the project.
-              Here is an example:
+                <p class="mbl">
+                  Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
+                  of the current class.
+                </p>
+                <h2 class="positive">Code style &amp; conventions</h2>
+                <img src="images/article/talk-about-me.jpg" alt="" />
+                Depending on your project needs team should define a code style to be used accross the project.
+                Here is an example:
 <pre>
 <code>.selector {
   background: #ccc url('image.png') 0 0 no-repeat;
@@ -96,13 +118,11 @@
           transition: all .2s;
 }</code>
 </pre>
-            </li>
-            <li class="unordered-list-item">
-              <h4>Mighty SASS</h4>
-              With SASS you can create shared variables <strong>config</strong> &amp; set of mixins for CSS properties
-              with vendor prefixes. Also it is extremely useful to control specific IE versions support by creating
-              mixins for cross-browser compatible <code>inline-block</code> or <code>opacity</code>. Finally you save time
-              writing less. Here is an example of a typical config:
+                <h4>Mighty SASS</h4>
+                With SASS you can create shared variables <strong>config</strong> &amp; set of mixins for CSS properties
+                with vendor prefixes. Also it is extremely useful to control specific IE versions support by creating
+                mixins for cross-browser compatible <code>inline-block</code> or <code>opacity</code>. Finally you save time
+                writing less. Here is an example of a typical config:
 <pre>
 <code>// Colors
 $base-color: #000
@@ -134,7 +154,7 @@ $space-s: 5px
 $space-m: 10px
 $space-l: 20px</code>
 </pre>
-              Create only mixins you need. No sense to keep not used code that just confuses you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code> instead of equal):
+                Create only mixins you need. No sense to keep not used code that just confuses you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code> instead of equal):
 <pre>
 <code>=transform($properties)
   -webkit-transform: $properties
@@ -158,9 +178,9 @@ $space-l: 20px</code>
     background: $background
     color: $color</code>
 </pre>
-              Note that there are two types of mixins: private and shared. The above example describes shared mixins.
-              If you need to automate some calculations inside specific <strong>module</strong> create private mixin
-              right in the begining of the current module file:
+                Note that there are two types of mixins: private and shared. The above example describes shared mixins.
+                If you need to automate some calculations inside specific <strong>module</strong> create private mixin
+                right in the begining of the current module file:
 <pre>
 <code>// scrollbox.sass
 
@@ -171,185 +191,193 @@ $space-l: 20px</code>
   width: $size</code>
 </pre>
 
-            </li>
-            <li class="unordered-list-item">
-              <h4>Class name should live for years</h4>
-              Class name should describe the function of an object. If we're talking about color appearance
-              (<strong>object modifier</strong>) then it is useful to abstract naming cause it's appearance can change
-              quite frequently. As an example let's take a <code>.button</code>:
+                <h4>Class name should live for years</h4>
+                Class name should describe the function of an object. If we're talking about color appearance
+                (<strong>object modifier</strong>) then it is useful to abstract naming cause it's appearance can change
+                quite frequently. As an example let's take a <code>.button</code>:
 <pre>
 <code>.button.green -> .button.positive
 .light-blue -> .pale
 .white -> .contrast</code>
 </pre>
-            </li>
-          </ul>
-          <h2 class="firm">So what's inside?</h2>
-          <h3>Framework</h3>
-          <ul class="unordered-list">
-            <li>
-              <strong>base.sass</strong>
-              &mdash; linker for all framework stylesheets
-            </li>
-            <li>
-              <strong>config.sass</strong>
-              &mdash; all shared variables store here. Also, links mixins at the end
-            </li>
-            <li>
-              <strong>grids.sass</strong>
-              &mdash; rock solid grids that allow you to build any layout no matter how complex is it. Works perfectly in IE6+ and all others
-            </li>
-            <li>
-              <strong>mixins.sass</strong>
-              &mdash; all SASS mixins go here. No need to use monster tools with thousands of mixins, just create mixins for your needs and use them across the project.
-            </li>
-            <li>
-              <strong>reset.sass</strong>
-              &mdash; resets everything to zero margin, padding + some black magic hacks to fix browsers inconsistencies
-            </li>
-            <li>
-              <strong>spaces.sass</strong>
-              &mdash; use to modify the default spacing between objects
-            </li>
-            <li>
-              <strong>type.sass</strong>
-              &mdash; stores all typography related style definitions
-            </li>
-          </ul>
-          <h3>Layouts</h3>
-          <ul class="unordered-list">
-            <li>
-              <strong>*.sass</strong>
-              &mdash; place for general layout styling. Store body, wrapper, content and other layout specific blocks here. Add a link to a config.sass to use shared mixins with variables. You can store all kinds of layouts here like: application.sass, homepage.sass, admin.sass
-            </li>
-          </ul>
-          <h3>Library</h3>
-          <ul class="unordered-list">
-            <li>
-              <strong>*.sass</strong>
-              &mdash; place for groups like buttons, text-inputs, selects, radios, checkboxes and other elements, which you can combine. Add a link to a config.sass to use shared mixins with variables. To specify multiple libraries for different layouts move groups to separate folders inside the library: /library/application/ /library/admin/
-            </li>
-          </ul>
-          <h3>Modules</h3>
-          <ul class="unordered-list">
-            <li>
-              <strong>*.sass</strong>
-              &mdash; use to create modules such as login-block.sass, modal.sass, votebar.sass, dropdown.sass, lightbox.sass and so on.
-              Add a link to a config.sass to use shared mixins with variables.
-            </li>
-            <li>
-              To specify multiple modules sets for different layouts create folders inside:
-              <p class="mvx">
-                <strong>/modules/application/</strong>
-              </p>
-              <p class="mbx">
-                <strong>/modules/admin/</strong>
-              </p>
-            </li>
-            <li>
-              If module gets too big, slice it to keep code small and flat structure:
-              <p class="mvx">
-                <strong>/modules/player-info.sass</strong>
-              </p>
-              <p class="mbx">
-                <strong>/modules/player-status.sass</strong>
-              </p>
-              <p class="mbx">
-                <strong>/modules/player-controls.sass</strong>
-              </p>
-              <p class="mbx">
-                <strong>/modules/player-states.sass</strong>
-              </p>
-            </li>
-          </ul>
-          <h2 class="firm">Grids</h2>
-          <p class="mbl">We like <a href="http://github.com/stubbornella/oocss/blob/master/core/grid/grids.css">Nicole Sullivan grids</a> system. There are 6 sizes available by default. We modified class names a bit to write less:</p>
-          <div class="clearfix debug-grids">
-            <div class="col1of2">
-              <div class="inner-col">Column 1 of 2</div>
-            </div>
-            <div class="col1of2 last-col">
-              <div class="inner-col">Column 1 of 2</div>
             </div>
           </div>
-          <div class="clearfix debug-grids">
-            <div class="col1of3">
-              <div class="inner-col">Column 1 of 3</div>
-            </div>
-            <div class="col1of3">
-              <div class="inner-col">Column 1 of 3</div>
-            </div>
-            <div class="col1of3 last-col">
-              <div class="inner-col">Column 1 of 3</div>
-            </div>
-          </div>
-          <div class="clearfix debug-grids">
-            <div class="col1of4">
-              <div class="inner-col">Column 1 of 4</div>
-            </div>
-            <div class="col1of4">
-              <div class="inner-col">Column 1 of 4</div>
-            </div>
-            <div class="col1of4">
-              <div class="inner-col">Column 1 of 4</div>
-            </div>
-            <div class="col1of4 last-col">
-              <div class="inner-col">Column 1 of 4</div>
-            </div>
-          </div>
-          <div class="clearfix debug-grids">
-            <div class="col1of5">
-              <div class="inner-col">Column 1 of 5</div>
-            </div>
-            <div class="col1of5">
-              <div class="inner-col">Column 1 of 5</div>
-            </div>
-            <div class="col1of5">
-              <div class="inner-col">Column 1 of 5</div>
-            </div>
-            <div class="col1of5">
-              <div class="inner-col">Column 1 of 5</div>
-            </div>
-            <div class="col1of5 last-col">
-              <div class="inner-col">Column 1 of 5</div>
-            </div>
-          </div>
-          <div class="clearfix debug-grids">
-            <div class="col1of6">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-            <div class="col1of6">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-            <div class="col1of6">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-            <div class="col1of6">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-            <div class="col1of6">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-            <div class="col1of6 last-col">
-              <div class="inner-col">Column 1 of 6</div>
-            </div>
-          </div>
-          <h2 class="mtl firm">Who use it?</h2>
-          <p class="mbl">
-            Most of the products in
-            <a href="http://railsware.com" class="rw-link">Railsware</a>
-            are made based on Scaffy. We're working hard to get all achievements ;)
-          </p>
-          <p class="mbl">
-            Also
-            <a href="http://designmodo.com/futurico-html">Futurico User Interface</a>
-            is based on it.
-          </p>
-          <a href="https://twitter.com/share" class="twitter-share-button" data-via="railsware">Tweet</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+        </div>
 
-          <a href="https://twitter.com/railsware" class="twitter-follow-button" data-show-count="false">Follow @railsware</a>
-          <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+        <div class="clearfix mbl">
+          <div class="col1of4 by-right">
+            <h2 class="firm">So what's inside?</h2>
+          </div>
+          <div class="col3of4">
+            <div class="content">
+              <h3>Framework</h3>
+              <ul class="unordered-list">
+                <li>
+                  <strong>base.sass</strong>
+                  &mdash; linker for all framework stylesheets
+                </li>
+                <li>
+                  <strong>config.sass</strong>
+                  &mdash; all shared variables store here. Also, links mixins at the end
+                </li>
+                <li>
+                  <strong>grids.sass</strong>
+                  &mdash; rock solid grids that allow you to build any layout no matter how complex is it. Works perfectly in IE6+ and all others
+                </li>
+                <li>
+                  <strong>mixins.sass</strong>
+                  &mdash; all SASS mixins go here. No need to use monster tools with thousands of mixins, just create mixins for your needs and use them across the project.
+                </li>
+                <li>
+                  <strong>reset.sass</strong>
+                  &mdash; resets everything to zero margin, padding + some black magic hacks to fix browsers inconsistencies
+                </li>
+                <li>
+                  <strong>spaces.sass</strong>
+                  &mdash; use to modify the default spacing between objects
+                </li>
+                <li>
+                  <strong>type.sass</strong>
+                  &mdash; stores all typography related style definitions
+                </li>
+              </ul>
+              <h3>Layouts</h3>
+              <ul class="unordered-list">
+                <li>
+                  <strong>*.sass</strong>
+                  &mdash; place for general layout styling. Store body, wrapper, content and other layout specific blocks here. Add a link to a config.sass to use shared mixins with variables. You can store all kinds of layouts here like: application.sass, homepage.sass, admin.sass
+                </li>
+              </ul>
+              <h3>Library</h3>
+              <ul class="unordered-list">
+                <li>
+                  <strong>*.sass</strong>
+                  &mdash; place for groups like buttons, text-inputs, selects, radios, checkboxes and other elements, which you can combine. Add a link to a config.sass to use shared mixins with variables. To specify multiple libraries for different layouts move groups to separate folders inside the library: /library/application/ /library/admin/
+                </li>
+              </ul>
+              <h3>Modules</h3>
+              <ul class="unordered-list">
+                <li>
+                  <strong>*.sass</strong>
+                  &mdash; use to create modules such as login-block.sass, modal.sass, votebar.sass, dropdown.sass, lightbox.sass and so on.
+                  Add a link to a config.sass to use shared mixins with variables.
+                </li>
+                <li>
+                  To specify multiple modules sets for different layouts create folders inside:
+                  <p class="mvx">
+                    <strong>/modules/application/</strong>
+                  </p>
+                  <p class="mbx">
+                    <strong>/modules/admin/</strong>
+                  </p>
+                </li>
+                <li>
+                  If module gets too big, slice it to keep code small and flat structure:
+                  <p class="mvx">
+                    <strong>/modules/player-info.sass</strong>
+                  </p>
+                  <p class="mbx">
+                    <strong>/modules/player-status.sass</strong>
+                  </p>
+                  <p class="mbx">
+                    <strong>/modules/player-controls.sass</strong>
+                  </p>
+                  <p class="mbx">
+                    <strong>/modules/player-states.sass</strong>
+                  </p>
+                </li>
+              </ul>
+              <h2 class="firm">Grids</h2>
+              <p class="mbl">We like <a href="http://github.com/stubbornella/oocss/blob/master/core/grid/grids.css">Nicole Sullivan grids</a> system. There are 6 sizes available by default. We modified class names a bit to write less:</p>
+              <div class="clearfix debug-grids">
+                <div class="col1of2">
+                  <div class="inner-col">1 of 2</div>
+                </div>
+                <div class="col1of2 last-col">
+                  <div class="inner-col">1 of 2</div>
+                </div>
+              </div>
+              <div class="clearfix debug-grids">
+                <div class="col1of3">
+                  <div class="inner-col">1 of 3</div>
+                </div>
+                <div class="col1of3">
+                  <div class="inner-col">1 of 3</div>
+                </div>
+                <div class="col1of3 last-col">
+                  <div class="inner-col">1 of 3</div>
+                </div>
+              </div>
+              <div class="clearfix debug-grids">
+                <div class="col1of4">
+                  <div class="inner-col">1 of 4</div>
+                </div>
+                <div class="col1of4">
+                  <div class="inner-col">1 of 4</div>
+                </div>
+                <div class="col1of4">
+                  <div class="inner-col">1 of 4</div>
+                </div>
+                <div class="col1of4 last-col">
+                  <div class="inner-col">1 of 4</div>
+                </div>
+              </div>
+              <div class="clearfix debug-grids">
+                <div class="col1of5">
+                  <div class="inner-col">1 of 5</div>
+                </div>
+                <div class="col1of5">
+                  <div class="inner-col">1 of 5</div>
+                </div>
+                <div class="col1of5">
+                  <div class="inner-col">1 of 5</div>
+                </div>
+                <div class="col1of5">
+                  <div class="inner-col">1 of 5</div>
+                </div>
+                <div class="col1of5 last-col">
+                  <div class="inner-col">1 of 5</div>
+                </div>
+              </div>
+              <div class="clearfix debug-grids">
+                <div class="col1of6">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+                <div class="col1of6">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+                <div class="col1of6">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+                <div class="col1of6">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+                <div class="col1of6">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+                <div class="col1of6 last-col">
+                  <div class="inner-col">1 of 6</div>
+                </div>
+              </div>
+              <h2 class="mtl firm">Who use it?</h2>
+              <p class="mbl">
+                Most of the products in
+                <a href="http://railsware.com" class="rw-link">Railsware</a>
+                are made based on Scaffy. We're working hard to get all achievements ;)
+              </p>
+              <p class="mbl">
+                Also
+                <a href="http://designmodo.com/futurico-html">Futurico User Interface</a>
+                is based on it.
+              </p>
+              <a href="https://twitter.com/share" class="twitter-share-button" data-via="railsware">Tweet</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+
+              <a href="https://twitter.com/railsware" class="twitter-follow-button" data-show-count="false">Follow @railsware</a>
+              <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+            </div>
+          </div>
         </div>
       </div>
     </div>

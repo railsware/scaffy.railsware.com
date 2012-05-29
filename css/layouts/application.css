@@ -1,17 +1,30 @@
 body {
-  background: white;
-  color: black;
-  font: 14px/1.35 Arial, Helvetica, sans-serif; }
+  background: #1c1a1d;
+  color: #e5dde6;
+  font: 400 15px/1.35 "Signika", sans-serif; }
 
 .wrapper {
-  clear: both;
   margin: auto;
-  padding: 20px 0;
-  position: relative;
-  width: 960px; }
+  max-width: 600px;
+  padding: 25px 0;
+  position: relative; }
+  .wrapper:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+
+.content {
+  padding-left: 30px; }
+  .content img {
+    width: 100%; }
+
+.symbol {
+  margin-top: 6px; }
 
 .unordered-list {
-  font-size: 15px;
+  font-size: 14px;
   margin-bottom: 20px; }
 
 .unordered-list-item {
@@ -19,14 +32,15 @@ body {
   margin: 0 0 20px 25px; }
 
 pre {
-  border-left: 4px solid #9cc346;
+  border-left: 4px solid #1dd681;
   line-height: 1.5;
   margin: 15px 0;
   padding: 10px 15px; }
 
 code {
-  color: #0072ff;
-  font-family: Monaco, monospace; }
+  color: #1dd681;
+  font-family: Monaco, monospace;
+  white-space: pre-wrap; }
 
 .link-by-railsware {
   background: url("../../images/by-rw-corner.png") 0 0 no-repeat;
@@ -43,3 +57,6 @@ code {
   text-decoration: none; }
   .rw-link:hover {
     border-bottom-color: red; }
+
+.article-pic {
+  margin-bottom: 10px; }

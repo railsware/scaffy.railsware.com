@@ -55,8 +55,8 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: "Signika", sans-serif;
+  font-size: 15px;
   vertical-align: middle; }
 
 button, input {
@@ -94,4 +94,4 @@ code {
 
 code,
 pre {
-  font: 14px/1.231 Arial, Helvetica, sans-serif; }
+  font: 15px/1.231 "Signika", sans-serif; }

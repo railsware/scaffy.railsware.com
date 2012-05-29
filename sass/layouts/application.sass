@@ -1,16 +1,24 @@
 @import '../framework/config'
 
 body
-  background: #fff
+  background: #1c1a1d
   color: $base-color
-  font: #{$base-font-size}/1.35 $base-font
+  font: 400 #{$base-font-size}/1.35 $base-font
 
 .wrapper
-  clear: both
   margin: auto
-  padding: 20px 0
+  max-width: 600px
+  padding: 25px 0
   position: relative
-  width: 960px
+  +clearfix
+
+.content
+  padding-left: 30px
+  img
+    width: 100%
+
+.symbol
+  margin-top: 6px
 
 .unordered-list
   font-size: $h5
@@ -27,8 +35,9 @@ pre
   padding: 10px 15px
 
 code
-  color: $link
+  color: $positive
   font-family: Monaco, monospace
+  white-space: pre-wrap
 
 .link-by-railsware
   background: url('../../images/by-rw-corner.png') 0 0 no-repeat
@@ -45,4 +54,7 @@ code
   text-decoration: none
   &:hover
     border-bottom-color: red
+
+.article-pic
+  margin-bottom: 10px
 
