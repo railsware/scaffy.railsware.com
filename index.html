@@ -47,10 +47,69 @@
           </div>
         </div>
 
-        <!-- Achievements ============================-->
+        <!-- Introduction section ============================-->
         <div class="clearfix mbl">
           <div class="col1of4 by-right">
-            <h2 class="firm">Achievements for large projects</h2>
+            <h2 class="firm">Preface</h2>
+          </div>
+          <div class="col3of4">
+            <div class="content">
+              <h2 class="positive">It's been a long story</h2>
+              <img src="images/article/hello.jpg" class="article-pic" alt="" />
+              <p>
+                We spend years finding a needed approach to build reach user 
+                interfaces for a large projects with more than 10 people working 
+                on each project at 
+                <a class="rw-link" target="_blank" href="http://railsware.com">Railsware</a>.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div class="clearfix mbm">
+          <div class="col1of4 by-right">
+            <h2 class="firm">Problems</h2>
+          </div>
+          <div class="col3of4">
+            <div class="content">
+              <p class="mbl">
+                One major problem is a clear communication
+                and involving collaboration accross the team. Everyone writes 
+                code in the way he feels comfortable. No rules. Just a mess.
+              </p>
+              <p class="mbl">
+                Back-end engineers can't start implementing new feature
+                without finished markup & CSS. Front-end guy is a bottleneck
+                in this situation.
+              </p>
+              <p class="mbl">
+                We spend too much time fixing bugs because of stylesheets size 
+                and location dependent UI components. And we can't guarantee we
+                checked all places.
+              </p>
+              <p class="mbl">
+                Scaling CSS for endless amount of pages/layouts is actually
+                another problem. So many confusion and mess start happening
+                when project grows continuously.
+              </p>
+              <p class="mbl">
+                Code is never predictable to find by looking just at the 
+                selector. So much frustration
+              </p>
+              <h2 class="positive">
+                And we decided to start with 
+                <a href="http://oocss.org" target="_blank">OOCSS</a> methodology 
+                as a base for creating approach that meets our expectations, 
+                needs and the way we build products.
+              </h2>
+            </div>
+          </div>
+        </div>
+
+        <!-- Achievements ============================-->
+        <div class="clearfix mbl ptl">
+          <div class="col1of4 by-right">
+            <h2 class="firm">Benefits</h2>
           </div>
           <div class="col3of4">
             <div class="content">
@@ -69,7 +128,7 @@
 </pre>
                 </div>
 
-                <h2 class="positive">Minimize style inherritance &amp; reduce cascades</h2>
+                <h2 class="positive ptl">Minimize style inherritance &amp; reduce cascades</h2>
                 <img src="images/article/inheritance.jpg" class="article-pic" alt="" />
                 When you have a high nesting of objects inside each other the deepest one will take a blow
                 of all styles you implied to its parents' tags.
@@ -84,7 +143,7 @@
 </pre>
                 </div>
 
-                <h2 class="positive">Object modifiers</h2>
+                <h2 class="positive ptl">Object modifiers</h2>
                 <img src="images/article/modifier.jpg" class="article-pic" alt="" />
                 Let's say you have 3 sizes and 3 colors of buttons. In this case its better to write <code>.button</code> as a
                 base and create modifiers of it keeping separate structure from skin:
@@ -97,8 +156,9 @@
                   Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
                   of the current class.
                 </p>
-                <h2 class="positive">Code style &amp; conventions</h2>
-                <img src="images/article/talk-about-me.jpg" alt="" />
+
+                <h2 class="positive ptl">Code style &amp; conventions</h2>
+                <img class="article-pic" src="images/article/talk-about-me.jpg" alt="" />
                 Depending on your project needs team should define a code style to be used accross the project.
                 Here is an example:
 <pre>
@@ -118,7 +178,8 @@
           transition: all .2s;
 }</code>
 </pre>
-                <h4>Mighty SASS</h4>
+                <h2 class="positive ptl">Using SASS in full power</h2>
+                <img class="article-pic" src="images/article/power.jpg" alt="" />
                 With SASS you can create shared variables <strong>config</strong> &amp; set of mixins for CSS properties
                 with vendor prefixes. Also it is extremely useful to control specific IE versions support by creating
                 mixins for cross-browser compatible <code>inline-block</code> or <code>opacity</code>. Finally you save time
@@ -204,14 +265,14 @@ $space-l: 20px</code>
           </div>
         </div>
 
-
         <div class="clearfix mbl">
           <div class="col1of4 by-right">
             <h2 class="firm">So what's inside?</h2>
           </div>
           <div class="col3of4">
             <div class="content">
-              <h3>Framework</h3>
+              <img class="article-pic" src="images/article/whats-inside.jpg" alt="" />
+              <h3 class="positive">Framework</h3>
               <ul class="unordered-list">
                 <li>
                   <strong>base.sass</strong>
@@ -242,21 +303,21 @@ $space-l: 20px</code>
                   &mdash; stores all typography related style definitions
                 </li>
               </ul>
-              <h3>Layouts</h3>
+              <h3 class="positive">Layouts</h3>
               <ul class="unordered-list">
                 <li>
                   <strong>*.sass</strong>
                   &mdash; place for general layout styling. Store body, wrapper, content and other layout specific blocks here. Add a link to a config.sass to use shared mixins with variables. You can store all kinds of layouts here like: application.sass, homepage.sass, admin.sass
                 </li>
               </ul>
-              <h3>Library</h3>
+              <h3 class="positive">Library</h3>
               <ul class="unordered-list">
                 <li>
                   <strong>*.sass</strong>
                   &mdash; place for groups like buttons, text-inputs, selects, radios, checkboxes and other elements, which you can combine. Add a link to a config.sass to use shared mixins with variables. To specify multiple libraries for different layouts move groups to separate folders inside the library: /library/application/ /library/admin/
                 </li>
               </ul>
-              <h3>Modules</h3>
+              <h3 class="positive">Modules</h3>
               <ul class="unordered-list">
                 <li>
                   <strong>*.sass</strong>
@@ -288,7 +349,9 @@ $space-l: 20px</code>
                   </p>
                 </li>
               </ul>
+
               <h2 class="firm">Grids</h2>
+              <img class="article-pic" src="images/article/maintenance.jpg" alt="" />
               <p class="mbl">We like <a href="http://github.com/stubbornella/oocss/blob/master/core/grid/grids.css">Nicole Sullivan grids</a> system. There are 6 sizes available by default. We modified class names a bit to write less:</p>
               <div class="clearfix debug-grids">
                 <div class="col1of2">
