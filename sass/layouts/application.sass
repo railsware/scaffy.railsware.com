@@ -1,16 +1,24 @@
 @import '../framework/config'
 
 body
-  background: #fff
+  background: #1c1a1d
   color: $base-color
-  font: #{$base-font-size}/1.35 $base-font
+  font: 400 #{$base-font-size}/1.35 $base-font
 
 .wrapper
-  clear: both
   margin: auto
-  padding: 20px 0
+  max-width: 600px
+  padding: 25px 0
   position: relative
-  width: 960px
+  +clearfix
+
+.content
+  padding-left: 30px
+  img
+    width: 100%
+
+.symbol
+  margin-top: 6px
 
 .unordered-list
   font-size: $h5
@@ -21,12 +29,52 @@ body
   margin: 0 0 20px 25px
 
 pre
-  border-left: 4px solid $positive
+  border-left: 1px solid $positive
   line-height: 1.5
   margin: 15px 0
   padding: 10px 15px
+  overflow: auto
+  &::-webkit-scrollbar
+    background: rgba(#fff, .05)
+    width: 8px
+    height: 8px
+  &::-webkit-scrollbar-corner,
+  &::-webkit-resizer
+    display: none
+  &::-webkit-scrollbar-track-piece:disabled
+    display: none !important
+  &::-webkit-scrollbar:vertical
+    border: none
+  &::-webkit-scrollbar-thumb:vertical,
+  &::-webkit-scrollbar-thumb:horizontal
+    background: rgba(#fff, .15)
+    border: none
+    min-height: 20px
+  &::-webkit-scrollbar-thumb:vertical:hover,
+  &::-webkit-scrollbar-thumb:horizontal:hover
+    background: $positive
 
 code
-  color: $link
+  color: $positive
   font-family: Monaco, monospace
 
+.link-by-railsware
+  background: url('../../images/by-rw-corner.png') 0 0 no-repeat
+  height: 163px
+  position: absolute
+  right: 0
+  text-indent: -99999em
+  top: 0
+  width: 163px
+
+.rw-link
+  border-bottom: 1px solid #cc0000
+  color: lighten(#c00, 20%)
+  text-decoration: none
+  &:hover
+    border-bottom-color: red
+    color: lighten(#c00, 30%)
+
+
+.article-pic
+  margin-bottom: 10px

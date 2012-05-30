@@ -1,3 +1,4 @@
+@import url('http://fonts.googleapis.com/css?family=Signika:400,600');
 * {
   padding: 0;
   margin: 0;
@@ -55,8 +56,8 @@ input,
 select,
 textarea {
   margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-  font-size: 14px;
+  font-family: "Signika", sans-serif;
+  font-size: 15px;
   vertical-align: middle; }
 
 button, input {
@@ -94,7 +95,7 @@ code {
 
 code,
 pre {
-  font: 14px/1.231 Arial, Helvetica, sans-serif; }
+  font: 15px/1.231 "Signika", sans-serif; }
 
 .clearfix {
   *zoom: 1; }
@@ -335,16 +336,13 @@ h4, .h4 {
   font-size: 16px; }
 
 h5, .h5 {
-  font-size: 15px; }
+  font-size: 14px; }
 
 h6, .h6 {
-  font-size: 11px; }
-
-h1, h2, h3, h4, h5, h6 {
-  font-weight: bold; }
+  font-size: 13px; }
 
 h1 {
-  margin-bottom: 20px; }
+  margin-bottom: 15px; }
 
 h2 {
   margin-bottom: 13px; }
@@ -359,7 +357,7 @@ h5 {
   margin-bottom: 5px; }
 
 .opaque {
-  color: #333333; }
+  color: #444444; }
 
 .neutral {
   color: #666666; }
@@ -371,22 +369,22 @@ h5 {
   color: #aaaaaa; }
 
 .firm {
-  color: #9bc345; }
+  color: #1dd681; }
 
 .sharp {
-  color: white; }
+  color: #252525; }
 
 .contrast {
-  color: black; }
+  color: white; }
 
 .positive {
-  color: #9cc346; }
+  color: #1dd681; }
 
 .negative {
-  color: #c34646; }
+  color: #cc0000; }
 
 a {
-  color: #0072ff;
-  text-decoration: underline; }
+  color: #1dd681;
+  text-decoration: none; }
   a:hover {
-    text-decoration: none; }
+    color: #6eebb2; }
