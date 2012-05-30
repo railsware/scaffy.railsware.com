@@ -1,4 +1,4 @@
-Set of best practices, approaches and tools that help writing modular CSS
+Set of best practices, approaches and tools that help writing modular CSS.
 
 All kinds developers can create user interfaces without frontender!
 
