@@ -147,14 +147,25 @@
 </pre>
                 </div>
 
-                <h2 class="positive ptl">Object modifiers</h2>
+                <h2 class="positive ptl">Object and it's modifier</h2>
                 <img src="images/article/modifier.jpg" class="article-pic" alt="" />
-                Let's say you have 3 sizes and 3 colors of buttons. In this case its better to write <code>.button</code> as a
-                base and create modifiers of it keeping separate structure from skin:
+                <p class="mbl">
+                  Object is a simple component that is used across the project. You can't place any other object inside of it because 
+                  it is indivisible. Create objects to build more complex modules with them.
+                </p>
+                <p class="mbl">
+                  Let's say you have 3 sizes and 3 colors of a button. In this case its better to write <code>.button</code> as an
+                  object name and create modifiers keeping separate structure from skin.
+                </p>
+                <p>
+                  Modifier name should start with a prefix <code>.is-</code> and means a logical state of the object or module. Note 
+                  that class name that starts with this prefix is reserved for modifiers only. Don't use such convention for the 
+                  object name.
+                </p>
 <pre>
 <code>.button { ... }
-.button.tiny { ... } /* Defines shape and size */
-.button.positive { ... } /* Defines color */</code>
+.button.is-tiny { ... } /* Defines shape and size */
+.button.is-positive { ... } /* Defines color */</code>
 </pre>
                 <p class="mbl">
                   Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
