@@ -163,35 +163,56 @@
                   object name.
                 </p>
 <pre>
-<code>.button { ... }
-.button.is-tiny { ... } /* Defines shape and size */
-.button.is-positive { ... } /* Defines color */</code>
+<code>.button
+.button.is-tiny /* Defines shape and size */
+.button.is-positive /* Defines color */</code>
 </pre>
                 <p class="mbl">
-                  Also you can move such objects to a group &mdash; a separate stylesheet where you store all modifiers
+                  You can move similar objects to a group &mdash; a separate stylesheet where you store all modifiers
                   of the current class.
                 </p>
+
+                <h2 class="positive ptl">Module</h2>
+                <img class="article-pic" src="images/article/module.jpg" alt="" />
+                <p class="mbl">
+                  Module is a unique complex component that consists of an objects. All modules are placed into a <code>modules</code>
+                  folder in order to be separated into an additional layer of the architecture.
+                </p>
+                <p class="mbl">
+                  Same rules apply for modifiers that 
+                  start with <code>.is-</code>.
+                </p>
+<pre>
+<code>.player
+  background: #ccc url('player/texture.png') 0 0 no-repeat
+  position: relative
+
+.player-avatar
+  height: 50px
+
+.player-status
+  background: #111
+  display: inline-block</code>
+</pre>
 
                 <h2 class="positive ptl">Code style &amp; conventions</h2>
                 <img class="article-pic" src="images/article/talk-about-me.jpg" alt="" />
                 Depending on your project needs team should define a code style to be used across the project.
                 Here is an example:
 <pre>
-<code>.selector {
-  background: #ccc url('image.png') 0 0 no-repeat;
+<code>.selector
+  background: #ccc url('image.png') 0 0 no-repeat
   font: 14px 'Helvetica Neue', Helvetica, sans-serif
-  padding: 0 4px 2px;
-  z-index: 5;
-}
+  padding: 0 4px 2px
+  z-index: 5
 
-.selector-child {
-  display: inline-block;
-  -webkit-transition: all .2s;
-     -moz-transition: all .2s;
-      -ms-transition: all .2s;
-       -o-transition: all .2s;
-          transition: all .2s;
-}</code>
+.selector-child
+  display: inline-block
+  -webkit-transition: all .2s
+     -moz-transition: all .2s
+      -ms-transition: all .2s
+       -o-transition: all .2s
+          transition: all .2s</code>
 </pre>
                 <h2 class="positive ptl">Using SASS in full power</h2>
                 <img class="article-pic" src="images/article/power.jpg" alt="" />
