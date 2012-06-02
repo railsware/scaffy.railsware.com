@@ -77,3 +77,16 @@ code {
 
 .article-pic {
   margin-bottom: 10px; }
+
+.button {
+  background-color: #1dd681;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 18px; }
+  .button:hover, .button:focus {
+    background: #6eebb2;
+    color: white; }
+  .button:active {
+    background: #117c4b; }
