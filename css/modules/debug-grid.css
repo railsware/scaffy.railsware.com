@@ -1,6 +1,12 @@
 .debug-grids {
   text-align: center;
   cursor: default; }
+  .debug-grids:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
   .debug-grids .inner-col {
     background-color: rgba(255, 255, 255, 0.1);
     border: 1px solid rgba(255, 255, 255, 0.1);
