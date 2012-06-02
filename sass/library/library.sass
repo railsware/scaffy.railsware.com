@@ -1,0 +1,84 @@
+@import '../framework/config'
+
+// CSS3 logo
+.symbol
+  margin-top: 6px
+
+.unordered-list
+  font-size: $h5
+  margin-bottom: 20px
+
+.unordered-list-item
+  list-style-type: square
+  margin: 0 0 20px 25px
+
+// Code sample
+pre
+  border-left: 1px solid $positive
+  line-height: 1.5
+  margin: 15px 0
+  padding: 10px 15px
+  overflow: auto
+  &::-webkit-scrollbar
+    background: rgba(#fff, .05)
+    width: 8px
+    height: 8px
+  &::-webkit-scrollbar-corner,
+  &::-webkit-resizer
+    display: none
+  &::-webkit-scrollbar-track-piece:disabled
+    display: none !important
+  &::-webkit-scrollbar:vertical
+    border: none
+  &::-webkit-scrollbar-thumb:vertical,
+  &::-webkit-scrollbar-thumb:horizontal
+    background: rgba(#fff, .15)
+    border: none
+    min-height: 20px
+  &::-webkit-scrollbar-thumb:vertical:hover,
+  &::-webkit-scrollbar-thumb:horizontal:hover
+    background: $positive
+
+code
+  color: $positive
+  font-family: Monaco, monospace
+
+// Triangle banner in the corner
+.link-by-railsware
+  background: url('../../images/by-rw-corner.png') 0 0 no-repeat
+  height: 163px
+  position: absolute
+  right: 0
+  text-indent: -99999em
+  top: 0
+  width: 163px
+
+// Special styling for the link
+.rw-link
+  border-bottom: 1px solid #cc0000
+  color: lighten(#c00, 20%)
+  text-decoration: none
+  &:hover
+    border-bottom-color: red
+    color: lighten(#c00, 30%)
+
+// Article paragraph picture
+.article-pic
+  margin-bottom: 10px
+
+// For now we have only one button style.
+// Move it the a separate group when need more types of them.
+.button
+  background-color: $positive
+  color: $contrast
+  cursor: pointer
+  display: inline-block
+  font-size: $h3
+  padding: 8px 18px
+  &:hover,
+  &:focus
+    background: lighten($positive, 20%)
+    color: $contrast
+  &:active
+    background: darken($positive, 20%)
+

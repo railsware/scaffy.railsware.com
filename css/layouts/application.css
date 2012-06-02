@@ -20,73 +20,11 @@ body {
   .content img {
     width: 100%; }
 
-.symbol {
-  margin-top: 6px; }
-
-.unordered-list {
-  font-size: 14px;
+.row {
   margin-bottom: 20px; }
-
-.unordered-list-item {
-  list-style-type: square;
-  margin: 0 0 20px 25px; }
-
-pre {
-  border-left: 1px solid #1dd681;
-  line-height: 1.5;
-  margin: 15px 0;
-  padding: 10px 15px;
-  overflow: auto; }
-  pre::-webkit-scrollbar {
-    background: rgba(255, 255, 255, 0.05);
-    width: 8px;
-    height: 8px; }
-  pre::-webkit-scrollbar-corner, pre::-webkit-resizer {
-    display: none; }
-  pre::-webkit-scrollbar-track-piece:disabled {
-    display: none !important; }
-  pre::-webkit-scrollbar:vertical {
-    border: none; }
-  pre::-webkit-scrollbar-thumb:vertical, pre::-webkit-scrollbar-thumb:horizontal {
-    background: rgba(255, 255, 255, 0.15);
-    border: none;
-    min-height: 20px; }
-  pre::-webkit-scrollbar-thumb:vertical:hover, pre::-webkit-scrollbar-thumb:horizontal:hover {
-    background: #1dd681; }
-
-code {
-  color: #1dd681;
-  font-family: Monaco, monospace; }
-
-.link-by-railsware {
-  background: url("../../images/by-rw-corner.png") 0 0 no-repeat;
-  height: 163px;
-  position: absolute;
-  right: 0;
-  text-indent: -99999em;
-  top: 0;
-  width: 163px; }
-
-.rw-link {
-  border-bottom: 1px solid #cc0000;
-  color: #ff3333;
-  text-decoration: none; }
-  .rw-link:hover {
-    border-bottom-color: red;
-    color: #ff6666; }
-
-.article-pic {
-  margin-bottom: 10px; }
-
-.button {
-  background-color: #1dd681;
-  color: white;
-  cursor: pointer;
-  display: inline-block;
-  font-size: 18px;
-  padding: 8px 18px; }
-  .button:hover, .button:focus {
-    background: #6eebb2;
-    color: white; }
-  .button:active {
-    background: #117c4b; }
+  .row:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
