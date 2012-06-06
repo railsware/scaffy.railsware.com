@@ -8,6 +8,7 @@
     <script type="text/javascript" src="js/ext/underscore.js"></script>
     <script type="text/javascript" src="js/ext/underscore.string.js"></script>
     <script type="text/javascript" src="js/haml.js"></script>
+    <script type="text/javascript" src="js/preboot.js"></script>
     <script type="text/javascript" src="js/ga.js"></script>
   </head>
   <body>
@@ -44,12 +45,5 @@
         </div>
       </div>
     </div>
-    <script type="text/javascript">
-        var partials = ["header", "introduction", "problems", "look", "inheritance", "object", "module", "codestyle", "sass", "classname", "structure"];
-        _(partials).each(function(partial) {
-            var template = haml.compileHaml({sourceUrl: 'haml/' + partial + '.haml'});
-            $(".js-" + partial).html(template());
-        });
-    </script>
   </body>
 </html>
