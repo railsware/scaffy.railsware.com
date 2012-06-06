@@ -37,7 +37,7 @@ code {
   font-family: Monaco, monospace; }
 
 .link-by-railsware {
-  background: url("../../images/by-rw-corner.png") 0 0 no-repeat;
+  background: url("../images/by-rw-corner.png") 0 0 no-repeat;
   height: 163px;
   position: absolute;
   right: 0;
@@ -52,9 +52,6 @@ code {
   .rw-link:hover {
     border-bottom-color: red;
     color: #ff6666; }
-
-.article-pic {
-  margin-bottom: 10px; }
 
 .button {
   background-color: #1dd681;

@@ -1,0 +1,32 @@
+#p5.article
+  %a.article-anchor(href="#p5") #5
+  %h2.article-title Object and it's modifier
+  %img.article-pic(alt="" src="images/article/modifier.jpg")/
+
+  %p.mbl
+    Object is a simple component that is used across the project. You 
+    can't place any other object inside of it because it is indivisible.
+    Create objects to build more complex modules with them.
+
+  %p.mbl
+    Let's say you have 3 sizes and 3 colors of a button. In this case its 
+    better to write <code>.button</code> as an object name and create 
+    modifiers keeping separate structure from skin.
+
+  %p
+    Modifier name should start with a prefix <code>.is-</code> and means a 
+    logical state of the object or module. Note that class name that starts 
+    with this prefix is reserved for modifiers only. Don't use such 
+    convention for the object name.
+
+  %pre<
+    %code<
+      :preserve
+        .button
+        .button.is-tiny /* Defines shape and size */
+        .button.is-positive /* Defines color */
+
+  %p.mbl
+    You can move similar objects to a group — a separate stylesheet where you store all modifiers
+    of the current class.
+

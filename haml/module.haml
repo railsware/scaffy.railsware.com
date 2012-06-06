@@ -1,0 +1,28 @@
+#p6.article
+  %a.article-anchor(href="#p6") #6
+  %h2.article-title Module
+  %img.article-pic(alt="" src="images/article/module.jpg")/
+
+  %p.mbl
+    Module is a unique complex component that consists of an objects. 
+    All modules are placed into a <code>modules</code> folder in order 
+    to be separated into an additional layer of the architecture.
+
+  %p.mbl
+    Same rules apply for modifiers that
+    start with <code>.is-</code>.
+
+  %pre<
+    %code<
+      :preserve
+        .player
+          background: #ccc url('player/texture.png') 0 0 no-repeat
+          position: relative
+          
+        .player-avatar
+          height: 50px
+          
+        .player-status
+          background: #111
+          display: inline-block
+

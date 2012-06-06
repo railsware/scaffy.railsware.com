@@ -1,0 +1,17 @@
+.article {
+  padding: 0 0 30px 30px;
+  position: relative; }
+  .article img {
+    width: 100%; }
+
+.article-pic {
+  margin-bottom: 10px; }
+
+.article-anchor {
+  color: #666666;
+  left: 100%;
+  margin-left: 30px;
+  position: absolute; }
+
+.article-title {
+  color: #1dd681; }
