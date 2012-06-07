@@ -43,53 +43,54 @@
         $space-m: 10px
         $space-l: 20px  #p9
 
+#p9.article
   %a.article-anchor(href="#p9") #9
+  %h2.article-title Create only mixins you need
 
-  #p9.mbl
-    Create only mixins you need. No sense to keep not used code that just confuses 
-    you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code>
-    instead of equal):
+  No sense to keep not used code that just confuses 
+  you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code>
+  instead of equal):
 
-    %pre<
-      %code<
-        :preserve
-          =transform($properties)
-            -webkit-transform: $properties
-            -moz-transform:    $properties
-            -ms-transform:     $properties
-            -o-transform:      $properties
-            transform:         $properties
-          
-          =user-select($properties)
-            -webkit-user-select: $properties
-            -moz-user-select:    $properties
-            -ms-user-select:     $properties
-            user-select:         $properties
-          
-          =selection($background, $color)
-            &::selection
-              background: $background
-              color: $color
-          
-            &::-moz-selection
-              background: $background
-              color: $color  #p10
+  %pre<
+    %code<
+      :preserve
+        =transform($properties)
+          -webkit-transform: $properties
+          -moz-transform:    $properties
+          -ms-transform:     $properties
+          -o-transform:      $properties
+          transform:         $properties
+        
+        =user-select($properties)
+          -webkit-user-select: $properties
+          -moz-user-select:    $properties
+          -ms-user-select:     $properties
+          user-select:         $properties
+        
+        =selection($background, $color)
+          &::selection
+            background: $background
+            color: $color
+        
+          &::-moz-selection
+            background: $background
+            color: $color  #p10
 
-  #p10.mbl
-    %a.article-anchor(href="#p10") #10
-    %h2.article-title Private & shared mixins
-    The above example describes shared mixins.  If you need to automate 
-    some calculations inside specific <strong>module</strong> create 
-    private mixin right in the begining of the current module file:
+#p10.article
+  %a.article-anchor(href="#p10") #10
+  %h2.article-title Private & shared mixins
+  The above example describes shared mixins.  If you need to automate 
+  some calculations inside specific <strong>module</strong> create 
+  private mixin right in the begining of the current module file:
 
-    %pre<
-      %code<
-        :preserve
-          // scrollbox.sass
-          
-          =center-slider($size)
-            height: $size
-            margin-left: -($size / 2)
-            right: -($size / 2)
-            width: $size
+  %pre<
+    %code<
+      :preserve
+        // scrollbox.sass
+        
+        =center-slider($size)
+          height: $size
+          margin-left: -($size / 2)
+          right: -($size / 2)
+          width: $size
 
