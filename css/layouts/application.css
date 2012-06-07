@@ -6,19 +6,27 @@ body {
 .container {
   padding-left: 210px;
   margin: auto;
-  max-width: 500px; }
+  max-width: 500px;
+  -webkit-transition: margin 0.3s;
+  -moz-transition: margin 0.3s;
+  -ms-transition: margin 0.3s;
+  -o-transition: margin 0.3s;
+  transition: margin 0.3s; }
 
 .wrapper {
   max-width: 480px;
   padding: 25px 0;
-  position: relative;
-  display: table-cell;
-  float: none;
-  width: auto; }
-  .wrapper:after {
-    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
-    clear: both;
-    display: block;
-    height: 0 !important;
-    line-height: 0;
-    visibility: hidden; }
+  position: relative; }
+
+@media all and (max-width: 499px) {
+  .container {
+    padding-left: 0; }
+
+  .wrapper {
+    padding: 25px 3%; } }
+@media all and (min-width: 500px) and (max-width: 780px) {
+  .container {
+    padding-left: 25%; }
+
+  .wrapper {
+    padding-right: 3%; } }

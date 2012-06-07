@@ -3,20 +3,39 @@
 .article
   padding: 0 0 30px 30px
   position: relative
-  img
-    width: 100%
 
 // Paragraph picture
 .article-pic
   margin-bottom: 10px
+  width: 100%
 
 // Paragraph link
 .article-anchor
   color: $neutral
   left: 100%
-  margin-left: 30px
+  margin: 5px 0 0 30px
   position: absolute
 
 .article-title
   color: $firm
+
+@media all and (max-width: 499px)
+  .article
+    padding-left: 0
+
+  .article-anchor
+    left: auto
+    right: 0
+
+  .article-title
+    margin-right: 40px
+
+@media all and (min-width: 500px) and (max-width: 780px)
+  .article-anchor
+    left: auto
+    right: 0
+
+  .article-title
+    margin-right: 40px
+
 

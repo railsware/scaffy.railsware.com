@@ -9,10 +9,24 @@ body
   padding-left: 210px
   margin: auto
   max-width: 500px
+  +transition(margin .3s)
 
 .wrapper
   max-width: 480px
   padding: 25px 0
   position: relative
-  +last-col
+
+@media all and (max-width: 499px)
+  .container
+    padding-left: 0
+
+  .wrapper
+    padding: 25px 3%
+
+@media all and (min-width: 500px) and (max-width: 780px)
+  .container
+    padding-left: 25%
+
+  .wrapper
+    padding-right: 3%
 

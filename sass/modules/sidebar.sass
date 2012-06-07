@@ -9,6 +9,7 @@
   top: 0
   width: 200px
   z-index: 10
+  +transition(margin .3s)
   a
     display: inline-block
     padding: 5px 0
@@ -22,4 +23,14 @@
   top: 0
   width: 100%
   +scrollbar
+
+@media all and (max-width: 499px)
+  .sidebar
+    margin-left: -100%
+
+@media all and (min-width: 500px) and (max-width: 780px)
+  .sidebar
+    left: 0
+    margin-left: 15px
+    width: 25%
 

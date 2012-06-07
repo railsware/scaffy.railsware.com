@@ -388,3 +388,39 @@ a {
   text-decoration: none; }
   a:hover {
     color: #6eebb2; }
+
+.shown-mobile,
+.shown-tablet,
+.shown-desktop,
+.hidden-mobile,
+.hidden-tablet,
+.hidden-desktop {
+  display: none; }
+
+@media all and (max-width: 499px) {
+  .shown-mobile {
+    display: block; }
+
+  .hidden-tablet {
+    display: block; }
+
+  .hidden-desktop {
+    display: block; } }
+@media all and (min-width: 500px) and (max-width: 781px) {
+  .shown-tablet {
+    display: block; }
+
+  .hidden-mobile {
+    display: block; }
+
+  .hidden-desktop {
+    display: block; } }
+@media all and (min-width: 781px) {
+  .shown-desktop {
+    display: block; }
+
+  .hidden-mobile {
+    display: block; }
+
+  .hidden-tablet {
+    display: block; } }
