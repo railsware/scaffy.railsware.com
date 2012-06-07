@@ -394,24 +394,28 @@ body {
   color: #e5dde6;
   font: 400 15px/1.35 "Signika", sans-serif; }
 
-.wrapper {
+.container {
+  padding-left: 210px;
   margin: auto;
-  max-width: 600px;
+  max-width: 500px; }
+
+.wrapper {
+  max-width: 480px;
   padding: 25px 0;
-  position: relative; }
+  position: relative;
+  display: table-cell;
+  float: none;
+  width: auto; }
   .wrapper:after {
-    content: ".";
-    display: block;
-    height: 0;
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
     clear: both;
+    display: block;
+    height: 0 !important;
+    line-height: 0;
     visibility: hidden; }
 
-.row:after {
-  content: ".";
-  display: block;
-  height: 0;
-  clear: both;
-  visibility: hidden; }
+.logo {
+  margin-bottom: 10px; }
 
 .symbol {
   margin-top: 6px; }
@@ -449,7 +453,7 @@ pre {
 
 code {
   color: #1dd681;
-  font-family: Monaco, monospace; }
+  font: 13px Monaco, monospace; }
 
 .link-by-railsware {
   background: url("../images/by-rw-corner.png") 0 0 no-repeat;
@@ -517,3 +521,41 @@ code {
 
 .article-title {
   color: #1dd681; }
+
+.sidebar {
+  font: 12px Monaco, monospace;
+  height: 100%;
+  left: 50%;
+  margin-left: -333px;
+  padding-top: 20px;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  z-index: 10; }
+  .sidebar a {
+    display: inline-block;
+    padding: 5px 0; }
+
+.sidebar-scroll {
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .sidebar-scroll::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.05);
+    width: 8px;
+    height: 8px; }
+  .sidebar-scroll::-webkit-scrollbar-corner, .sidebar-scroll::-webkit-resizer {
+    display: none; }
+  .sidebar-scroll::-webkit-scrollbar-track-piece:disabled {
+    display: none !important; }
+  .sidebar-scroll::-webkit-scrollbar:vertical {
+    border: none; }
+  .sidebar-scroll::-webkit-scrollbar-thumb:vertical, .sidebar-scroll::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    min-height: 20px; }
+  .sidebar-scroll::-webkit-scrollbar-thumb:vertical:hover, .sidebar-scroll::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #1dd681; }
