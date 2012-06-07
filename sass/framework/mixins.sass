@@ -97,3 +97,24 @@
     line-height: 0
     visibility: hidden
 
+=scrollbar
+  &::-webkit-scrollbar
+    background: rgba(#fff, .05)
+    width: 8px
+    height: 8px
+  &::-webkit-scrollbar-corner,
+  &::-webkit-resizer
+    display: none
+  &::-webkit-scrollbar-track-piece:disabled
+    display: none !important
+  &::-webkit-scrollbar:vertical
+    border: none
+  &::-webkit-scrollbar-thumb:vertical,
+  &::-webkit-scrollbar-thumb:horizontal
+    background: rgba(#fff, .15)
+    border: none
+    min-height: 20px
+  &::-webkit-scrollbar-thumb:vertical:hover,
+  &::-webkit-scrollbar-thumb:horizontal:hover
+    background: $positive
+

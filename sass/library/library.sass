@@ -7,14 +7,6 @@
 .symbol
   margin-top: 6px
 
-.unordered-list
-  font-size: $h5
-  margin-bottom: 20px
-
-.unordered-list-item
-  list-style-type: square
-  margin: 0 0 20px 25px
-
 // Code sample
 pre
   border-left: 1px solid $positive
@@ -22,25 +14,7 @@ pre
   margin: 15px 0
   padding: 10px 15px
   overflow: auto
-  &::-webkit-scrollbar
-    background: rgba(#fff, .05)
-    width: 8px
-    height: 8px
-  &::-webkit-scrollbar-corner,
-  &::-webkit-resizer
-    display: none
-  &::-webkit-scrollbar-track-piece:disabled
-    display: none !important
-  &::-webkit-scrollbar:vertical
-    border: none
-  &::-webkit-scrollbar-thumb:vertical,
-  &::-webkit-scrollbar-thumb:horizontal
-    background: rgba(#fff, .15)
-    border: none
-    min-height: 20px
-  &::-webkit-scrollbar-thumb:vertical:hover,
-  &::-webkit-scrollbar-thumb:horizontal:hover
-    background: $positive
+  +scrollbar
 
 code
   color: $positive
@@ -60,7 +34,6 @@ code
 .rw-link
   border-bottom: 1px solid #cc0000
   color: lighten(#c00, 20%)
-  text-decoration: none
   &:hover
     border-bottom-color: red
     color: lighten(#c00, 30%)

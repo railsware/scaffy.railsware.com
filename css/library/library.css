@@ -4,14 +4,6 @@
 .symbol {
   margin-top: 6px; }
 
-.unordered-list {
-  font-size: 14px;
-  margin-bottom: 20px; }
-
-.unordered-list-item {
-  list-style-type: square;
-  margin: 0 0 20px 25px; }
-
 pre {
   border-left: 1px solid #1dd681;
   line-height: 1.5;
@@ -50,8 +42,7 @@ code {
 
 .rw-link {
   border-bottom: 1px solid #cc0000;
-  color: #ff3333;
-  text-decoration: none; }
+  color: #ff3333; }
   .rw-link:hover {
     border-bottom-color: red;
     color: #ff6666; }

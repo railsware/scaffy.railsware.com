@@ -5,7 +5,6 @@
   height: 100%
   left: 50%
   margin-left: -333px
-  padding-top: 20px
   position: fixed
   top: 0
   width: 200px
@@ -18,26 +17,9 @@
   height: 100%
   left: 0
   overflow: auto
+  padding-top: 20px
   position: absolute
   top: 0
   width: 100%
-  &::-webkit-scrollbar
-    background: rgba(#fff, .05)
-    width: 8px
-    height: 8px
-  &::-webkit-scrollbar-corner,
-  &::-webkit-resizer
-    display: none
-  &::-webkit-scrollbar-track-piece:disabled
-    display: none !important
-  &::-webkit-scrollbar:vertical
-    border: none
-  &::-webkit-scrollbar-thumb:vertical,
-  &::-webkit-scrollbar-thumb:horizontal
-    background: rgba(#fff, .15)
-    border: none
-    min-height: 20px
-  &::-webkit-scrollbar-thumb:vertical:hover,
-  &::-webkit-scrollbar-thumb:horizontal:hover
-    background: $positive
+  +scrollbar
 

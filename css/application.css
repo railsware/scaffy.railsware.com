@@ -420,14 +420,6 @@ body {
 .symbol {
   margin-top: 6px; }
 
-.unordered-list {
-  font-size: 14px;
-  margin-bottom: 20px; }
-
-.unordered-list-item {
-  list-style-type: square;
-  margin: 0 0 20px 25px; }
-
 pre {
   border-left: 1px solid #1dd681;
   line-height: 1.5;
@@ -466,8 +458,7 @@ code {
 
 .rw-link {
   border-bottom: 1px solid #cc0000;
-  color: #ff3333;
-  text-decoration: none; }
+  color: #ff3333; }
   .rw-link:hover {
     border-bottom-color: red;
     color: #ff6666; }
@@ -527,7 +518,6 @@ code {
   height: 100%;
   left: 50%;
   margin-left: -333px;
-  padding-top: 20px;
   position: fixed;
   top: 0;
   width: 200px;
@@ -540,6 +530,7 @@ code {
   height: 100%;
   left: 0;
   overflow: auto;
+  padding-top: 20px;
   position: absolute;
   top: 0;
   width: 100%; }
