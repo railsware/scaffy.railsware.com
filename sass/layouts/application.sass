@@ -5,21 +5,14 @@ body
   color: $base-color
   font: 400 #{$base-font-size}/1.35 $base-font
 
-.wrapper
+.container
+  padding-left: 210px
   margin: auto
-  max-width: 600px
+  max-width: 500px
+
+.wrapper
+  max-width: 480px
   padding: 25px 0
   position: relative
-  +clearfix
-
-.content
-  padding-left: 30px
-  img
-    width: 100%
-
-.row
-  // Use variable if you want to keep your spaces consistent 
-  // across the system. Also it is easy to support responsivity
-  margin-bottom: $space-l
-  +clearfix
+  +last-col
 

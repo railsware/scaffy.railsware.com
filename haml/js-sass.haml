@@ -1,0 +1,95 @@
+#p8.article
+  %a.article-anchor(href="#p8") #8
+  %h2.article-title Using SASS in full power
+  %img.article-pic(alt="" src="images/article/power.jpg")/
+
+  With SASS you can create shared variables <code>config</code> & set 
+  of mixins for CSS properties with vendor prefixes. Also it is extremely 
+  useful to control specific IE versions support by creating mixins for 
+  cross-browser compatible <code>inline-block</code> or 
+  <code>opacity</code> Finally you save time writing less. Here is an 
+  example of a typical config:
+
+  %pre<
+    %code<
+      :preserve
+        // Colors
+        $base-color: #000
+        $opaque:     #333
+        $neutral:    #666
+        $pale:       #999
+        $bare:       #aaa
+        $firm:       #9bc345
+        $sharp:      #fff
+        $contrast:   #000
+        $positive:   #9cc346
+        $negative:   #c34646
+        $link:       #0072ff
+        
+        // Typography
+        $base-font: Arial, Helvetica, sans-serif
+        $firm-font: Georgia, serif
+        $h1: 24px
+        $h2: 20px
+        $h3: 18px
+        $h4: 16px
+        $h5: 15px
+        $h6: 11px
+        $base-font-size: 14px
+        
+        // Spaces
+        $space-x: 3px
+        $space-s: 5px
+        $space-m: 10px
+        $space-l: 20px  #p9
+
+  %a.article-anchor(href="#p9") #9
+
+  #p9.mbl
+    Create only mixins you need. No sense to keep not used code that just confuses 
+    you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code>
+    instead of equal):
+
+    %pre<
+      %code<
+        :preserve
+          =transform($properties)
+            -webkit-transform: $properties
+            -moz-transform:    $properties
+            -ms-transform:     $properties
+            -o-transform:      $properties
+            transform:         $properties
+          
+          =user-select($properties)
+            -webkit-user-select: $properties
+            -moz-user-select:    $properties
+            -ms-user-select:     $properties
+            user-select:         $properties
+          
+          =selection($background, $color)
+            &::selection
+              background: $background
+              color: $color
+          
+            &::-moz-selection
+              background: $background
+              color: $color  #p10
+
+  #p10.mbl
+    %a.article-anchor(href="#p10") #10
+    %h2.article-title Private & shared mixins
+    The above example describes shared mixins.  If you need to automate 
+    some calculations inside specific <strong>module</strong> create 
+    private mixin right in the begining of the current module file:
+
+    %pre<
+      %code<
+        :preserve
+          // scrollbox.sass
+          
+          =center-slider($size)
+            height: $size
+            margin-left: -($size / 2)
+            right: -($size / 2)
+            width: $size
+

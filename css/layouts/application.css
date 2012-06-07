@@ -3,28 +3,22 @@ body {
   color: #e5dde6;
   font: 400 15px/1.35 "Signika", sans-serif; }
 
-.wrapper {
+.container {
+  padding-left: 210px;
   margin: auto;
-  max-width: 600px;
+  max-width: 500px; }
+
+.wrapper {
+  max-width: 480px;
   padding: 25px 0;
-  position: relative; }
+  position: relative;
+  display: table-cell;
+  float: none;
+  width: auto; }
   .wrapper:after {
-    content: ".";
-    display: block;
-    height: 0;
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
     clear: both;
-    visibility: hidden; }
-
-.content {
-  padding-left: 30px; }
-  .content img {
-    width: 100%; }
-
-.row {
-  margin-bottom: 20px; }
-  .row:after {
-    content: ".";
     display: block;
-    height: 0;
-    clear: both;
+    height: 0 !important;
+    line-height: 0;
     visibility: hidden; }

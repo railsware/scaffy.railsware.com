@@ -1,0 +1,37 @@
+.sidebar {
+  font: 12px Monaco, monospace;
+  height: 100%;
+  left: 50%;
+  margin-left: -333px;
+  position: fixed;
+  top: 0;
+  width: 200px;
+  z-index: 10; }
+  .sidebar a {
+    display: inline-block;
+    padding: 5px 0; }
+
+.sidebar-scroll {
+  height: 100%;
+  left: 0;
+  overflow: auto;
+  padding-top: 20px;
+  position: absolute;
+  top: 0;
+  width: 100%; }
+  .sidebar-scroll::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.05);
+    width: 8px;
+    height: 8px; }
+  .sidebar-scroll::-webkit-scrollbar-corner, .sidebar-scroll::-webkit-resizer {
+    display: none; }
+  .sidebar-scroll::-webkit-scrollbar-track-piece:disabled {
+    display: none !important; }
+  .sidebar-scroll::-webkit-scrollbar:vertical {
+    border: none; }
+  .sidebar-scroll::-webkit-scrollbar-thumb:vertical, .sidebar-scroll::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    min-height: 20px; }
+  .sidebar-scroll::-webkit-scrollbar-thumb:vertical:hover, .sidebar-scroll::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #1dd681; }
