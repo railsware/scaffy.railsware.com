@@ -27,13 +27,14 @@ code
 
 // Triangle banner in the corner
 .link-by-railsware
-  background: url('../images/by-rw-corner.png') 0 0 no-repeat
-  height: 163px
+  background: url('../images/by-rw.png') 0 0 no-repeat
+  height: 77px
   position: absolute
   right: 0
   text-indent: -99999em
   top: 0
-  width: 163px
+  width: 65px
+  z-index: 10
 
 // Special styling for the link
 .rw-link
@@ -58,4 +59,12 @@ code
     color: $contrast
   &:active
     background: darken($positive, 20%)
+
+@media all and (max-width: 499px)
+  .link-by-railsware
+    right: 3%
+
+@media all and (min-width: 500px) and (max-width: 780px)
+  .link-by-railsware
+    right: 3%
 

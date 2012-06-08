@@ -495,13 +495,14 @@ code {
   font: 13px Monaco, monospace; }
 
 .link-by-railsware {
-  background: url("../images/by-rw-corner.png") 0 0 no-repeat;
-  height: 163px;
+  background: url("../images/by-rw.png") 0 0 no-repeat;
+  height: 77px;
   position: absolute;
   right: 0;
   text-indent: -99999em;
   top: 0;
-  width: 163px; }
+  width: 65px;
+  z-index: 10; }
 
 .rw-link {
   border-bottom: 1px solid #cc0000;
@@ -523,6 +524,12 @@ code {
   .button:active {
     background: #117c4b; }
 
+@media all and (max-width: 499px) {
+  .link-by-railsware {
+    right: 3%; } }
+@media all and (min-width: 500px) and (max-width: 780px) {
+  .link-by-railsware {
+    right: 3%; } }
 .debug-grids {
   text-align: center;
   cursor: default; }
