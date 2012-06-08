@@ -457,7 +457,12 @@ body {
   .wrapper {
     padding-right: 3%; } }
 .logo {
-  margin-bottom: 10px; }
+  color: inherit;
+  display: inline-block;
+  font: 600 60px/0.85 "Signika", sans-serif;
+  min-height: 63px; }
+  .logo span {
+    letter-spacing: -3px; }
 
 .symbol {
   margin-top: 6px; }
@@ -616,7 +621,7 @@ code {
 
 @media all and (max-width: 499px) {
   .sidebar {
-    margin-left: -100%; } }
+    margin-left: -150%; } }
 @media all and (min-width: 500px) and (max-width: 780px) {
   .sidebar {
     left: 0;

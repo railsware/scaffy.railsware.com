@@ -1,5 +1,10 @@
 .logo {
-  margin-bottom: 10px; }
+  color: inherit;
+  display: inline-block;
+  font: 600 60px/0.85 "Signika", sans-serif;
+  min-height: 63px; }
+  .logo span {
+    letter-spacing: -3px; }
 
 .symbol {
   margin-top: 6px; }
