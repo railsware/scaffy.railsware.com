@@ -123,7 +123,7 @@ pre {
   *display: block;
   *zoom: 1; }
   .last-col:after {
-    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .";
+    content: " . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . ";
     clear: both;
     display: block;
     height: 0 !important;
@@ -198,6 +198,10 @@ pre {
 .by-center {
   text-align: center; }
 
+@media all and (max-width: 499px) {
+  .col1of2, .col1of3, .col1of4, .col1of5, .col1of6 {
+    float: none;
+    width: auto; } }
 /*
  * Should be used to modify the default spacing between objects (not between nodes of the same object)
  * a, t, r, b, l, h, v = all,top,right,bottom,left,horizontal,vertical
@@ -540,7 +544,8 @@ code {
     right: 3%; } }
 .debug-grids {
   text-align: center;
-  cursor: default; }
+  cursor: default;
+  *zoom: 1; }
   .debug-grids:after {
     content: ".";
     display: block;
@@ -557,6 +562,9 @@ code {
   .debug-grids .last-col .inner-col {
     margin-right: 0; }
 
+@media all and (max-width: 499px) {
+  .debug-grids .inner-col {
+    margin-right: 0; } }
 .article {
   padding: 0 0 30px 30px;
   position: relative; }
@@ -573,6 +581,10 @@ code {
 
 .article-title {
   color: #1dd681; }
+
+.article-label {
+  color: #dfb301;
+  padding-right: 10px; }
 
 @media all and (max-width: 499px) {
   .article {

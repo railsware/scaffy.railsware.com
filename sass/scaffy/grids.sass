@@ -1,11 +1,7 @@
+@import 'config'
+
 .clearfix
-  *zoom: 1
-  &:after
-    content: '.'
-    display: block
-    height: 0
-    clear: both
-    visibility: hidden
+  +clearfix
 
 .col1of2,
 .col1of3, .col2of3,
@@ -15,21 +11,7 @@
   float: left
 
 .last-col
-  display: table-cell
-  float: none
-  width: auto
-  _margin-right: -3px
-  _left: -3px
-  _position: relative
-  *display: block
-  *zoom: 1
-  &:after
-    content: ' . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . . .'
-    clear: both
-    display: block
-    height: 0 !important
-    line-height: 0
-    visibility: hidden
+  +last-col
 
 .col1of1
   float: none
@@ -98,4 +80,9 @@
 
 .by-center
   text-align: center
+
+@media all and (max-width: 499px)
+  .col1of2, .col1of3, .col1of4, .col1of5, .col1of6
+    float: none
+    width: auto
 

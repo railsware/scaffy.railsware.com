@@ -6,56 +6,61 @@
   .mbl
     %table.contents
       %tr
-        %td.bright(width="23%")
+        %td.article-label(width="30%")
           bundle.sass
         %td
-          linker for all framework stylesheets
+          Linker for all framework stylesheets
       %tr
-        %td.bright
+        %td.article-label
           config.sass
         %td
-          shared variables set
+          Shared variables set
       %tr
-        %td.bright
+        %td.article-label
           grids.sass
         %td
-          rock solid grids for building layouts
+          Rock solid grids for building layouts
       %tr
-        %td.bright
+        %td.article-label
           mixins.sass
         %td
-          shared Sass mixins set
+          Shared Sass mixins set
       %tr
-        %td.bright
+        %td.article-label
           reset.sass
         %td
-          resets everything to zero margin, padding
+          Resets everything to zero margin, padding
       %tr
-        %td.bright
+        %td.article-label
           spaces.sass
         %td
-          use to modify the default spacing between objects
+          Use to modify spacing between objects
       %tr
-        %td.bright
+        %td.article-label
           type.sass
         %td
-          stores all typography related style definitions
+          Stores all typography related style definitions
+      %tr
+        %td.article-label
+          responsive.sass
+        %td
+          Use to hide/show responsive components
 
   %h3.positive /layouts/
   .mbl
     %table.contents
       %tr
-        %td.bright(width="30%")
+        %td.article-label(width="30%")
           application.sass
         %td
           Application layout
       %tr
-        %td.bright
+        %td.article-label
           marketing.sass
         %td
           Marketing layout
       %tr
-        %td.bright
+        %td.article-label
           admin.sass
         %td
           Admin layout
@@ -68,17 +73,17 @@
   .mbl
     %table.contents
       %tr
-        %td.bright(width="30%")
+        %td.article-label(width="30%")
           application.sass
         %td
           Application library
       %tr
-        %td.bright
+        %td.article-label
           marketing.sass
         %td
           Marketing library
       %tr
-        %td.bright
+        %td.article-label
           admin.sass
         %td
           Admin library
@@ -96,17 +101,17 @@
     Slice modules by small logical parts to keep code small and flat structure:
     %table.contents
       %tr
-        %td.bright(width="34%")
+        %td.article-label(width="34%")
           player-info.sass
         %td
           Player info module
       %tr
-        %td.bright
+        %td.article-label
           player-status.sass
         %td
           Player status module
       %tr
-        %td.bright
+        %td.article-label
           player-controls.sass
         %td
           Player controls module
@@ -114,12 +119,12 @@
   To specify multiple modules sets for different layouts create folders inside:
   %table.contents
     %tr
-      %td.bright(width="28%")
+      %td.article-label(width="34%")
         application.sass
       %td
         Application modules
     %tr
-      %td.bright
+      %td.article-label
         admin.sass
       %td
         Admin modules
@@ -131,7 +136,8 @@
   %p.mbl
     We like
     %a(href="http://github.com/stubbornella/oocss/blob/master/core/grid/grids.css") Nicole Sullivan grids
-    system. There are 6 sizes available by default. We modified class names a bit to write less:
+    system. There are 6 sizes available by default. We modified class names a bit to write less and 
+    made them responsive:
 
   .debug-grids
     .col1of2
