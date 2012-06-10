@@ -1,14 +1,19 @@
-#p8.article
-  %a.article-anchor(href="#p8") #8
-  %h2.article-title Using SASS in full power
+#p9.article
+  %a.article-anchor(href="#p9") #9
+  %h2.article-title Using Sass in full power
   %img.article-pic(alt="" src="images/article/power.jpg")/
 
-  With SASS you can create shared variables <code>config</code> & set 
-  of mixins for CSS properties with vendor prefixes. Also it is extremely 
-  useful to control specific IE versions support by creating mixins for 
-  cross-browser compatible <code>inline-block</code> or 
-  <code>opacity</code> Finally you save time writing less. Here is an 
-  example of a typical config:
+  %p.mbl
+    With Sass you can create shared variables <code>config</code> and set 
+    of mixins for CSS properties with vendor prefixes.
+
+  %p.mbl
+    Also it is extremely useful to control specific IE versions support
+    by creating mixins for cross-browser compatible <code>inline-block</code>
+    or <code>opacity</code>.
+
+  %p.mbl
+    Here is an example of a typical config:
 
   %pre<
     %code<
@@ -41,15 +46,14 @@
         $space-x: 3px
         $space-s: 5px
         $space-m: 10px
-        $space-l: 20px  #p9
+        $space-l: 20px
 
-#p9.article
-  %a.article-anchor(href="#p9") #9
+#p10.article
+  %a.article-anchor(href="#p10") #10
   %h2.article-title Create only mixins you need
 
   No sense to keep not used code that just confuses 
-  you. So here's <code>mixins.sass</code> example (to call mixin use <code>+</code>
-  instead of equal):
+  you. So here's <code>mixins.sass</code> example:
 
   %pre<
     %code<
@@ -76,8 +80,8 @@
             background: $background
             color: $color  #p10
 
-#p10.article
-  %a.article-anchor(href="#p10") #10
+#p11.article
+  %a.article-anchor(href="#p11") #11
   %h2.article-title Private & shared mixins
   The above example describes shared mixins.  If you need to automate 
   some calculations inside specific <strong>module</strong> create 

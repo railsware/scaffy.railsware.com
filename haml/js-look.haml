@@ -1,15 +1,19 @@
-#p3.article
-  %a.article-anchor(href="#p3") #3
+#p5.article
+  %a.article-anchor(href="#p5") #5
   %h2.positive Look identically everywhere
   %img.article-pic(alt="" src="images/article/look.jpg")/
 
-  Doesn't matter where your object will take place it looks the same. It is possible
-  by creating unique classes for each object. For example <code>.navigation</code> in
-  <code>.header</code> will look identically the same in <code>.footer</code> or in 
-  the <code>.content</code> area. That means if you need to modify navigation in 
-  footer, you have to create another type of it, like .sub-navigation.
+  %p.mbl
+    Doesn't matter where your object will take place it should look the same. It is possible
+    by creating unique classes for each component.
 
-  .ptm.mbl
+  %p.mbl
+    For example <code>.navigation</code> in
+    <code>.header</code> will look identically the same in <code>.footer</code> or in 
+    the <code>.content</code> area. That means if you need to modify navigation in 
+    footer, you have to create another type of it &mdash; <code>.sub-navigation</code>.
+
+  .mbl
     Selector should describe a main object, be as short as it can & don't make potential conflict:
     %pre<
       %code<

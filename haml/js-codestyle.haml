@@ -1,10 +1,10 @@
-#p7.article
-  %a.article-anchor(href="#p7") #7
+#p8.article
+  %a.article-anchor(href="#p8") #8
   %h2.article-title Code style & conventions
   %img.article-pic(alt="" src="images/article/talk-about-me.jpg")/
 
   Depending on your project needs team should define a code style to be used 
-  across the project. Here is an example:
+  across the project. Here is a Sass example:
 
   %pre<
     %code<
@@ -14,12 +14,8 @@
           font: 14px 'Helvetica Neue', Helvetica, sans-serif
           padding: 0 4px 2px
           z-index: 5
+          +transition(all .2s linear)
         
         .selector-child
           display: inline-block
-          -webkit-transition: all .2s
-             -moz-transition: all .2s
-              -ms-transition: all .2s
-               -o-transition: all .2s
-                  transition: all .2s
 

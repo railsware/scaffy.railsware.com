@@ -371,6 +371,9 @@ h5 {
 .firm {
   color: #1dd681; }
 
+.bright {
+  color: #dfb301; }
+
 .sharp {
   color: #252525; }
 
@@ -456,6 +459,11 @@ body {
 
   .wrapper {
     padding-right: 3%; } }
+.contents {
+  width: 100%; }
+  .contents td {
+    padding: 5px 0; }
+
 .logo {
   color: inherit;
   display: inline-block;

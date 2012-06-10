@@ -1,5 +1,5 @@
-#p6.article
-  %a.article-anchor(href="#p6") #6
+#p4.article
+  %a.article-anchor(href="#p4") #4
   %h2.article-title Module
   %img.article-pic(alt="" src="images/article/module.jpg")/
 
@@ -9,15 +9,19 @@
     to be separated into an additional layer of the architecture.
 
   %p.mbl
-    Same rules apply for modifiers that
-    start with <code>.is-</code>.
+    Modules can also have modifiers that start with <code>.is-</code>.
+
+  %p.mbl
+    To avoid conflicts it is recommended to name all module
+    objects starting with module name prefix (Sass example):
 
   %pre<
     %code<
       :preserve
         .player
-          background: #ccc url('player/texture.png') 0 0 no-repeat
           position: relative
+          &.is-away
+            opacity: .3
           
         .player-avatar
           height: 50px

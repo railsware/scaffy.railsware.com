@@ -1,13 +1,16 @@
-#p4.article
-  %a.article-anchor(href="#p4") #4
-  %h2.article-title Minimize style inherritance & reduce cascades
+#p6.article
+  %a.article-anchor(href="#p6") #6
+  %h2.article-title Minimize style inherritance & reduce cascade
   %img.article-pic(alt="" src="images/article/inheritance.jpg")/
 
-  When you have a high nesting of objects inside each other the deepest one will take a blow
-  of all styles you implied to its parents' tags. Another tricky situation happens if you 
-  have a <strong>cascade</strong> and your object in fact location dependent.  To get this 
-  achievement reduce cascades where possible & don't set styling to tags.  Your CSS should 
-  have this look in ideal:
+  %p.mbl
+    When you have a high nesting of objects inside each other the deepest one will take a blow
+    of all styles you implied to its parents' tags.
+
+  %p.mbl
+    Another tricky situation happens if you have a cascade and your object in
+    fact location dependent. Reduce cascades where possible & don't set styling to tags.
+    Your CSS should have this look in ideal:
 
   .mbl
     %pre<

@@ -2,69 +2,127 @@
   %a.article-anchor(href="#p12") #12
   %h3.article-title File structure
   %img.article-pic(alt="" src="images/article/whats-inside.jpg")/
-  %h3.positive Framework
-  %ul.mbl
-    %li
-      %strong base.sass
-      — linker for all framework stylesheets
-    %li
-      %strong config.sass
-      — all shared variables store here. Also, links mixins at the end
-    %li
-      %strong grids.sass
-      — rock solid grids that allow you to build any layout no matter how complex is it. Works perfectly in IE6+ and all others
-    %li
-      %strong mixins.sass
-      — all SASS mixins go here. No need to use monster tools with thousands of mixins, just create mixins for your needs and use them across the project.
-    %li
-      %strong reset.sass
-      — resets everything to zero margin, padding + some black magic hacks to fix browsers inconsistencies
-    %li
-      %strong spaces.sass
-      — use to modify the default spacing between objects
-    %li
-      %strong type.sass
-      — stores all typography related style definitions
+  %h3.positive /scaffy/
+  .mbl
+    %table.contents
+      %tr
+        %td.bright(width="23%")
+          bundle.sass
+        %td
+          linker for all framework stylesheets
+      %tr
+        %td.bright
+          config.sass
+        %td
+          shared variables set
+      %tr
+        %td.bright
+          grids.sass
+        %td
+          rock solid grids for building layouts
+      %tr
+        %td.bright
+          mixins.sass
+        %td
+          shared Sass mixins set
+      %tr
+        %td.bright
+          reset.sass
+        %td
+          resets everything to zero margin, padding
+      %tr
+        %td.bright
+          spaces.sass
+        %td
+          use to modify the default spacing between objects
+      %tr
+        %td.bright
+          type.sass
+        %td
+          stores all typography related style definitions
 
-  %h3.positive Layouts
-  %ul.mbl
-    %li
-      %strong *.sass
-      — place for general layout styling. Store body, wrapper, content and other layout specific 
-      blocks here. Add a link to a config.sass to use shared mixins with variables. You can store 
-      all kinds of layouts here like: application.sass, homepage.sass, admin.sass
+  %h3.positive /layouts/
+  .mbl
+    %table.contents
+      %tr
+        %td.bright(width="30%")
+          application.sass
+        %td
+          Application layout
+      %tr
+        %td.bright
+          marketing.sass
+        %td
+          Marketing layout
+      %tr
+        %td.bright
+          admin.sass
+        %td
+          Admin layout
 
-  %h3.positive Library
-  %ul.mbl
-    %li
-      %strong *.sass
-      — place for groups like buttons, text-inputs, selects, radios, checkboxes and other 
-      elements, which you can combine. Add a link to a config.sass to use shared mixins with 
-      variables. To specify multiple libraries for different layouts move groups to separate 
-      folders inside the library: /library/application/ /library/admin/
+    %p.ptm
+      Place for general layout styling. Store body, wrapper, content and other layout specific 
+      blocks here. Add a link to a config.sass to use shared mixins with variables.
 
-  %h3.positive Modules
-  %ul.mbl
-    %li
-      %strong *.sass
-      — use to create modules such as login-block.sass, modal.sass, votebar.sass, dropdown.sass, 
-      lightbox.sass and so on.  Add a link to a config.sass to use shared mixins with variables.
-    %li
-      To specify multiple modules sets for different layouts create folders inside:
-      %p.mvx
-        %strong /modules/application/
-      %p.mbx
-        %strong /modules/admin/
-    %li
-      If module gets too big, slice it to keep code small and flat structure:
-      %p.mvx
-        %strong /modules/player-info.sass
-      %p.mbx
-        %strong /modules/player-status.sass
-      %p.mbx
-        %strong /modules/player-controls.sass
-      %p.mbx
-        %strong /modules/player-states.sass
+  %h3.positive /library/
+  .mbl
+    %table.contents
+      %tr
+        %td.bright(width="30%")
+          application.sass
+        %td
+          Application library
+      %tr
+        %td.bright
+          marketing.sass
+        %td
+          Marketing library
+      %tr
+        %td.bright
+          admin.sass
+        %td
+          Admin library
+
+    %p.pvm
+      Place for groups like buttons, text-inputs, selects, radios, checkboxes and other
+      elements, which you can combine.
+
+    %p.mbl
+      Until you don't have so many objects just store
+      all misc ones here in a general library scope file (e.g. /library/marketing.sass).
+
+  %h3.positive /modules/
+  .mbl
+    Slice modules by small logical parts to keep code small and flat structure:
+    %table.contents
+      %tr
+        %td.bright(width="34%")
+          player-info.sass
+        %td
+          Player info module
+      %tr
+        %td.bright
+          player-status.sass
+        %td
+          Player status module
+      %tr
+        %td.bright
+          player-controls.sass
+        %td
+          Player controls module
+
+  To specify multiple modules sets for different layouts create folders inside:
+  %table.contents
+    %tr
+      %td.bright(width="28%")
+        application.sass
+      %td
+        Application modules
+    %tr
+      %td.bright
+        admin.sass
+      %td
+        Admin modules
 
 #p13.article
   %a.article-anchor(href="#p13") #13
@@ -125,12 +183,11 @@
     .col1of6.last-col
       .inner-col 1 of 6
 
+.article
   %h2.article-title Who use it?
   %p.mbl
     Most of the products in <a class="rw-link" href="http://railsware.com">Railsware</a> are 
-    made based on Scaffy. We're working hard to get all achievements ;)
-
-  %p.mbl
+    made based on Scaffy.
     Also <a href="http://designmodo.com/futurico-html">Futurico User Interface</a> is based on it.
 
   <a href="https://twitter.com/share" class="twitter-share-button" data-via="railsware">Tweet</a>
