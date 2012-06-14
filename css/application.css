@@ -6,12 +6,7 @@ body {
 .container {
   padding-left: 210px;
   margin: auto;
-  max-width: 500px;
-  -webkit-transition: margin 0.3s;
-  -moz-transition: margin 0.3s;
-  -ms-transition: margin 0.3s;
-  -o-transition: margin 0.3s;
-  transition: margin 0.3s; }
+  max-width: 500px; }
 
 .wrapper {
   max-width: 480px;
@@ -99,12 +94,7 @@ body {
   position: fixed;
   top: 0;
   width: 200px;
-  z-index: 10;
-  -webkit-transition: margin 0.3s;
-  -moz-transition: margin 0.3s;
-  -ms-transition: margin 0.3s;
-  -o-transition: margin 0.3s;
-  transition: margin 0.3s; }
+  z-index: 10; }
   .sidebar a {
     display: inline-block;
     padding: 5px 0; }
