@@ -405,29 +405,17 @@ a {
   display: none; }
 
 @media all and (max-width: 499px) {
-  .shown-mobile {
-    display: inherit; }
-
-  .hidden-tablet {
-    display: inherit; }
-
+  .shown-mobile,
+  .hidden-tablet,
   .hidden-desktop {
     display: inherit; } }
 @media all and (min-width: 500px) and (max-width: 781px) {
-  .shown-tablet {
-    display: inherit; }
-
-  .hidden-mobile {
-    display: inherit; }
-
+  .shown-tablet,
+  .hidden-mobile,
   .hidden-desktop {
     display: inherit; } }
 @media all and (min-width: 781px) {
-  .shown-desktop {
-    display: inherit; }
-
-  .hidden-mobile {
-    display: inherit; }
-
+  .shown-desktop,
+  .hidden-mobile,
   .hidden-tablet {
     display: inherit; } }
