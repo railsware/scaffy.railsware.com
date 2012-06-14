@@ -1,0 +1,79 @@
+.contents {
+  width: 100%; }
+  .contents td {
+    padding: 5px 0; }
+
+.logo {
+  color: inherit;
+  display: inline-block;
+  font: 600 60px/0.85 "Signika", sans-serif;
+  min-height: 63px; }
+  .logo span {
+    letter-spacing: -3px; }
+
+.symbol {
+  margin-top: 6px; }
+
+pre {
+  border-left: 1px solid #1dd681;
+  line-height: 1.5;
+  margin: 15px 0;
+  padding: 10px 15px;
+  overflow: auto; }
+  pre::-webkit-scrollbar {
+    background: rgba(255, 255, 255, 0.05);
+    width: 8px;
+    height: 8px; }
+  pre::-webkit-scrollbar-corner, pre::-webkit-resizer {
+    display: none; }
+  pre::-webkit-scrollbar-track-piece:disabled {
+    display: none !important; }
+  pre::-webkit-scrollbar:vertical {
+    border: none; }
+  pre::-webkit-scrollbar-thumb:vertical, pre::-webkit-scrollbar-thumb:horizontal {
+    background: rgba(255, 255, 255, 0.15);
+    border: none;
+    min-height: 20px; }
+  pre::-webkit-scrollbar-thumb:vertical:hover, pre::-webkit-scrollbar-thumb:horizontal:hover {
+    background: #1dd681; }
+
+code {
+  color: #1dd681;
+  font: 13px Monaco, monospace; }
+
+.link-by-railsware {
+  background: url("../../images/by-rw.png") 0 0 no-repeat;
+  height: 77px;
+  position: absolute;
+  right: 0;
+  text-indent: -99999em;
+  top: 0;
+  width: 65px;
+  z-index: 10; }
+
+.rw-link {
+  border-bottom: 1px solid #cc0000;
+  color: #ff3333; }
+  .rw-link:hover {
+    border-bottom-color: red;
+    color: #ff6666; }
+
+.button {
+  background-color: #1dd681;
+  color: white;
+  cursor: pointer;
+  display: inline-block;
+  font-size: 18px;
+  padding: 8px 18px; }
+  .button:hover, .button:focus {
+    background: #6eebb2;
+    color: white; }
+  .button:active {
+    background: #117c4b; }
+
+@media all and (max-width: 499px) {
+  .link-by-railsware {
+    right: 3%; } }
+@media all and (min-width: 500px) and (max-width: 780px) {
+  .link-by-railsware {
+    right: 3%; } }
