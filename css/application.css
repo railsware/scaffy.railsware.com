@@ -142,3 +142,31 @@ body {
     left: 0;
     margin-left: 15px;
     width: 25%; } }
+.responsivity {
+  cursor: default;
+  margin: 0 -3px 20px 0;
+  text-align: center;
+  *zoom: 1; }
+  .responsivity:after {
+    content: ".";
+    display: block;
+    height: 0;
+    clear: both;
+    visibility: hidden; }
+  .responsivity li {
+    margin: 0 -1px -1px 0;
+    position: relative; }
+
+.responsivity-place {
+  border: 1px solid #444444;
+  color: #666666;
+  padding: 20px; }
+
+.responsivity-test {
+  background: #1dd681;
+  color: white;
+  left: 0;
+  padding: 21px 0;
+  position: absolute;
+  top: 0;
+  width: 100%; }

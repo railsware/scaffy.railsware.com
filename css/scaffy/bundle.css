@@ -406,28 +406,28 @@ a {
 
 @media all and (max-width: 499px) {
   .shown-mobile {
-    display: block; }
+    display: inherit; }
 
   .hidden-tablet {
-    display: block; }
+    display: inherit; }
 
   .hidden-desktop {
-    display: block; } }
+    display: inherit; } }
 @media all and (min-width: 500px) and (max-width: 781px) {
   .shown-tablet {
-    display: block; }
+    display: inherit; }
 
   .hidden-mobile {
-    display: block; }
+    display: inherit; }
 
   .hidden-desktop {
-    display: block; } }
+    display: inherit; } }
 @media all and (min-width: 781px) {
   .shown-desktop {
-    display: block; }
+    display: inherit; }
 
   .hidden-mobile {
-    display: block; }
+    display: inherit; }
 
   .hidden-tablet {
-    display: block; } }
+    display: inherit; } }
